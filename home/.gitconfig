@@ -1,0 +1,25 @@
+[user]
+  name = Chris LoPresto
+  email = chrislopresto@gmail.com
+
+[credential]
+  helper = /usr/local/bin/git-credential-osxkeychain
+
+[color]
+  ui = true
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+
+[gh]
+  protocol = https
+
+[hub]
+  protocol = https
+
+[mergetool]
+  keepBackup = true
+
+[push]
+  default = simple

@@ -1,0 +1,27 @@
+fancy_echo "Printing contents of original .zshrc ..."
+  cd ~
+  cat .zshrc
+  cd -
+### end printing original .zshrc
+
+fancy_echo "Installing antigen to manage zsh plugins ..."
+  cd ~
+  if [ -d antigen ]; then
+    git -C antigen pull
+  else
+    git clone https://github.com/zsh-users/antigen.git
+  fi
+  cd -
+### end antigen
+
+fancy_echo "Installing homesick to manage home directory dotfiles and such ..."
+  gem install homesick --no-document
+### end homesick
+
+fancy_echo "Clone dotfiles ..."
+  homesick clone chrislopresto/dotfiles
+  homesick pull dotfiles
+  homesick unlink dotfiles
+  homesick symlink dotfiles --force
+  homesick list
+### end dotfiles
