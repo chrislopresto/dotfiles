@@ -1,8 +1,10 @@
-**/Package Control.last-run
-**/Package Control.ca-list
-**/Package Control.ca-bundle
-**/Package Control.system-ca-bundle
-**/Package Control.cache/
-**/Package Control.ca-certs/
+sublime/**/Package Control.last-run
+sublime/**/Package Control.ca-list
+sublime/**/Package Control.ca-bundle
+sublime/**/Package Control.system-ca-bundle
+sublime/**/Package Control.cache/
+sublime/**/Package Control.ca-certs/
+
+sublime/**/Color Highlighter/
 
 *.sublime-workspace

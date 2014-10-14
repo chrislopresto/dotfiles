@@ -12,6 +12,7 @@
       ],
 			"folder_exclude_patterns": [
         "Package Control.cache",
+        "Color Highlighter"
       ],
       "follow_symlinks": true,
 			"path": "."
