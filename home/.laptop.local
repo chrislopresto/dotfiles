@@ -18,10 +18,17 @@ fancy_echo "Installing homesick to manage home directory dotfiles and such ..."
   gem install homesick --no-document
 ### end homesick
 
-fancy_echo "Clone dotfiles ..."
+fancy_echo "Cloning and symlinking dotfiles ..."
   homesick clone chrislopresto/dotfiles
   homesick pull dotfiles
   homesick unlink dotfiles
   homesick symlink dotfiles --force
   homesick list
 ### end dotfiles
+
+fancy_echo "Symlinking Sublime preferences..."
+  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+  rm -r User
+  ln -s ~/.homesick/repos/dotfiles/sublime/Packages/User
+  cd -
+### end sublime

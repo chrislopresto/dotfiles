@@ -16,3 +16,6 @@ alias localip="ifconfig -a | grep -o 'inet \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\
 
 # Flush DNS
 alias flushdns="sudo killall -HUP mDNSResponder"
+
+# Open local Sublime project
+alias stp="st *.sublime-project"

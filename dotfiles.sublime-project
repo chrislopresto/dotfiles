@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+      "file_exclude_patterns": [
+        "Package Control.last-run",
+        "Package Control.ca-list",
+        "Package Control.ca-bundle",
+        "Package Control.system-ca-bundle",
+        "Package Control.cache",
+        "Package Control.ca-certs"
+      ],
+			"folder_exclude_patterns": [
+        "Package Control.cache",
+      ],
+      "follow_symlinks": true,
+			"path": "."
+		}
+	]
+}
