@@ -26,9 +26,13 @@ fancy_echo "Cloning and symlinking dotfiles ..."
   homesick list
 ### end dotfiles
 
-fancy_echo "Symlinking Sublime preferences..."
+fancy_echo "Symlinking Sublime preferences ..."
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/.homesick/repos/dotfiles/sublime/Packages/User
   cd -
 ### end sublime
+
+fancy_echo "Installing pry-theme ..."
+  gem install pry-theme --no-document
+### end pry-theme
