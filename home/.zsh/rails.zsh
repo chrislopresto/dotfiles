@@ -1,4 +1,4 @@
 alias rake='noglob bundle exec rake'
-alias rc='bundle exec rails console'
 alias beg='bundle exec guard start'
-alias devlog='tail -f log/development.log'
+alias rakeall='time bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare'
+alias rakeallt='time bundle exec rake db:drop --trace db:create --trace db:migrate --trace db:seed --trace db:test:prepare --trace'
