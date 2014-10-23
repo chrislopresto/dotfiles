@@ -36,3 +36,19 @@ fancy_echo "Symlinking Sublime preferences ..."
 fancy_echo "Installing pry-theme ..."
   gem install pry-theme --no-document
 ### end pry-theme
+
+fancy_echo "Installing bower ..."
+  npm install -g bower
+### end bower
+
+fancy_echo "Installing ember-cli ..."
+  npm install -g ember-cli
+### end ember-cli
+
+fancy_echo "Installing phantomjs ..."
+  npm install -g phantomjs
+### end phantomjs
+
+fancy_echo "Installing compass ..."
+  gem install compass --no-document
+### end compass
