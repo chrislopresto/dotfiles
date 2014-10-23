@@ -27,7 +27,7 @@ fancy_echo "Cloning and symlinking dotfiles ..."
 ### end dotfiles
 
 fancy_echo "Symlinking Sublime preferences ..."
-  cd ~/Library/Application\ Support/Sublime\ Text/Packages/
+  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/.homesick/repos/dotfiles/sublime/Packages/User
   cd -
