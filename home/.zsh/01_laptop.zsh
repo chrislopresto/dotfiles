@@ -1,11 +1,8 @@
 #!/bin/zsh
 
-### This file contains the original contents of .zshrc in the
-### thoughtbot/laptop vagrant box: thoughtbot/ubuntu-14-04-server-with-laptop
+### This file contains the contents that the laptop script appends to .zshrc
 
 export PATH="$HOME/.bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:/usr/local/lib/node_modules"
+source $(brew --prefix nvm)/nvm.sh
