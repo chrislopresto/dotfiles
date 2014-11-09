@@ -114,4 +114,15 @@ symlink_files () {
   done
 }
 
+install_antigen () {
+  cd ~
+  if [ -d antigen ]; then
+    git -C antigen pull
+  else
+    git clone https://github.com/zsh-users/antigen.git
+  fi
+  cd -
+}
+
+install_antigen
 symlink_files
