@@ -51,4 +51,7 @@ fancy_echo "Installing compass ..."
 
 fancy_echo "Installing chef-related things ..."
   brew install caskroom/cask/brew-cask
+  brew cask install virtualbox
+  brew install docker
+  brew install boot2docker
   brew cask install chefdk
