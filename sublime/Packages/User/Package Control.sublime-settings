@@ -1,4 +1,12 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -12,6 +20,7 @@
 		"Handlebars",
 		"LESS",
 		"MaxPane",
+		"Package Control",
 		"Predawn",
 		"Ruby Slim",
 		"Sass",
