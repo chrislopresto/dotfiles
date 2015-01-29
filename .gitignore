@@ -8,3 +8,5 @@ sublime/**/Package Control.ca-certs/
 sublime/**/Color Highlighter/
 
 *.sublime-workspace
+
+home/.zsh/private/*.zsh

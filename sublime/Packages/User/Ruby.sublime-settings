@@ -3,6 +3,8 @@
 	[
 		"Vagrantfile",
 		"Berksfile",
-		"Guardfile"
+		"Guardfile",
+		"lock",
+		"chefignore"
 	]
 }
