@@ -11,4 +11,6 @@ sublime/**/Color Highlighter/
 
 *.sublime-workspace
 
+home/.config/gh-update
+
 home/.zsh/private/*.zsh
