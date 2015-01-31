@@ -13,4 +13,6 @@ sublime/**/Color Highlighter/
 
 home/.config/gh-update
 
+home/.config/beets/state.pickle
+
 home/.zsh/private/*.zsh

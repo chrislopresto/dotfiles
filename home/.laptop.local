@@ -55,3 +55,8 @@ fancy_echo "Installing chef-related things ..."
   brew install docker
   brew install boot2docker
   brew cask install chefdk
+
+fancy_echo "Installing beets ..."
+  pip install beets
+  pip install requests
+  pip install pylast

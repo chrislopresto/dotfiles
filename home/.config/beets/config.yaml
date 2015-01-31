@@ -1,2 +1,13 @@
-directory: ~/Dropbox/Music
-library: ~/Dropbox/Music/.library.blb
+directory: ~/Dropbox/Music/Library
+library: ~/Dropbox/Music/Library/.library.blb
+
+plugins:
+  - embedart
+  - fetchart
+  - lastgenre
+  - lyrics
+  - missing
+
+import:
+  incremental: yes
+  quiet_fallback: skip
