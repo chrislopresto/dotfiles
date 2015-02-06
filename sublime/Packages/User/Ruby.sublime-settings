@@ -5,6 +5,7 @@
 		"Berksfile",
 		"Guardfile",
 		"lock",
-		"chefignore"
+		"chefignore",
+		"laptop.local"
 	]
 }

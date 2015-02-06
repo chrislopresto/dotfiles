@@ -35,7 +35,6 @@ fancy_echo "Symlinking Sublime preferences ..."
 
 fancy_echo "Installing pry-theme ..."
   gem install pry-theme --no-document
-### end pry-theme
 
 fancy_echo "Installing bower ..."
   npm install -g bower
@@ -48,6 +47,9 @@ fancy_echo "Installing phantomjs ..."
 
 fancy_echo "Installing compass ..."
   gem install compass --no-document
+
+fancy_echo "Installing tldr ..."
+  brew tap tldr-pages/tldr && brew install tldr
 
 fancy_echo "Installing chef-related things ..."
   brew install caskroom/cask/brew-cask

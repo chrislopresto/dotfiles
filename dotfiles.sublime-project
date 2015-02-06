@@ -8,7 +8,10 @@
         "Package Control.ca-bundle",
         "Package Control.system-ca-bundle",
         "Package Control.cache",
-        "Package Control.ca-certs"
+        "Package Control.ca-certs",
+        "state.pickle",
+        ".config/gh",
+        ".config/gh-update"
       ],
 			"folder_exclude_patterns": [
         "Package Control.cache",

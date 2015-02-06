@@ -11,6 +11,7 @@ sublime/**/Color Highlighter/
 
 *.sublime-workspace
 
+home/.config/gh
 home/.config/gh-update
 
 home/.config/beets/state.pickle
