@@ -1,0 +1,8 @@
+{
+  "NSGlobalDomain": {
+    "ApplePressAndHoldEnabled": false
+  },
+  "com.apple.dock": {
+    "tilesize": 36
+  }
+}

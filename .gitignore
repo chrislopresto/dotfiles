@@ -13,6 +13,8 @@ sublime/**/Color Highlighter/
 
 home/.config/gh
 home/.config/gh-update
+home/.config/configstore
+home/.config/robomongo
 
 home/.config/beets/state.pickle
 

@@ -15,7 +15,7 @@ fancy_echo "Installing antigen to manage zsh plugins ..."
 ### end antigen
 
 fancy_echo "Installing homesick to manage home directory dotfiles and such ..."
-  gem install homesick --no-document
+  gem_install_or_update 'homesick'
 ### end homesick
 
 fancy_echo "Cloning and symlinking dotfiles ..."
@@ -34,7 +34,7 @@ fancy_echo "Symlinking Sublime preferences ..."
 ### end sublime
 
 fancy_echo "Installing pry-theme ..."
-  gem install pry-theme --no-document
+  gem_install_or_update 'pry-theme'
 
 fancy_echo "Installing bower ..."
   npm install -g bower
@@ -46,19 +46,28 @@ fancy_echo "Installing phantomjs ..."
   npm install -g phantomjs
 
 fancy_echo "Installing compass ..."
-  gem install compass --no-document
+  gem_install_or_update 'compass'
 
 fancy_echo "Installing tldr ..."
-  brew tap tldr-pages/tldr && brew install tldr
+  brew tap 'tldr-pages/tldr'
+  brew install 'tldr'
 
 fancy_echo "Installing chef-related things ..."
-  brew install caskroom/cask/brew-cask
-  brew cask install virtualbox
-  brew install docker
-  brew install boot2docker
-  brew cask install chefdk
+  brew tap 'caskroom/cask'
+  brew_install_or_upgrade 'brew-cask'
+
+  brew_install_or_upgrade 'docker'
+  brew_install_or_upgrade 'boot2docker'
+  brew cask install 'virtualbox'
+  brew cask install 'chefdk'
 
 fancy_echo "Installing beets ..."
-  pip install beets
-  pip install requests
-  pip install pylast
+  pip install -U beets
+  pip install -U requests
+  pip install -U pylast
+
+fancy_echo "Installing cider ..."
+  pip install -U cider
+
+fancy_echo "Restoring cider ..."
+  cider restore
