@@ -6,6 +6,8 @@
 		"Guardfile",
 		"lock",
 		"chefignore",
-		"laptop.local"
+		"laptop.local",
+		"Assetfile",
+		"ru"
 	]
 }

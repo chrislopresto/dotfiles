@@ -10,8 +10,10 @@
         "Package Control.cache",
         "Package Control.ca-certs",
         "state.pickle",
+        ".config/configstore",
         ".config/gh",
-        ".config/gh-update"
+        ".config/gh-update",
+        ".config/robomongo"
       ],
 			"folder_exclude_patterns": [
         "Package Control.cache",
