@@ -1,7 +1,7 @@
 {
   "icons": {
     "Atom": "https://github.com/pashinsky/atom-yosemite-icon/raw/master/Atom.icns",
-    "Sublime Text": "https://github.com/jamiewilson/predawn/raw/master/dock-icons/sublime-predawn-round-icon.icns",
+    "Sublime Text": "https://github.com/jamiewilson/predawn/raw/master/dock-icons/sublime-predawn-dark-round-icon.icns",
     "iTerm": "https://github.com/jasonlong/iterm-replacement-icon/raw/master/iTerm2.icns"
   }
 }
