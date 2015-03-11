@@ -50,7 +50,7 @@ fancy_echo "Installing compass ..."
 
 fancy_echo "Installing tldr ..."
   brew tap 'tldr-pages/tldr'
-  brew install 'tldr'
+  brew_install_or_upgrade 'tldr'
 
 fancy_echo "Installing chef-related things ..."
   brew tap 'caskroom/cask'
@@ -60,6 +60,21 @@ fancy_echo "Installing chef-related things ..."
   brew_install_or_upgrade 'boot2docker'
   brew cask install 'virtualbox'
   brew cask install 'chefdk'
+
+fancy_echo "Installing apple things ..."
+  brew tap 'homebrew/dupes'
+  brew_install_or_upgrade 'apple-gcc42'
+  brew_install_or_upgrade 'libksba'
+  brew_install_or_upgrade 'watchman'
+
+fancy_echo "Installing cocoapod things ..."
+  gem_install_or_update 'cocoapods'
+  pod setup
+
+fancy_echo "Installing node things ..."
+  brew_install_or_upgrade 'nave'
+  nade install stable
+  nave usemain stable
 
 fancy_echo "Installing beets ..."
   pip install -U beets
