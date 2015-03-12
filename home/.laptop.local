@@ -61,11 +61,12 @@ fancy_echo "Installing chef-related things ..."
   brew cask install 'virtualbox'
   brew cask install 'chefdk'
 
-fancy_echo "Installing apple things ..."
+fancy_echo "Installing developer things ..."
   brew tap 'homebrew/dupes'
   brew_install_or_upgrade 'apple-gcc42'
   brew_install_or_upgrade 'libksba'
   brew_install_or_upgrade 'watchman'
+  brew_install_or_upgrade 'jq'
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
