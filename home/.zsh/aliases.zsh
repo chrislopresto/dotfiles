@@ -19,10 +19,3 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 
 # Open local Sublime project
 alias stp="st *.sublime-project"
-
-# Node bomb
-alias nom="rm -rf node_modules && npm cache clear && npm i"
-
-alias eom="rm -rf node_modules bower_components dist tmp && npm cache clean && bower cache clean && bower install && npm install"
-
-alias gsuir="git submodule update --init --recursive"
