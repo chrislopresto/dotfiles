@@ -3,13 +3,13 @@
   email = chrislopresto@gmail.com
 
 [credential]
-  helper = /usr/local/bin/git-credential-osxkeychain
+  helper = osxkeychain
 
 [color]
   ui = true
 
 [core]
-  editor = vim
+	editor = subl -n -w
   excludesfile = ~/.gitignore
 
 [gh]
@@ -23,3 +23,8 @@
 
 [push]
   default = simple
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f

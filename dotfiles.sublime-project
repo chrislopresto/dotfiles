@@ -12,10 +12,11 @@
         "state.pickle",
         ".config/configstore",
         ".config/gh",
-        ".config/gh-update",
-        ".config/robomongo"
+        ".config/gh-update"
       ],
-			"folder_exclude_patterns": [
+      "folder_exclude_patterns": [
+        ".config/configstore",
+        ".config/robomongo",
         "Package Control.cache",
         "Color Highlighter"
       ],

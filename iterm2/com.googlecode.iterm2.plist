@@ -1909,11 +1909,11 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>349 485 924 485 0 0 1680 1050 </string>
+	<string>238 356 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>768 787 384 129 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-770 -106 570 426 -1024 -106 1024 768 </string>
+	<string>162 91 570 426 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 738 570 426 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2154,7 +2154,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Yes</string>
+			<string>Advanced</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -2707,7 +2707,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-12T00:52:49Z</date>
+	<date>2015-03-16T04:39:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
