@@ -1,57 +1,27 @@
 {
-  // Themes
-
-  // Oceanic Next
-  // https://github.com/voronianski/oceanic-next-theme
-  "color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
-  "theme": "Spacegray.sublime-theme",
-
-  // Predawn
-  // https://github.com/jamiewilson/predawn
-  // "theme": "predawn-DEV.sublime-theme",
-  // "color_scheme": "Packages/Predawn/predawn.tmTheme",
-  // "findreplace_small": true,
-  // "sidebar_small": true, // default, xsmall, small, medium, large or xlarge
-  // "tabs_small": true,
-
-  // Spacegray
-  // https://github.com/kkga/spacegray
-
-  // Spacegray
-  // "theme": "Spacegray.sublime-theme",
-  // "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-
-  // Spacegray Light
-  // "theme": "Spacegray Light.sublime-theme",
-  // "color_scheme": "Packages/Theme - Spacegray/base16-ocean.light.tmTheme",
-
-  // Spacegray Eighties
-  // "theme": "Spacegray Eighties.sublime-theme",
-  // "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-
-  // Typography
-  "caret_style": "phase",
-  "font_face": "Source Code Pro",
-  "font_size": 12,
-  "highlight_line": true,
-  "word_wrap": false,
-
-  // Whitespace, Matching, Copy & Auto-Complete
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-
-  // Interface & Behavior
-  "bold_folder_labels": true,
-  "close_windows_when_empty": false,
-  "ensure_newline_at_eof_on_save": true,
-  "highlight_modified_tabs": true,
-  "overlay_scroll_bars": "enabled",
-  "use_simple_full_screen": true,
-  "rulers": [100],
-
-  "ignored_packages":
-  [
-    "Vintage"
-  ]
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"tab_size": 2,
+	"theme": "Spacegray Eighties.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"word_wrap": false
 }

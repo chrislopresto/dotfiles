@@ -12,9 +12,6 @@
 	editor = subl -n -w
   excludesfile = ~/.gitignore
 
-[gh]
-  protocol = https
-
 [hub]
   protocol = https
 
@@ -26,5 +23,5 @@
 
 [filter "media"]
   required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f

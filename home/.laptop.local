@@ -36,15 +36,6 @@ fancy_echo "Symlinking Sublime preferences ..."
 fancy_echo "Installing pry-theme ..."
   gem_install_or_update 'pry-theme'
 
-fancy_echo "Installing bower ..."
-  npm install -g bower
-
-fancy_echo "Installing ember-cli ..."
-  npm install -g ember-cli
-
-fancy_echo "Installing phantomjs ..."
-  npm install -g phantomjs
-
 fancy_echo "Installing compass ..."
   gem_install_or_update 'compass'
 
@@ -67,6 +58,8 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'libksba'
   brew_install_or_upgrade 'watchman'
   brew_install_or_upgrade 'jq'
+  brew_install_or_upgrade 'git'
+  brew_install_or_upgrade 'hub'
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
@@ -76,6 +69,16 @@ fancy_echo "Installing node things ..."
   brew_install_or_upgrade 'nave'
   nade install stable
   nave usemain stable
+
+fancy_echo "Installing npm packages like bower, ember-cli, phantomjs, etc ..."
+  npm install -g bower
+  npm install -g ember-cli
+  npm install -g phantomjs
+  npm install -g grunt
+  npm install -g grunt-cli
+
+fancy_echo "Installing python things ..."
+  brew_install_or_upgrade 'pyenv'
 
 fancy_echo "Installing beets ..."
   pip install -U beets
