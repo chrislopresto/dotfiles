@@ -1,6 +1,8 @@
 {
+  "color_scheme": "Packages/Monokai JSON+/Monokai JSON+.tmTheme",
 	"extensions":
 	[
-		".jshintrc"
+		".jshintrc",
+		"json"
 	]
 }

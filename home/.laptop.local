@@ -36,8 +36,9 @@ fancy_echo "Symlinking Sublime preferences ..."
 fancy_echo "Installing pry-theme ..."
   gem_install_or_update 'pry-theme'
 
-fancy_echo "Installing compass ..."
+fancy_echo "Installing scss things ..."
   gem_install_or_update 'compass'
+  gem_install_or_update 'scss-lint'
 
 fancy_echo "Installing tldr ..."
   brew tap 'tldr-pages/tldr'
@@ -60,6 +61,8 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'jq'
   brew_install_or_upgrade 'git'
   brew_install_or_upgrade 'hub'
+  brew_install_or_upgrade 'fig'
+  brew_install_or_upgrade 'mono'
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
