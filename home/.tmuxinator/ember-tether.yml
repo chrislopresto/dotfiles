@@ -1,0 +1,10 @@
+name: ember-tether
+root: ~/p/yapplabs/ember-tether
+
+windows:
+  - main:
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - emss
+        - echo 'Tether Time'
+        - emts

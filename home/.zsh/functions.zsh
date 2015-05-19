@@ -29,3 +29,7 @@ function gitup {
       open -a "GitUp" --args "$F"
   fi
 }
+
+function df {
+  cd ~/.homesick/repos/dotfiles && stp
+}

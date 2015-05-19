@@ -63,6 +63,10 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'hub'
   brew_install_or_upgrade 'fig'
   brew_install_or_upgrade 'mono'
+  brew_install_or_upgrade 'ack'
+  brew_install_or_upgrade 'ctags'
+  brew_install_or_upgrade 'tmux'
+  gem_install_or_update 'tmuxinator'
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
