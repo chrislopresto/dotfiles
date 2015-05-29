@@ -1,0 +1,27 @@
+name: monegraph
+root: ~/p/monegraph
+
+windows:
+  - activate_everywhere:
+      layout: tiled
+      panes:
+        - cd monegraph-activate ; ems
+        - cd monegraph-everywhere ; sleep 5 ; ems
+        - cd monegraph-activate ; emts
+        - cd monegraph-everywhere ; sleep 5 ; emts
+        - cd monegraph-activate
+        - cd monegraph-everywhere
+  - api_explorer:
+      layout: tiled
+      panes:
+        - cd monegraph-api ; npm start
+        - cd monegraph-explorer ; sleep 10 ; ems
+        - cd monegraph-api
+        - cd monegraph-explorer ; sleep 10 ; emts
+        - cd monegraph-api ; npm run test:watch
+        - cd monegraph-explorer
+  - common:
+      layout: even-vertical
+      panes:
+        - cd monegraph-common ; sleep 15 ; emss
+        - cd monegraph-common

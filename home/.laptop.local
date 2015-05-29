@@ -55,18 +55,22 @@ fancy_echo "Installing chef-related things ..."
 
 fancy_echo "Installing developer things ..."
   brew tap 'homebrew/dupes'
+  brew_install_or_upgrade 'nginx'
   brew_install_or_upgrade 'apple-gcc42'
   brew_install_or_upgrade 'libksba'
   brew_install_or_upgrade 'watchman'
   brew_install_or_upgrade 'jq'
   brew_install_or_upgrade 'git'
   brew_install_or_upgrade 'hub'
-  brew_install_or_upgrade 'fig'
   brew_install_or_upgrade 'mono'
   brew_install_or_upgrade 'ack'
   brew_install_or_upgrade 'ctags'
   brew_install_or_upgrade 'tmux'
   gem_install_or_update 'tmuxinator'
+  brew_install_or_upgrade 'reattach-to-user-namespace'
+  brew_install_or_upgrade 'vim'
+  brew_install_or_upgrade 'macvim'
+  curl -Lo- https://bit.ly/janus-bootstrap | bash
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'

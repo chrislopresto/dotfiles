@@ -1,4 +1,5 @@
 {
     "word_wrap": true,
+    "ensure_newline_at_eof_on_save": false,
     "wrap_width": 80  // Sets the # of characters per line
 }
