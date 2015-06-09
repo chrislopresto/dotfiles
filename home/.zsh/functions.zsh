@@ -13,20 +13,10 @@ function app_on_port {
 function code {
   if [[ $# = 0 ]]
   then
-      open -a "Visual Studio Code"
+    open -a "Visual Studio Code"
   else
-      [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-      open -a "Visual Studio Code" --args "$F"
-  fi
-}
-
-function gitup {
-  if [[ $# = 0 ]]
-  then
-      open -a "GitUp"
-  else
-      [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-      open -a "GitUp" --args "$F"
+    [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+    open -a "Visual Studio Code" --args "$F"
   fi
 }
 

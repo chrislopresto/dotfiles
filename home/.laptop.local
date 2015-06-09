@@ -55,6 +55,8 @@ fancy_echo "Installing chef-related things ..."
 
 fancy_echo "Installing developer things ..."
   brew tap 'homebrew/dupes'
+  brew_install_or_upgrade 'postgres'
+  brew_install_or_upgrade 'pgcli'
   brew_install_or_upgrade 'nginx'
   brew_install_or_upgrade 'apple-gcc42'
   brew_install_or_upgrade 'libksba'

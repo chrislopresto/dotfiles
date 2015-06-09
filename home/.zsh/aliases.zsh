@@ -1,4 +1,4 @@
-alias reload!='. ~/.zshrc'
+alias reload!='. ~/.zshrc && tmux source-file ~/.tmux.conf'
 
 # Move or rename multiple files with wildcards and such
 # Thanks go to http://www.mfasold.net/blog/2008/11/moving-or-renaming-multiple-files/
