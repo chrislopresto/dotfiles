@@ -1,4 +1,5 @@
-alias reload!='. ~/.zshrc && tmux source-file ~/.tmux.conf'
+alias reload!='. ~/.zshrc'
+alias reloadt!='tmux source-file ~/.tmux.conf'
 
 # Move or rename multiple files with wildcards and such
 # Thanks go to http://www.mfasold.net/blog/2008/11/moving-or-renaming-multiple-files/
@@ -16,6 +17,3 @@ alias localip="ifconfig -a | grep -o 'inet \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\
 
 # Flush DNS
 alias flushdns="sudo killall -HUP mDNSResponder"
-
-# Open local Sublime project
-alias stp="st *.sublime-project"

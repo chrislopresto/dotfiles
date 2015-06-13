@@ -10,7 +10,7 @@ windows:
         - bundle exec thin start -p 3000
         - bundle exec sidekiq -C config/sidekiq.yml
         - bundle exec guard
-        - tail -f log/development
+        - tail -f log/development.log
         - bin/nginx_start
         -
   - editor:

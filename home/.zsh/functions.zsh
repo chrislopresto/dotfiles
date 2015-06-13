@@ -23,3 +23,11 @@ function code {
 function df {
   cd ~/.homesick/repos/dotfiles && stp
 }
+
+function stp {
+  if test -z "$(find . -maxdepth 1 -name '*.sublime-project' -print -quit)"; then
+    DIRECTORY_NAME=${PWD##*/}
+    cp ~/.homesick/repos/dotfiles/sublime/example.sublime-project "$DIRECTORY_NAME.sublime-project"
+  fi
+  st *.sublime-project
+}

@@ -9,7 +9,7 @@ windows:
       panes:
         - npm start
         - npm run nginx
-        -
+        - DEBUG=GENERAL_WORKER,PLAYLIST_NOTIFIER node ./workers/general.js
         - npm run test:watch
   - activate:
       root: ~/p/monegraph/monegraph-activate
