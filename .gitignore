@@ -22,3 +22,8 @@ home/.config/ThingM
 home/.config/beets/state.pickle
 
 home/.zsh/private/*.zsh
+
+home/.vim/autoload/*.vim
+home/.vim/colors/*.vim
+home/.vim/plugged
+home/.vim/.netrwhist

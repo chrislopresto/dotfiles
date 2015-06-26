@@ -1,0 +1,27 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+autocmd VimEnter * PlugInstall
+
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plugged/vim-material-theme', 'do': 'mv colors/material-theme.vim ~/.vim/colors/' }
+call plug#end()
+
+nmap ; :
+set vb
+set expandtab
+set softtabstop=2
+set bs=2
+set foldmethod=manual
+let NERDTreeShowHidden=1
+syntax on
+
+" vim-material-theme
+syntax enable
+set background=dark
+colorscheme material-theme
