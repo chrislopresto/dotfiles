@@ -8,7 +8,8 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'ap/vim-css-color'
+" Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plugged/vim-material-theme', 'do': 'mv colors/material-theme.vim ~/.vim/colors/' }
 call plug#end()
 
@@ -20,6 +21,8 @@ set bs=2
 set foldmethod=manual
 let NERDTreeShowHidden=1
 syntax on
+
+set splitright
 
 " vim-material-theme
 syntax enable
