@@ -53,6 +53,13 @@ windows:
         -
         -
         -
+  - mobile:
+      root: ~/p/monegraph/monegraph-mobile
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        -
+        -
+        -
   - postgres:
       panes:
         - pgcli monegraph monegraphuser

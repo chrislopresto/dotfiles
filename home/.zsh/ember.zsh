@@ -9,6 +9,8 @@ alias ems='ember s'
 alias emt='ember t --port 7357'
 alias emsdbug='DEBUG=express:* ember s'
 
+ulimit -n 10000
+
 function emss {
   if [[ $# -eq 0 ]] ; then
     # No port specified

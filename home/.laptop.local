@@ -89,6 +89,7 @@ fancy_echo "Installing npm packages like bower, ember-cli, phantomjs, etc ..."
   npm install -g phantomjs
   npm install -g grunt
   npm install -g grunt-cli
+  npm install -g cordova
 
 fancy_echo "Installing python things ..."
   brew_install_or_upgrade 'pyenv'

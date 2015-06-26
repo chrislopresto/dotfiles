@@ -12,9 +12,6 @@
 	editor = subl -n -w
   excludesfile = ~/.gitignore
 
-[hub]
-  protocol = https
-
 [mergetool]
   keepBackup = true
 
@@ -25,3 +22,7 @@
   required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
