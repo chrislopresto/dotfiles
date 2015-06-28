@@ -1,0 +1,41 @@
+name: vim-yapp
+root: ~/p/yappbox/projects
+startup_window: server
+
+windows:
+  - server:
+      root: ~/p/yappbox/projects/yapp-server
+      panes:
+        - vim .
+  - editor:
+      root: ~/p/yappbox/projects/editor
+      panes:
+        - vim .
+  - dashboard:
+      root: ~/p/yappbox/projects/dashboard
+      panes:
+        - vim .
+  - account:
+      root: ~/p/yappbox/projects/account
+      panes:
+        - vim .
+  - themes:
+      root: ~/p/yappbox/projects/yapp-themes
+      panes:
+        - vim .
+  - preview:
+      root: ~/p/yappbox/projects/yapp-preview
+      panes:
+        - vim .
+  - mobile:
+      root: ~/p/yappbox/projects/yapp-mobile
+      panes:
+        - vim .
+  - projects:
+      root: ~/p/yappbox/projects
+      panes:
+        - vim .
+  - yek:
+      root: ~/p/yappbox/projects/yapp-ember-kit
+      panes:
+        - vim .

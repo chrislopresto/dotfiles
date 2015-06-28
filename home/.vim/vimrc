@@ -1,28 +1,70 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  au VimEnter * PlugInstall
 endif
-autocmd VimEnter * PlugInstall
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-css-color'
-" Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'scrooloose/nerdtree'
 Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plugged/vim-material-theme', 'do': 'mv colors/material-theme.vim ~/.vim/colors/' }
 call plug#end()
 
 nmap ; :
-set vb
-set expandtab
-set softtabstop=2
-set bs=2
-set foldmethod=manual
-let NERDTreeShowHidden=1
+" set vb
+" set bs=2
+" set foldmethod=manual
 syntax on
+set mouse=a
+set colorcolumn=80
+let mapleader = " "
 
+set nocompatible
+set modelines=0
+
+" Whitespace
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
 set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" NERDTree
+let NERDTreeShowHidden=1
+au VimEnter * NERDTree
+
+" ctrlp
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_working_path_mode = ''
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
 " vim-material-theme
 syntax enable

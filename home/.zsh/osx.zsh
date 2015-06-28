@@ -4,6 +4,9 @@ alias resetsound="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' | awk '{pr
 # Reset Events... useful when Mountain Lion hangs when attempting to unzip something
 alias resetevents="sudo killall -KILL appleeventsd"
 
+# Reset Bluetooth... useful when Yosemite's Bluetooth stack freaks out after resuming from sleep
+alias resetblue="sudo pkill blued"
+
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
