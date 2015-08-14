@@ -4,14 +4,15 @@
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Source Code Pro",
-	"font_size": 11,
+	"font_face": "DejaVu Sans Mono",
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"material_theme_accent_red": true,
 	"material_theme_disable_fileicons": false,
 	"material_theme_disable_folder_animation": false,
 	"material_theme_small_tab": true,
