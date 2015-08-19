@@ -76,6 +76,7 @@ fancy_echo "Installing developer things ..."
 
 fancy_echo "Installing heroku things ..."
   heroku plugins:install https://github.com/tpope/heroku-surrogate.git
+  heroku plugins:install heroku-redis
 
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
