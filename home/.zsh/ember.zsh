@@ -9,6 +9,10 @@ alias ems='ember s'
 alias emt='ember t --port 7357'
 alias emsdbug='DEBUG=express:* ember s'
 
+alias ecb='ember cordova:build --platform=ios'
+alias ecba='ember cordova:build --platform=android'
+alias nbi='npm install && bower install'
+
 ulimit -n 10000
 
 function emss {

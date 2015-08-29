@@ -74,14 +74,18 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'macvim'
   curl -Lo- https://bit.ly/janus-bootstrap | bash
 
+fancy_echo "Installing heroku things ..."
+  heroku plugins:install https://github.com/tpope/heroku-surrogate.git
+  heroku plugins:install heroku-redis
+
 fancy_echo "Installing cocoapod things ..."
   gem_install_or_update 'cocoapods'
   pod setup
 
 fancy_echo "Installing node things ..."
-  brew_install_or_upgrade 'nave'
-  nade install stable
-  nave usemain stable
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash
+  nvm install stable
+  nvm use stable
 
 fancy_echo "Installing npm packages like bower, ember-cli, phantomjs, etc ..."
   npm install -g bower

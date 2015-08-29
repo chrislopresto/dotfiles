@@ -9,7 +9,7 @@ windows:
       panes:
         - npm start
         - npm run nginx
-        - DEBUG=GENERAL_WORKER,PLAYLIST_NOTIFIER node ./workers/general.js
+        - DEBUG=GENERAL_WORKER,PLAYLIST_NOTIFIER npm run general:start
         - npm run test:watch
   - activate:
       root: ~/p/monegraph/monegraph-activate
@@ -24,42 +24,25 @@ windows:
       panes:
         - ems
         -
-        - sleep 5 ; emts
+        - sleep 30 ; emts
   - explorer:
       root: ~/p/monegraph/monegraph-explorer
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - ems
         -
-        - sleep 10 ; emts
+        - sleep 40 ; emts
   - common:
       root: ~/p/monegraph/monegraph-common
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
-        - sleep 15 ; emss
+        - sleep 20 ; emss
         -
-        - sleep 15 ; emts
-  - tv:
-      root: ~/p/monegraph/monegraph-tv
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
-      panes:
-        - ems
-        -
-        - sleep 20 ; emts
-  - webos:
-      root: ~/p/monegraph/monegraph-webos
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
-      panes:
-        -
-        -
-        -
+        - sleep 50 ; emts
   - mobile:
       root: ~/p/monegraph/monegraph-mobile
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
+        - EMBER_CLI_CORDOVA=0 ems
         -
-        -
-        -
-  - postgres:
-      panes:
-        - pgcli monegraph monegraphuser
+        - sleep 60 ; emts
