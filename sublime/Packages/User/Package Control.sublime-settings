@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -16,6 +17,7 @@
 		"GitGutter",
 		"Github Tools",
 		"Handlebars",
+		"JSCS-Formatter",
 		"JSHint Gutter",
 		"LESS",
 		"Material Color Scheme",
@@ -23,6 +25,7 @@
 		"Material Theme - White Panels",
 		"MaxPane",
 		"nginx",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"Predawn",
 		"Pretty JSON",
@@ -30,6 +33,9 @@
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
-		"Theme - Spacegray"
+		"Theme - Broceanic",
+		"Theme - Cobalt2",
+		"Theme - Spacegray",
+		"Zeus"
 	]
 }

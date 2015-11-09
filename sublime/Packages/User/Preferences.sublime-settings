@@ -2,20 +2,18 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "DejaVu Sans Mono",
-	"font_size": 13,
+	"font_face": "Hack",
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"material_theme_accent_red": true,
-	"material_theme_disable_fileicons": false,
-	"material_theme_disable_folder_animation": false,
-	"material_theme_small_tab": true,
+	"indent_guide_options": "draw_normal",
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -23,7 +21,7 @@
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Cobalt2.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
