@@ -44,6 +44,10 @@ fancy_echo "Installing tldr ..."
   brew tap 'tldr-pages/tldr'
   brew_install_or_upgrade 'tldr'
 
+fancy_echo "Installing fonts ..."
+  git clone chrissimpkins/Hack ~/p/Hack
+  cp ~/p/Hack/build/otf/* ~/Library/Fonts
+
 fancy_echo "Installing chef-related things ..."
   brew tap 'caskroom/cask'
   brew_install_or_upgrade 'brew-cask'
@@ -67,6 +71,10 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'mono'
   brew_install_or_upgrade 'ack'
   brew_install_or_upgrade 'ctags'
+  brew cask install 'licecap'
+  brew_install_or_upgrade 'the_silver_searcher'
+  brew_install_or_upgrade 'icdiff'
+  brew_install_or_upgrade 'httpie'
   brew_install_or_upgrade 'tmux'
   gem_install_or_update 'tmuxinator'
   brew_install_or_upgrade 'reattach-to-user-namespace'
@@ -94,6 +102,7 @@ fancy_echo "Installing npm packages like bower, ember-cli, phantomjs, etc ..."
   npm install -g grunt
   npm install -g grunt-cli
   npm install -g cordova
+  npm install -g jscs
 
 fancy_echo "Installing python things ..."
   brew_install_or_upgrade 'pyenv'
