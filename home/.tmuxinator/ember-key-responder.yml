@@ -1,10 +1,10 @@
-name: chrislopresto
-root: ~/p/chrislopresto/chrislopresto
+name: ember-key-responder
+root: ~/p/yapplabs/ember-key-responder
 
 windows:
   - main:
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - emss
-        - echo "I'm writing an unauthorized autobiography.\n-Steven Wright"
+        -
         - emts
