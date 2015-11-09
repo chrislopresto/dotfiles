@@ -16,4 +16,4 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ifconfig -a | grep -o 'inet \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | grep -v '127\.0\.0\.1' | sed -e 's/inet //'"
 
 # Flush DNS
-alias flushdns="sudo killall -HUP mDNSResponder"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say cache flushed"
