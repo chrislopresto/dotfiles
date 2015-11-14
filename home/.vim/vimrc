@@ -1,8 +1,8 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  au VimEnter * PlugInstall
 endif
+au VimEnter * PlugInstall
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
@@ -11,7 +11,17 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-css-color'
 Plug 'scrooloose/nerdtree'
 Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plugged/vim-material-theme', 'do': 'mv colors/material-theme.vim ~/.vim/colors/' }
-call plug#end()
+
+" Really nice prompt
+" Plug 'bling/vim-airline'
+" let g:airline_theme='powerlineish'
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+" let g:airline_section_z=''
+
+" Awesome autocompletion
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+" call plug#end()
 
 nmap ; :
 " set vb

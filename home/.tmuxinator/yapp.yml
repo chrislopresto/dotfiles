@@ -11,7 +11,7 @@ windows:
         - bundle exec sidekiq -C config/sidekiq.yml
         - bundle exec guard
         - tail -f log/development.log
-        - bin/nginx_start
+        - sudo bin/nginx_start
         -
   - editor:
       root: ~/p/yappbox/projects/editor

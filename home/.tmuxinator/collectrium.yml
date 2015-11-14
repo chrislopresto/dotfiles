@@ -1,0 +1,34 @@
+name: collectrium
+root: ~/p/collectrium
+startup_window: apollo
+
+windows:
+  - apollo:
+      root: ~/p/collectrium/apollo
+      layout: 684d,272x62,0,0{80x62,0,0,0,191x62,81,0[191x20,81,0,3,191x20,81,21,4,191x20,81,42,5]}
+      panes:
+        -
+        -
+        -
+        -
+  - global:
+      root: ~/p/collectrium/apollo-global
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        -
+        -
+        -
+  - auth:
+      root: ~/p/collectrium/apollo-auth
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        -
+        -
+        -
+  - vvroom:
+      root: ~/p/collectrium/vvroom
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        -
+        -
+        -
