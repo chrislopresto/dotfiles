@@ -1,0 +1,15 @@
+#compdef permcheck
+
+_arguments \
+  '(- *)-h[display help and exit]' \
+  '(-h)-R[disable default read permissions test]' \
+  '(-h)-X[do not recurse onto different devices]' \
+  '(-h)-g[specify group to test]:group:_groups' \
+  '(-h)-n[disable user/group lookups in output]' \
+  '(-h)-p[prune directories that fail check]' \
+  '(-h)-u[specify user for test]:user:_users' \
+  '(-h)-v[be more verbose]' \
+  '(-h)-w[enable write permissions test]' \
+  '(-h)-x[enable execute permissions test]' \
+  '*:file:_files' \
+  && return 0
