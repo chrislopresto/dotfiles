@@ -19,21 +19,21 @@ windows:
       panes:
         - ems
         -
-        - emts
+        -
   - dashboard:
       root: ~/p/yappbox/projects/dashboard
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - ems
         -
-        - sleep 5 ; emts
+        -
   - account:
       root: ~/p/yappbox/projects/account
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - ems
         -
-        - sleep 10 ; emts
+        -
   - themes:
       root: ~/p/yappbox/projects/yapp-themes
       layout: main-vertical
@@ -46,17 +46,16 @@ windows:
         - foreman start
   - mobile:
       root: ~/p/yappbox/projects/yapp-mobile
-      layout: even-vertical
+      layout: tiled
       panes:
-        - foreman start
+        - ems
+        - "cd ../yapp && ems"
         - cd ../yapp-mobile-node
-  - postgres:
-      panes:
-        - pgcli yapp_development yapp
+        -
   - yek:
       root: ~/p/yappbox/projects/yapp-ember-kit
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - ems
         -
-        - sleep 15 ; emts
+        -

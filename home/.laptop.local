@@ -75,6 +75,8 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'the_silver_searcher'
   brew_install_or_upgrade 'icdiff'
   brew_install_or_upgrade 'httpie'
+  brew_install_or_upgrade 'optipng'
+  brew_install_or_upgrade 'mediainfo'
   brew_install_or_upgrade 'tmux'
   gem_install_or_update 'tmuxinator'
   brew_install_or_upgrade 'reattach-to-user-namespace'

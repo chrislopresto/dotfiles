@@ -18,15 +18,15 @@ windows:
         -
         -
         -
-  - auth:
-      root: ~/p/collectrium/apollo-auth
+  - label:
+      root: ~/p/collectrium/collectable-label
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         -
         -
         -
-  - vvroom:
-      root: ~/p/collectrium/vvroom
+  - gavel:
+      root: ~/p/collectrium/gavel
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         -

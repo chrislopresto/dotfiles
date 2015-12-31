@@ -22,6 +22,15 @@ unpushed () {
   git cherry -v @{upstream} 2>/dev/null
 }
 
+
+aws_profile() {
+  if [[ -z "$AWS" ]]; then
+    echo 'none'
+  else
+    echo "$AWS"
+  fi
+}
+
 need_push () {
   if [[ $(unpushed) == "" ]]
   then
@@ -32,4 +41,4 @@ need_push () {
 }
 
 export PROMPT='%{$fg[blue]%}%c %{$fg[white]%}%(!.#.›)%{$reset_color%} '
-export RPROMPT='%{$fg[cyan]%}%{$reset_color%} $(git_dirty)$(need_push)'
+export RPROMPT='%{$fg[cyan]%}[$(aws_profile)]%{$reset_color%} $(git_dirty)$(need_push)'
