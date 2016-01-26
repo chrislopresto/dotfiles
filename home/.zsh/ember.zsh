@@ -1,7 +1,43 @@
-alias nom="rm -rf node_modules && npm cache clean && npm install"
+function nom {
+  DEST="$HOME/nombom/$(basename $PWD)/node_modules"
+  mkdir -p "$DEST"
+  cp -r node_modules/* "$DEST"
+  echo "Backed up node_modules to $DEST"
+  rm -rf node_modules
+  npm cache clean
+  npm install
+}
+
+function bom {
+  DEST="$HOME/nombom/$(basename $PWD)/bower_components"
+  mkdir -p "$DEST"
+  cp -r bower_components/* "$DEST"
+  echo "Backed up bower_components to $DEST"
+  rm -rf bower_components
+  bower cache clean
+  bower install
+}
+
+function undo-nom {
+  rm -rf node_modules
+  SOURCE="$HOME/nombom/$(basename $PWD)/node_modules"
+  cp -r "$SOURCE" .
+}
+
+function undo-bom {
+  rm -rf bower_components
+  SOURCE="$HOME/nombom/$(basename $PWD)/bower_components"
+  cp -r "$SOURCE" .
+}
+
+function nombom {
+  rm -rf dist tmp
+  nom
+  bom
+}
+
 alias gsuir="git submodule update --init --recursive"
 
-alias nombom="rm -rf node_modules bower_components dist tmp && npm cache clean && bower cache clean && npm install && bower install"
 alias emdbug="node debug ./node_modules/ember-cli/bin/ember build"
 alias emdbugp="node debug ./node_modules/ember-cli/bin/ember build --environment=production"
 
