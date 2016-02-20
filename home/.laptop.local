@@ -84,6 +84,7 @@ fancy_echo "Installing developer things ..."
   brew_install_or_upgrade 'macvim'
   curl -Lo- https://bit.ly/janus-bootstrap | bash
   pip install --upgrade aws-shell
+  pip install --upgrade whatportis
 
 fancy_echo "Installing heroku things ..."
   heroku plugins:install https://github.com/tpope/heroku-surrogate.git

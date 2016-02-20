@@ -45,16 +45,9 @@ Note that pairing the `homesick clone`/`pull` commands and the `homesick unlink`
     - Activate
     - Install command line utility
 
-## Provisioning a Laptop'ed Vagrant Box (deprecated)
+## Icons and Things
 
-Thoughtbot publishes [Vagrant boxes](https://github.com/thoughtbot/laptop#laptoped-linux-vagrant-boxes) with the Laptop script applied. Here are instructions for running the above setup atop the Ubuntu 14.04 distro.
+This will change over time. Use as desired.
 
-```
-vagrant init thoughtbot/ubuntu-14-04-server-with-laptop ; vagrant up
-vagrant ssh
-cd ~ ; curl https://raw.githubusercontent.com/chrislopresto/dotfiles/master/home/.laptop.local -o .laptop.local ; cd -
-bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linux) 2>&1 | tee ~/laptop.log
-. ~/.zshrc
-```
-
-Note that everything after `vagrant ssh` is executed in the VM.
+- Sublime
+    - https://dribbble.com/shots/1827862-Yosemite-Sublime-Text-Icon

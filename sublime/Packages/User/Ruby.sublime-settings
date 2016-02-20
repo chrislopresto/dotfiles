@@ -10,6 +10,7 @@
 		"Assetfile",
 		"ru",
 		"local",
-		"Podfile"
+		"Podfile",
+		"thor"
 	]
 }

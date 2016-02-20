@@ -16,7 +16,7 @@
 	"indent_guide_options": "draw_normal",
 	"material_theme_accent_indigo": true,
 	"material_theme_contrast_mode": true,
-	"material_theme_small_statusbar": true,
+	"material_theme_small_statusbar": false,
 	"material_theme_small_tab": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
