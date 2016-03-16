@@ -11,7 +11,7 @@ windows:
         - bundle exec sidekiq -C config/sidekiq.yml
         - bundle exec guard
         - tail -f log/development.log
-        - sudo bin/nginx_start
+        - bin/nginx_start
         -
   - editor:
       root: ~/p/yappbox/projects/editor
@@ -43,7 +43,7 @@ windows:
       root: ~/p/yappbox/projects/yapp-preview
       layout: main-vertical
       panes:
-        - foreman start
+        - ems
   - mobile:
       root: ~/p/yappbox/projects/yapp-mobile
       layout: tiled

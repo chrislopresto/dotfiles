@@ -5,7 +5,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 setopt APPEND_HISTORY # adds history
-setopt COMPLETE_ALIASES # don't expand aliases _before_ completion has finished
+# setopt COMPLETE_ALIASES is what broke git autocomplete
+# setopt COMPLETE_ALIASES # don't expand aliases _before_ completion has finished
 setopt EXTENDED_GLOB
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history

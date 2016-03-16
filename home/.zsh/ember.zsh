@@ -1,40 +1,6 @@
-function nom {
-  DEST="$HOME/nombom/$(basename $PWD)/node_modules"
-  mkdir -p "$DEST"
-  cp -r node_modules/* "$DEST"
-  echo "Backed up node_modules to $DEST"
-  rm -rf node_modules
-  npm cache clean
-  npm install
-}
-
-function bom {
-  DEST="$HOME/nombom/$(basename $PWD)/bower_components"
-  mkdir -p "$DEST"
-  cp -r bower_components/* "$DEST"
-  echo "Backed up bower_components to $DEST"
-  rm -rf bower_components
-  bower cache clean
-  bower install
-}
-
-function undo-nom {
-  rm -rf node_modules
-  SOURCE="$HOME/nombom/$(basename $PWD)/node_modules"
-  cp -r "$SOURCE" .
-}
-
-function undo-bom {
-  rm -rf bower_components
-  SOURCE="$HOME/nombom/$(basename $PWD)/bower_components"
-  cp -r "$SOURCE" .
-}
-
-function nombom {
-  rm -rf dist tmp
-  nom
-  bom
-}
+alias nom='npm cache clean && rm -rf node_modules && mkdir node_modules && touch node_modules/.metadata_never_index && npm install'
+alias bom='bower cache clean && rm -rf bower_components && mkdir bower_components && touch bower_components/.metadata_never_index && bower install'
+alias nombom="rm -rf dist tmp && nom && bom"
 
 alias gsuir="git submodule update --init --recursive"
 

@@ -2,11 +2,11 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/freshcut.tmTheme",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Hack",
-	"font_size": 12,
+	"font_face": "Operator Mono",
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -14,7 +14,7 @@
 		"Vintage"
 	],
 	"indent_guide_options": "draw_normal",
-	"material_theme_accent_indigo": true,
+	"material_theme_accent_blue": true,
 	"material_theme_contrast_mode": true,
 	"material_theme_small_statusbar": false,
 	"material_theme_small_tab": true,
@@ -25,9 +25,9 @@
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
-	"word_wrap": false,
+	"word_wrap": false
 }
