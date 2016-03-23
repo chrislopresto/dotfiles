@@ -1,0 +1,35 @@
+#compdef sockstat
+local -a args
+
+case $OSTYPE in
+  *bsd*)
+    args=(
+      '-4[show AF_INET (IPv4) sockets]'
+      '-6[show AF_INET6 (IPv6) sockets]'
+      '-c[show connected sockets]'
+      '-l[show listening sockets]'
+      '*-p[specify port number]:port numbers (comma delimited)'
+      '-u[show AF_LOCAL (UNIX) sockets]'
+    )
+  ;|
+  freebsd*)
+    args+=(
+      '*-j[show sockets belonging to JID]: : _jails -0 -o jid'
+      '-L[exclude loopback]'
+      '*-P[specify protocol]: :_sequence -s , _ports'
+    )
+  ;;
+  netbsd*)
+    args+=(
+      '*-f[only show specified address family]:address family:(inet inet6 local unix)'
+      '-n[no symbolic names for addresses/ports]'
+    )
+  ;;
+esac
+
+if (( $#args )); then
+  _arguments -s -w $args
+  return
+fi
+
+_default

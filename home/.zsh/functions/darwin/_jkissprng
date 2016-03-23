@@ -1,0 +1,54 @@
+#compdef jkissprng
+#
+# ZSH completion for the jkissprng utility. Install to a $fpath directory.
+
+_jkissprng() {
+  _arguments -s -S \
+    '(- *)-h[emit help and exit]' \
+    '(-h)-c+[count of times to call method]:count:(10 1000 100000)' \
+    '(-h -X -Y)-R+[count at which to reseed PRNG]:count:(5 500 50000)' \
+    '(-h -R)-X+[custom value for X seed]:integer:' \
+    '(-h -R)-Y+[custom value for Y seed]:integer:' \
+    '*::jkissprng method:_jkissprng_methods'
+}
+
+_jkissprng_methods() {
+  _jkissprng_methods=(
+    'randomArrayMember:random member of array' \
+    'randomFloat:random float' \
+    'randomNumber:random integer' \
+    'randomSetMember:random member set' \
+    'rollD:roll to a small number'
+  )
+
+  if (( CURRENT == 1 )); then
+    _describe -t commands 'jkissprng method' _jkissprng_methods
+  else
+    local curcontext="$curcontext"
+
+    cmd="${_jkissprng_methods[(r)$words[1]:*]%%:*}"
+    if (( $#cmd )); then
+      curcontext="${curcontext%:*:*}:jkissprng-${cmd}:"
+      _call_function ret _jkissprng_$cmd || _message 'no more arguments'
+    else
+      _message "unknown jkissprng method: $words[1]"
+    fi
+    return ret
+  fi
+}
+
+# TODO though really "filename" is a file, hyphen, or nothing at all, though
+# "will there be input from stdin" might be a hard quesation to answer.
+_jkissprng_randomArrayMember() { _files }
+_jkissprng_randomFloat() {
+  local prec
+  prec=(1 2 4 8 16 32)
+  _arguments '*:precision:_values precision $prec'
+}
+_jkissprng_randomNumber() { _message "randomNumber takes no options" }
+_jkissprng_randomSetMember() { _files }
+_jkissprng_rollD() {
+  local dwhat
+  dwhat=(4 6 8 10 12 20 100)
+  _arguments '*:roll:_values roll $dwhat'
+}

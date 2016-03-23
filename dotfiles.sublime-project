@@ -1,27 +1,27 @@
 {
-	"folders":
-	[
-		{
-      "file_exclude_patterns": [
-        "Package Control.last-run",
-        "Package Control.ca-list",
-        "Package Control.ca-bundle",
-        "Package Control.system-ca-bundle",
-        "Package Control.cache",
-        "Package Control.ca-certs",
-        "state.pickle",
-        ".config/configstore",
-        ".config/gh",
-        ".config/gh-update"
-      ],
-      "folder_exclude_patterns": [
-        ".config/configstore",
-        ".config/robomongo",
-        "Package Control.cache",
-        "Color Highlighter"
-      ],
-      "follow_symlinks": true,
-			"path": "."
-		}
-	]
+"folders":
+[
+{
+"file_exclude_patterns": [
+"Package Control.last-run",
+"Package Control.ca-list",
+"Package Control.ca-bundle",
+"Package Control.system-ca-bundle",
+"Package Control.cache",
+"Package Control.ca-certs",
+"state.pickle",
+".config/configstore",
+".config/gh",
+".config/gh-update"
+],
+"folder_exclude_patterns": [
+".config/configstore",
+".config/robomongo",
+"Package Control.cache",
+"Color Highlighter"
+],
+"follow_symlinks": true,
+"path": "."
+}
+]
 }

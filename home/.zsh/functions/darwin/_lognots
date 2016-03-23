@@ -1,0 +1,10 @@
+#compdef lognots
+#
+# ZSH completion for the lognots utility. Install to a $fpath directory.
+
+_arguments \
+  '(- *)-h[display help and exit]' \
+  '(-h)-L[emit notifications via NSLog()]' \
+  '(-h -L)-q[do not emit to stdout (implies -L)]' \
+  '(-h)-U[omit the userInfo of the notification]' \
+  && return 0
