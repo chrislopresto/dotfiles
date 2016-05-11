@@ -11,7 +11,7 @@ windows:
         - bundle exec sidekiq -C config/sidekiq.yml
         - bundle exec guard
         - tail -f log/development.log
-        - bin/nginx_start
+        - sudo bin/nginx_start
         -
   - editor:
       root: ~/p/yappbox/projects/editor
@@ -36,22 +36,24 @@ windows:
         -
   - themes:
       root: ~/p/yappbox/projects/yapp-themes
-      layout: main-vertical
+      layout: tiled
       panes:
         - foreman start
+        -
   - preview:
       root: ~/p/yappbox/projects/yapp-preview
-      layout: main-vertical
+      layout: tiled
       panes:
         - ems
+        -
   - mobile:
       root: ~/p/yappbox/projects/yapp-mobile
       layout: tiled
       panes:
         - ems
         - "cd ../yapp && ems"
-        - cd ../yapp-mobile-node
         -
+        - cd ../yapp
   - yek:
       root: ~/p/yappbox/projects/yapp-ember-kit
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
@@ -59,3 +61,12 @@ windows:
         - ems
         -
         -
+  - native:
+      root: ~/p/yappbox/projects/yapp-ios
+      layout: 01ce,238x69,0,0{119x69,0,0[119x34,0,0,24,119x34,0,35,26],118x69,120,0[118x23,120,0,25,118x23,120,24,27,118x21,120,48,28]}
+      panes:
+        -
+        -
+        - cd ../yapp-android
+        - cd ../yapp-android
+        - cd ../yapp-android-node
