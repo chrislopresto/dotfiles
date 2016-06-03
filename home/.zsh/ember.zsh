@@ -62,5 +62,5 @@ function emts {
       i=$[$i+1]
     done
   fi
-  ember t -s --port $PORT
+  ember t -s --test-port $PORT
 }

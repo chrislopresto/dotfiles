@@ -10,16 +10,6 @@ function app_on_port {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
-function code {
-  if [[ $# = 0 ]]
-  then
-    open -a "Visual Studio Code"
-  else
-    [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-    open -a "Visual Studio Code" --args "$F"
-  fi
-}
-
 function df {
   cd ~/.homesick/repos/dotfiles && stp
 }
