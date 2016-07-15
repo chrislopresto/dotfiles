@@ -1,0 +1,166 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        alpha: 1
+        blue: 79
+        green: 213
+        red: 255
+      accentColor:
+        alpha: 1
+        blue: 50
+        green: 136
+        red: 162
+      genAccent: true
+      predefinedColor: "Amber"
+    fonts:
+      fontSize: 15
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    includeCompletionsFromAllBuffers: true
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "jscs-fixer"
+      "linter-jscs"
+      "atom-ternjs"
+      "pane-layout-plus"
+      "toggle-gutter"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      "dist"
+      "bower_components"
+      "node_modules"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".codekit-cache"
+      "tmp"
+      "log"
+      "*.sublime-project"
+      "*.sublime-workspace"
+      "**/.sass-cache/**"
+    ]
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
+    themes: [
+      "native-ui"
+      "cobalt2-syntax"
+    ]
+    useReactEditor: false
+  editor:
+    autoIndent: true
+    fontFamily: "Operator Mono"
+    fontSize: 13
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  emmet: {}
+  "exception-reporting":
+    userId: "12898d24-f025-e415-2151-a3d70939fe60"
+  "fuzzy-finder": {}
+  "git-diff": {}
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    disableFSCache: true
+    disableWhenNoEslintConfig: false
+    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
+    useGlobalEslint: true
+  "linter-jscs":
+    esnext: true
+    onlyConfig: true
+    preset: "node-style-guide"
+  "linter-jshint":
+    executablePath: "/usr/local/bin/jshint"
+  "linter-ruby":
+    rubyExecutablePath: "/opt/boxen/rbenv/shims/ruby"
+  "linter-sass-lint":
+    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
+    noConfigDisable: true
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
+  metrics:
+    userId: "9a373aacc08946c8b7940a4b381e936d87675c70"
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "release-notes":
+    viewedVersion: "0.95.0"
+  tabs:
+    enableVcsColoring: true
+  "toggle-gutter": {}
+  "travis-ci-status":
+    personalAccessToken: "1735ceb47e2746f553d09727e8146e045e36a167"
+    useTravisCiPro: true
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}
+".core.html.htmlbars.internal.text":
+  editor:
+    preferredLineLength: 120
+".css.source":
+  editor:
+    autoIndent: true
+    preferredLineLength: 120
+".curley.html.htmlbars.internal.text":
+  editor:
+    preferredLineLength: 120
+".diff.source":
+  editor:
+    preferredLineLength: 120
+".html.htmlbars.inline.internal.text":
+  editor:
+    preferredLineLength: 120
+".html.htmlbars.internal.strings.text":
+  editor:
+    preferredLineLength: 120
+".html.htmlbars.internal.subexp.text":
+  editor:
+    preferredLineLength: 120
+".html.htmlbars.internal.text":
+  editor:
+    preferredLineLength: 120
+".html.htmlbars.text":
+  editor:
+    autoIndent: false
+    preferredLineLength: 120
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.source":
+  editor:
+    preferredLineLength: 120
+    showIndentGuide: true
+".js.source":
+  editor:
+    autoIndent: true
+    preferredLineLength: 120
+    showInvisibles: false

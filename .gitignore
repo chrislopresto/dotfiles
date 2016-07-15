@@ -27,3 +27,13 @@ home/.vim/autoload/*.vim
 home/.vim/colors/*.vim
 home/.vim/plugged
 home/.vim/.netrwhist
+
+home/.atom/.apm
+home/.atom/.node-gyp
+home/.atom/blob-store
+home/.atom/compile-cache
+home/.atom/git-time-machine
+home/.atom/init.coffee
+home/.atom/packages
+home/.atom/recovery
+home/.atom/storage
