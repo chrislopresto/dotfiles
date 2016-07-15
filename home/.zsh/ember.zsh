@@ -44,7 +44,7 @@ function emss {
 function emts {
   if [[ $# -eq 0 ]] ; then
     # No port specified
-    PORT=7357
+    PORT=7777
   else
     PORT=$1
   fi
@@ -62,5 +62,5 @@ function emts {
       i=$[$i+1]
     done
   fi
-  ember t -s --test-port $PORT
+  ember test -s -tp $PORT
 }
