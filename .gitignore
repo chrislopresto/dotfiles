@@ -37,3 +37,7 @@ home/.atom/init.coffee
 home/.atom/packages
 home/.atom/recovery
 home/.atom/storage
+
+home/.config/nvim/plugged
+home/.config/nvim/.netrwhist
+home/.config/nvim/autoload

@@ -12,6 +12,7 @@ antigen bundle marked2
 antigen bundle rails
 antigen bundle sublime
 antigen bundle vagrant
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 

@@ -1,11 +1,43 @@
 name: chrislopresto
-root: ~/p/chrislopresto/chrislopresto
+root: /Users/chrislopresto/p/chrislopresto
+startup_window: rails
 
 windows:
-  - main:
-      layout: 684d,272x62,0,0{80x62,0,0,0,191x62,81,0[191x20,81,0,3,191x20,81,21,4,191x20,81,42,5]}
+  - rails:
+      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-rails
+      layout: tiled
+      panes:
+        - rails s
+        - redis-server /usr/local/etc/redis.conf
+        - echo "bundle exec guard someday"
+        - tail -f log/development.log
+        -
+        -
+  - islands:
+      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-ember-islands
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - ems
-        - echo "I'm writing an unauthorized autobiography.\n-Steven Wright"
-        - npm run nginx
-        - emts
+        -
+        -
+  - bateman:
+      root: /Users/chrislopresto/p/chrislopresto/bateman-ember
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - ems
+        -
+        -
+  - living:
+      root: /Users/chrislopresto/p/chrislopresto/living-style-guide-driven-development
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - ems
+        -
+        -
+  - modal:
+      root: /Users/chrislopresto/p/chrislopresto/ember-modal-dialog-intro
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - ems
+        -
+        -

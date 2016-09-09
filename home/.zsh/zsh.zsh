@@ -24,4 +24,4 @@ bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
 
-export EDITOR='subl'
+export EDITOR='nvim'

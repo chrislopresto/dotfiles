@@ -1,6 +1,7 @@
 {
   "icons": {
     "Atom": "https://github.com/fv0/native-ui/raw/master/Atom.icns",
-    "Sublime Text": "https://s3.amazonaws.com/get.chrislopresto.com/icons/sublime.icns"
+    "Sublime Text": "https://s3.amazonaws.com/get.chrislopresto.com/icons/sublime.icns",
+    "MacVim": "http://firegoby.com/workspace/downloads/firegoby-alternate-vim.icns"
   }
 }

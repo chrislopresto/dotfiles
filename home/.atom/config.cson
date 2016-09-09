@@ -38,6 +38,10 @@
       "atom-ternjs"
       "pane-layout-plus"
       "toggle-gutter"
+      "linter-rubocop"
+      "linter-ruby"
+      "linter-eslint"
+      "linter-slim"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -61,16 +65,16 @@
       "emmet"
     ]
     themes: [
-      "native-ui"
-      "cobalt2-syntax"
+      "dracula-ui"
+      "dracula-theme"
     ]
     useReactEditor: false
   editor:
     autoIndent: true
-    fontFamily: "Operator Mono"
-    fontSize: 13
+    fontFamily: "Inconsolata"
     invisibles: {}
-    preferredLineLength: 120
+    lineHeight: 1.2
+    preferredLineLength: 140
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -80,10 +84,9 @@
   "fuzzy-finder": {}
   "git-diff": {}
   linter:
-    showErrorPanel: false
+    lintOnFlyInterval: 3000
   "linter-eslint":
     disableFSCache: true
-    disableWhenNoEslintConfig: false
     globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
     useGlobalEslint: true
   "linter-jscs":
@@ -92,6 +95,8 @@
     preset: "node-style-guide"
   "linter-jshint":
     executablePath: "/usr/local/bin/jshint"
+  "linter-rubocop":
+    command: "/opt/boxen/rbenv/versions/jruby-1.7.24/bin/bundle exec rubocop"
   "linter-ruby":
     rubyExecutablePath: "/opt/boxen/rbenv/shims/ruby"
   "linter-sass-lint":
@@ -113,9 +118,7 @@
   tabs:
     enableVcsColoring: true
   "toggle-gutter": {}
-  "travis-ci-status":
-    personalAccessToken: "1735ceb47e2746f553d09727e8146e045e36a167"
-    useTravisCiPro: true
+  "travis-ci-status": {}
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
@@ -152,6 +155,9 @@
   editor:
     autoIndent: false
     preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 140
 ".js.regexp.replacement.source":
   editor:
     preferredLineLength: 120

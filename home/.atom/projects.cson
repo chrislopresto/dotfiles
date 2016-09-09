@@ -112,7 +112,10 @@ yappannie:
 chrislopresto:
   title: "chrislopresto.com"
   paths: [
-    "/Users/chrislopresto/p/chrislopresto/chrislopresto"
+    "/Users/chrislopresto/p/chrislopresto/chrislopresto-rails"
+    "/Users/chrislopresto/p/chrislopresto/living-style-guide-driven-development"
+    "/Users/chrislopresto/p/chrislopresto/bateman-ember"
+    "/Users/chrislopresto/p/chrislopresto/chrislopresto-ember-islands"
   ]
 emberrevealjs:
   title: "Ember Reveal.js"

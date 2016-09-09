@@ -11,6 +11,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-css-color'
 Plug 'scrooloose/nerdtree'
 Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plugged/vim-material-theme', 'do': 'mv colors/material-theme.vim ~/.vim/colors/' }
+Plug 'https://github.com/herrbischoff/cobalt2.vim.git', { 'dir': '~/.vim/plugged/cobalt2.vim.git', 'do': 'mv colors/cobalt2.vim ~/.vim/colors/' }
 
 " Really nice prompt
 " Plug 'bling/vim-airline'
@@ -21,15 +22,42 @@ Plug 'https://github.com/jdkanani/vim-material-theme.git', { 'dir': '~/.vim/plug
 
 " Awesome autocompletion
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-" call plug#end()
+call plug#end()
 
-nmap ; :
+set guifont=Inconsolata
+set guioptions=cemg
+
+set number
+" Toggle line numbers
+:nmap <C-N><C-N> :set invnumber<CR>
+
+" Shift indents with Command+[ or ]
+map <D-]> >gv
+nmap <D-]> >>
+imap <D-]> <Esc><D-]>
+map <D-[> <gv
+nmap <D-[> <<
+imap <D-[> <Esc><D-[>
+
+" Map the leader key to SPACE
+let mapleader="\<SPACE>"
+
+" Use ; for commands.
+nnoremap ; :
+
+" Open file menu
+nnoremap <Leader>o :CtrlP<CR>
+" Open buffer menu
+nnoremap <Leader>b :CtrlPBuffer<CR>
+" Open most recently used files
+nnoremap <Leader>f :CtrlPMRUFiles<CR>
+
 " set vb
 " set bs=2
 " set foldmethod=manual
 syntax on
 set mouse=a
-set colorcolumn=80
+set colorcolumn=140
 let mapleader = " "
 
 set nocompatible
@@ -56,19 +84,30 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
-
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Open new split panes to right and bottom, which feels more natural
+" set splitbelow
+" set splitright
+
+" Quicker splits
+" nnoremap <Leader>l :vsp<CR>
+" nnoremap <Leader>j :sp<CR>
+
+" buffer
+nmap <leader>h :leftabove  vnew<CR>
+nmap <leader>l :rightbelow vnew<CR>
+nmap <leader>k :leftabove  new<CR>
+nmap <leader>j :rightbelow new<CR>
+
 " NERDTree
 let NERDTreeShowHidden=1
 au VimEnter * NERDTree
+map <D-\> :NERDTreeToggle<CR>
 
 " ctrlp
 let g:ctrlp_max_files=0
@@ -79,4 +118,5 @@ let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -
 " vim-material-theme
 syntax enable
 set background=dark
-colorscheme material-theme
+" colorscheme material-theme
+colorscheme cobalt2

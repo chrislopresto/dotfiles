@@ -8,7 +8,7 @@ git_dirty() {
     then
       echo "%{$fg[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo "%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo "%{$fg_bold[magenta]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
@@ -40,5 +40,5 @@ need_push () {
   fi
 }
 
-export PROMPT='%{$fg[blue]%}%c %{$fg[white]%}%(!.#.›)%{$reset_color%} '
-export RPROMPT='%{$fg[cyan]%}[$(aws_profile)]%{$reset_color%} $(git_dirty)$(need_push)'
+export PROMPT='%{$fg[yellow]%}%c %{$fg[white]%}%(!.#.›)%{$reset_color%} '
+export RPROMPT='$(git_dirty)$(need_push)'
