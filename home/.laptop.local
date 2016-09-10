@@ -121,3 +121,9 @@ fancy_echo "Installing cider ..."
 
 fancy_echo "Restoring cider ..."
   cider restore
+
+fancy_echo "Installing fonts ..."
+  mkdir -p ~/p/fonts/google ; git clone google/fonts ~/p/fonts/google
+  cp ~/p/fonts/google/ofl/inconsolata/*.ttf ~/Library/Fonts
+  mkdir -p ~/p/fonts/powerline ; git clone powerline/fonts ~/p/fonts/powerline
+  ~/p/fonts/powerline/install.sh
