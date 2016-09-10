@@ -6,6 +6,8 @@ packages: [
   "cobalt2-syntax"
   "colorful-json"
   "count-word"
+  "dracula-ui"
+  "dracula-theme"
   "electron-light-syntax"
   "electron-syntax"
   "ember-snippets"
