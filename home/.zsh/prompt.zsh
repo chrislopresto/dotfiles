@@ -40,5 +40,5 @@ need_push () {
   fi
 }
 
-export PROMPT='%{$fg[yellow]%}%c %{$fg[white]%}%(!.#.›)%{$reset_color%} '
-export RPROMPT='$(git_dirty)$(need_push)'
+# export PROMPT='%{$fg[yellow]%}%c %{$fg[white]%}%(!.#.›)%{$reset_color%} '
+# export RPROMPT='$(git_dirty)$(need_push)'
