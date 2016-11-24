@@ -11,10 +11,10 @@ function app_on_port {
 }
 
 function df {
-  cd ~/.homesick/repos/dotfiles && stp
+  cd ~/.homesick/repos/dotfiles && stpf
 }
 
-function stp {
+function stpf {
   if test -z "$(find . -maxdepth 1 -name '*.sublime-project' -print -quit)"; then
     DIRECTORY_NAME=${PWD##*/}
     cp ~/.homesick/repos/dotfiles/sublime/example.sublime-project "$DIRECTORY_NAME.sublime-project"
