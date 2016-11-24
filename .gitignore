@@ -41,3 +41,5 @@ home/.atom/storage
 home/.config/nvim/plugged
 home/.config/nvim/.netrwhist
 home/.config/nvim/autoload
+
+home/.config/yarn

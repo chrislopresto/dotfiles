@@ -15,6 +15,7 @@ endfunction
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'herrbischoff/cobalt2.vim'
+Plug 'sheerun/dracula-theme'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -73,4 +74,4 @@ nnoremap <Leader>j :sp<CR>
 " Colors
 syntax enable
 set background=dark
-colorscheme cobalt2
+colorscheme dracula

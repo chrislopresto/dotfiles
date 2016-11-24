@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Hack, "DejaVu Sans Mono", Menlo, "Lucida Console", monospace',
+    fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.75)',
@@ -56,13 +56,23 @@ module.exports = {
     // if left empty, your system's login shell will be used by default
     shell: '',
 
+    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
+    // by default ['--login'] will be used
+    shellArgs: ['--login'],
+
+    // for environment variables
+    env: {},
+
+    // set to false for no bell
+    bell: 'SOUND',
+
+    // if true, selected text will automatically be copied to the clipboard
+    copyOnSelect: false
+
+    // URL to custom bell
+    // bellSoundURL: 'http://example.com/bell.mp3',
+
     // for advanced config flags please refer to https://hyperterm.org/#cfg
-
-    visor: {
-      hotkey: 'Control+Shift+Z',
-      // position: 'top', // or left, right, bottom
-    }
-
   },
 
   // a list of plugins to fetch and install from npm

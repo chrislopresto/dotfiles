@@ -40,7 +40,6 @@
       "toggle-gutter"
       "linter-rubocop"
       "linter-ruby"
-      "linter-eslint"
       "linter-slim"
     ]
     excludeVcsIgnoredPaths: false
@@ -60,15 +59,18 @@
       "*.sublime-project"
       "*.sublime-workspace"
       "**/.sass-cache/**"
+      "source_maps"
     ]
     packagesWithKeymapsDisabled: [
       "emmet"
     ]
+    telemetryConsent: "no"
     themes: [
       "dracula-ui"
       "dracula-theme"
     ]
-    useReactEditor: false
+    useCustomTitleBar: true
+    useReactEditor: true
   editor:
     autoIndent: true
     fontFamily: "Inconsolata"
@@ -85,9 +87,14 @@
   "git-diff": {}
   linter:
     lintOnFlyInterval: 3000
+    showErrorPanel: false
   "linter-eslint":
     disableFSCache: true
-    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
+    eslintrcPath: '''
+      /Users/chrislopresto/src/.eslintrc.js
+      
+    '''
+    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v6.3.1"
     useGlobalEslint: true
   "linter-jscs":
     esnext: true
@@ -125,7 +132,8 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
-  whitespace: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".core.html.htmlbars.internal.text":
   editor:
     preferredLineLength: 120
@@ -139,6 +147,9 @@
 ".diff.source":
   editor:
     preferredLineLength: 120
+".gfm.source":
+  whitespace:
+    removeTrailingWhitespace: false
 ".html.htmlbars.inline.internal.text":
   editor:
     preferredLineLength: 120

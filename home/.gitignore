@@ -5,3 +5,4 @@ tags
 
 *.sublime-project
 *.sublime-workspace
+.pryrc

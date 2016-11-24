@@ -13,7 +13,7 @@ default_command_set = Pry::CommandSet.new do
     input
   end
 
-  command 'pbpaste', 'Paste clipboard' do
+  command 'pbpaste', 'Paste clipboard', keep_retval: true do
     `pbpaste`
   end
 end

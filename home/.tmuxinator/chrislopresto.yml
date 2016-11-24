@@ -7,7 +7,7 @@ windows:
       root: /Users/chrislopresto/p/chrislopresto/chrislopresto-rails
       layout: tiled
       panes:
-        - rails s
+        - foreman start -f Procfile.dev
         - redis-server /usr/local/etc/redis.conf
         - echo "bundle exec guard someday"
         - tail -f log/development.log
