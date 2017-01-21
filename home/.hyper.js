@@ -4,10 +4,10 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.75)',
+    cursorColor: 'rgba(248,28,229,0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -26,6 +26,16 @@ module.exports = {
 
     // custom css to embed in the terminal window
     termCSS: '',
+
+    // set to `true` if you're using a Linux set up
+    // that doesn't shows native menus
+    // default: `false` on Linux, `true` on Windows (ignored on macOS)
+    showHamburgerMenu: '',
+
+    // set to `false` if you want to hide the minimize, maximize and close buttons
+    // additionally, set to `'left'` if you want them on the left, like in Ubuntu
+    // default: `true` on windows and Linux (ignored on macOS)
+    showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -67,12 +77,17 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: true,
+
+    hyperBorder: {
+      borderColors: ['random', 'random'],
+      borderWidth: '2px'
+    }
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
-    // for advanced config flags please refer to https://hyperterm.org/#cfg
+    // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
   // a list of plugins to fetch and install from npm
@@ -82,17 +97,15 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hypertheme",
-    "hyperborder",
-    "hyperterm-visor",
-    "hyperterm-tab-icons",
-    "hyperlinks",
+    "hyper-tab-icons",
     "hyperterm-cursor",
-    "hyperterm-snazzy"
+    "hyperlinks",
+    "hyper-dark-dracula",
+    "hyperborder"
   ],
 
   // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
+  // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: []
 };

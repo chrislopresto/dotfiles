@@ -28,6 +28,7 @@
 	[
 	],
 	"scroll_past_end": true,
+	"spacegray_fileicons": true,
 	"spacegray_sidebar_font_small": true,
 	"spacegray_sidebar_tree_small": true,
 	"spacegray_tabs_auto_width": true,
