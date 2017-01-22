@@ -33,6 +33,15 @@ function setup_sublime_text() {
   cd -
 }
 
+function install_homebrew_dependencies() {
+  brew bundle --global
+  if [ -f "$HOME/.dotfiles/.Brewfile" ]; then
+    brew bundle --global --file="$HOME/.dotfiles/.Brewfile"
+  else
+    brew bundle --global --file="$HOME/.Brewfile"
+  fi
+}
+
 function install_ruby_gems() {
   gem_install_or_update bundler
 
@@ -61,17 +70,8 @@ function cleanup_after_strap() {
   rm -rf "${HOME}/.dotfiles"
 }
 
-function install_prezto() {
-  cd ~
-  if [ -d "${HOME}/.zprezto" ]; then
-    git -C "${HOME}/.zprezto" pull
-  else
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-  fi
-  cd -
-}
-
 install_zgen
+install_homebrew_dependencies
 install_homesick
 install_ruby_gems
 install_npm_packages
