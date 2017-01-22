@@ -17,5 +17,3 @@ function aws-set {
     echo
   fi
 }
-
-aws-set 'yapp' 'false'
