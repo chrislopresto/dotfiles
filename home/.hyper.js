@@ -100,7 +100,7 @@ module.exports = {
     "hyper-tab-icons",
     "hyperterm-cursor",
     "hyperlinks",
-    "hyper-dark-dracula",
+    "hyper-snazzy",
     "hyperborder"
   ],
 

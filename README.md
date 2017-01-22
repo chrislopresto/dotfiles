@@ -4,7 +4,7 @@ These are my dotfiles. This repository is a [homesick castle](https://github.com
 
 ## Installation
 
-Run the [bootstrap script](bootstrap/script) is intended to play nicely with [Strap](https://github.com/MikeMcQuaid/strap).
+Run the [bootstrap script](script/bootstrap). It is intended to play nicely with [Strap](https://github.com/MikeMcQuaid/strap).
 
 ## Manual Steps
 
