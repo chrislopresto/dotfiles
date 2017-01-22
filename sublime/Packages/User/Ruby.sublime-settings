@@ -12,6 +12,7 @@
 		"local",
 		"Podfile",
 		"thor",
-		".pryrc"
+		".pryrc",
+		".Brewfile"
 	]
 }

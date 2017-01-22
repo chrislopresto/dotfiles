@@ -1,0 +1,56 @@
+brew 'ack'
+brew 'awscli'
+brew 'docker'
+brew 'fasd'
+brew 'git'
+brew 'httpie'
+brew 'hub'
+brew 'icdiff'
+brew 'jq'
+brew 'libyaml'
+brew 'macvim'
+brew 'mas'
+brew 'mediainfo'
+brew 'mysql'
+brew 'nodenv'
+brew 'openssl'
+brew 'optipng'
+brew 'postgres'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew 'rbenv'
+brew 'reattach-to-user-namespace'
+brew 'ruby-build'
+brew 'tldr'
+brew 'tmux'
+brew 'tree'
+brew 'vim'
+brew 'yarn'
+brew 'zsh'
+
+cask 'alfred'
+cask 'atom'
+cask 'atom-beta'
+cask 'font-hack'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'licecap'
+cask 'pgcli'
+cask 'postico'
+cask 'sketch'
+cask 'slack'
+cask 'sublime-text'
+cask 'taskpaper'
+cask 'virtualbox'
+cask 'visual-studio-code'
+cask 'watchman'
+cask 'whatsapp'
+
+mas '1Password', id: 443987910
+mas 'Amphetamine', id: 937984704
+mas 'DaisyDisk', id: 411643860
+mas 'Fantastical 2', id: 975937182
+mas 'Moom', id: 419330170
+mas 'Pixelmator', id: 407963104
+mas 'Quiver', id: 866773894
+mas 'Soulver', id: 413965349
