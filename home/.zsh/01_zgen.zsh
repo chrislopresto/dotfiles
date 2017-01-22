@@ -1,5 +1,4 @@
 #!/bin/zsh
-export ZGEN_RESET_ON_CHANGE=($HOME/.zshrc)
 source ~/.zgen/zgen.zsh
 
 if ! zgen saved; then

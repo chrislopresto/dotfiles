@@ -37,6 +37,7 @@ function setup_sublime_text() {
 }
 
 function install_homebrew_dependencies() {
+  brew tap 'homebrew/bundle'
   brew tap 'caskroom/cask'
   brew tap 'caskroom/fonts'
   brew tap 'caskroom/versions'
