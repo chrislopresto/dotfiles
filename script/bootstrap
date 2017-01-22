@@ -44,6 +44,7 @@ function install_homebrew_dependencies() {
   brew tap 'homebrew/core'
   brew tap 'homebrew/services'
   brew tap 'homebrew/versions'
+  brew tap 'neovim/neovim'
   if [ -f "$HOME/.dotfiles/home/.Brewfile" ]; then
     echo "Installing Homebrew Dependencies from $HOME/.dotfiles/home/.Brewfile"
     brew bundle --file="$HOME/.dotfiles/home/.Brewfile"
