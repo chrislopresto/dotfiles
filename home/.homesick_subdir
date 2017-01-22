@@ -6,3 +6,5 @@
 .tmux
 .tmuxinator
 .vim
+.zsh/dotfiles
+.zsh/private
