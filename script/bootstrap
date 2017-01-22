@@ -19,7 +19,7 @@ function install_zgen() {
 }
 
 function install_homesick() {
-  echo "Installing homesick"
+  echo "Installing dotfiles homesick castle"
   gem_install_or_update homesick
   homesick clone chrislopresto/dotfiles
   homesick pull dotfiles
@@ -73,9 +73,7 @@ function install_npm_packages() {
 
 function install_python_packages() {
   echo "Installing python packages"
-  pip install -U beets
   pip install -U cider
-  pip install -U pylast
   pip install -U requests
 }
 
