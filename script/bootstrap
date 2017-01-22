@@ -8,6 +8,7 @@ function gem_install_or_update() {
 }
 
 function install_zgen() {
+  echo "Installing zgen"
   cd ~
   if [ -d "${HOME}/.zgen" ]; then
     git -C "${HOME}/.zgen" pull
@@ -18,6 +19,7 @@ function install_zgen() {
 }
 
 function install_homesick() {
+  echo "Installing homesick"
   gem_install_or_update homesick
   homesick clone chrislopresto/dotfiles
   homesick pull dotfiles
@@ -27,6 +29,7 @@ function install_homesick() {
 }
 
 function setup_sublime_text() {
+  echo "Setting up Sublime Text"
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/.homesick/repos/dotfiles/sublime/Packages/User
@@ -34,6 +37,7 @@ function setup_sublime_text() {
 }
 
 function install_homebrew_dependencies() {
+  echo "Installing Homebrew Dependencies"
   brew bundle --global
   if [ -f "$HOME/.dotfiles/.Brewfile" ]; then
     brew bundle --global --file="$HOME/.dotfiles/.Brewfile"
@@ -43,6 +47,7 @@ function install_homebrew_dependencies() {
 }
 
 function install_ruby_gems() {
+  echo "Installing ruby gems"
   gem_install_or_update bundler
 
   gem_install_or_update cocoapods
@@ -51,11 +56,15 @@ function install_ruby_gems() {
 }
 
 function install_npm_packages() {
+  echo "Running nodenv init"
   nodenv init
+
+  echo "Installing npm packages"
   yarn global upgrade bower ember-cli phantomjs hpm-cli eslint grunt-cli webpack@beta
 }
 
 function install_python_packages() {
+  echo "Installing python packages"
   pip install -U beets
   pip install -U cider
   pip install -U pylast
@@ -63,10 +72,12 @@ function install_python_packages() {
 }
 
 function restore_cider() {
+  echo "Restoring cider"
   cider restore
 }
 
 function cleanup_after_strap() {
+  echo "Cleaning up after strap"
   rm -rf "${HOME}/.dotfiles"
 }
 
