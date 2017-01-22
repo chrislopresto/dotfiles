@@ -18,7 +18,9 @@
         ".config/configstore",
         ".config/robomongo",
         "Package Control.cache",
-        "Color Highlighter"
+        "Color Highlighter",
+        "home/.atom/compile-cache",
+        "home/.atom/storage"
       ],
       "follow_symlinks": true,
 			"path": "."

@@ -92,7 +92,7 @@
     disableFSCache: true
     eslintrcPath: '''
       /Users/chrislopresto/src/.eslintrc.js
-      
+
     '''
     globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v6.3.1"
     useGlobalEslint: true
@@ -102,10 +102,6 @@
     preset: "node-style-guide"
   "linter-jshint":
     executablePath: "/usr/local/bin/jshint"
-  "linter-rubocop":
-    command: "/opt/boxen/rbenv/versions/jruby-1.7.24/bin/bundle exec rubocop"
-  "linter-ruby":
-    rubyExecutablePath: "/opt/boxen/rbenv/shims/ruby"
   "linter-sass-lint":
     globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
     noConfigDisable: true

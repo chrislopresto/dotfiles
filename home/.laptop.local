@@ -85,6 +85,11 @@ fancy_echo "Installing developer things ..."
   curl -Lo- https://bit.ly/janus-bootstrap | bash
   pip install --upgrade aws-shell
   pip install --upgrade whatportis
+  pip install --upgrade gitsome
+  pip install --upgrade gordon --ignore-installed six
+
+  brew uninstall --force z
+  brew install fasd
 
 fancy_echo "Installing heroku things ..."
   heroku plugins:install https://github.com/tpope/heroku-surrogate.git
@@ -107,6 +112,7 @@ fancy_echo "Installing npm packages like bower, ember-cli, phantomjs, etc ..."
   npm install -g grunt-cli
   npm install -g cordova
   npm install -g jscs
+  npm install -g hpm-cli
 
 fancy_echo "Installing python things ..."
   brew_install_or_upgrade 'pyenv'
