@@ -18,6 +18,7 @@ function install_zgen() {
 }
 
 function install_homesick() {
+  gem_install_or_update homesick
   homesick clone chrislopresto/dotfiles
   homesick pull dotfiles
   homesick unlink dotfiles
@@ -36,7 +37,6 @@ function install_ruby_gems() {
   gem_install_or_update bundler
 
   gem_install_or_update cocoapods
-  gem_install_or_update homesick
   gem_install_or_update pry-theme
   gem_install_or_update tmuxinator
 }
@@ -72,9 +72,9 @@ function install_prezto() {
 }
 
 install_zgen
+install_homesick
 install_ruby_gems
 install_npm_packages
-install_homesick
 install_python_packages
 restore_cider
 setup_sublime_text
