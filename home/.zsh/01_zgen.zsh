@@ -14,7 +14,7 @@
 # Customize to your needs...
 
 
-source ~/zgen/zgen.zsh
+source ~/.zgen/zgen.zsh
 
 if ! zgen saved; then
   zgen oh-my-zsh
