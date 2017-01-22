@@ -57,6 +57,10 @@ function restore_cider() {
   cider restore
 }
 
+function cleanup_after_strap() {
+  rm -rf "${HOME}/.dotfiles"
+}
+
 function install_prezto() {
   cd ~
   if [ -d "${HOME}/.zprezto" ]; then
@@ -67,18 +71,11 @@ function install_prezto() {
   cd -
 }
 
-# install_fonts () {
-#   mkdir -p ~/p/fonts/google ; git clone google/fonts ~/p/fonts/google
-#   cp ~/p/fonts/google/ofl/inconsolata/*.ttf ~/Library/Fonts
-#   mkdir -p ~/p/fonts/powerline ; git clone powerline/fonts ~/p/fonts/powerline
-#   ~/p/fonts/powerline/install.sh
-# }
-
-#install_zgen
+install_zgen
 install_ruby_gems
 install_npm_packages
+install_homesick
 install_python_packages
 restore_cider
-#install_homesick
-# # install_prezto
-#setup_sublime_text
+setup_sublime_text
+cleanup_after_strap
