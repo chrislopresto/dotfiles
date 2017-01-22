@@ -1,32 +1,19 @@
 #!/bin/zsh
+export ZGEN_RESET_ON_CHANGE=($HOME/.zshrc)
 source ~/.zgen/zgen.zsh
 
 if ! zgen saved; then
-  zgen oh-my-zsh
-  zgen oh-my-zsh plugins/git
-  zgen oh-my-zsh plugins/hub
-  zgen oh-my-zsh plugins/rails
-
-  zgen load mafredri/zsh-async
-  zgen load zsh-users/zsh-syntax-highlighting
+  zgen prezto editor key-bindings 'vi'
+  zgen prezto prompt theme 'pure'
 
   zgen prezto
-  zgen prezto terminal
-  zgen prezto editor key-bindings 'vi'
-  zgen prezto history
-  zgen prezto directory
-  zgen prezto spectrum
-  zgen prezto utility
-  zgen prezto completion
-  zgen prezto homebrew
-  zgen prezto osx
-  zgen prezto ruby
-  zgen prezto rails
   zgen prezto git
-  # zgen prezto syntax-highlighting
+  zgen prezto command-not-found
+  zgen prezto tmux
   zgen prezto history-substring-search
+  zgen prezto syntax-highlighting
 
-  zgen prezto prompt theme 'pure'
+  zgen load mafredri/zsh-async
 
   zgen save
 fi
