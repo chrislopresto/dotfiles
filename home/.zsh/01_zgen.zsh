@@ -1,19 +1,4 @@
 #!/bin/zsh
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Source Prezto.
-# if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-#   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-# fi
-
-# Customize to your needs...
-
-
 source ~/.zgen/zgen.zsh
 
 if ! zgen saved; then
@@ -22,11 +7,12 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/hub
   zgen oh-my-zsh plugins/rails
 
-  # zgen load mafredri/zsh-async
+  zgen load mafredri/zsh-async
+  zgen load zsh-users/zsh-syntax-highlighting
 
   zgen prezto
   zgen prezto terminal
-  zgen prezto editor key-bindings 'vim'
+  zgen prezto editor key-bindings 'vi'
   zgen prezto history
   zgen prezto directory
   zgen prezto spectrum
@@ -37,7 +23,7 @@ if ! zgen saved; then
   zgen prezto ruby
   zgen prezto rails
   zgen prezto git
-  zgen prezto syntax-highlighting
+  # zgen prezto syntax-highlighting
   zgen prezto history-substring-search
 
   zgen prezto prompt theme 'pure'
