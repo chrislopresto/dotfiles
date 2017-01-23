@@ -12,7 +12,10 @@ pkg.link() {
 
   fs.link_file tmuxinator
   fs.link_file vim
-  fs.link_file zsh
+
+  mkdir -p "$ELLIPSIS_HOME/.zsh"
+  fs.link_file zsh/dotfiles "$ELLIPSIS_HOME/.zsh/dotfiles"
+  fs.link_file zsh/private "$ELLIPSIS_HOME/.zsh/private"
 
   # Files
   fs.link_file Brewfile
@@ -30,6 +33,8 @@ pkg.unlink() {
   rm "$ELLIPSIS_HOME/.config/heroku"
   rm "$ELLIPSIS_HOME/.config/nvim"
   rm "$ELLIPSIS_HOME/.config/pgcli"
+  rm "$ELLIPSIS_HOME/.zsh/dotfiles"
+  rm "$ELLIPSIS_HOME/.zsh/private"
 
   hooks.unlink
 }
