@@ -1,46 +1,46 @@
-.sublime/**/Package Control.last-run
-.sublime/**/Package Control.ca-list
-.sublime/**/Package Control.ca-bundle
-.sublime/**/Package Control.system-ca-bundle
-.sublime/**/Package Control.merged-ca-bundle
-.sublime/**/Package Control.user-ca-bundle
-.sublime/**/Package Control.cache/
-.sublime/**/Package Control.ca-certs/
-.sublime/**/oscrypto-ca-bundle.crt
+sublime/**/Package Control.last-run
+sublime/**/Package Control.ca-list
+sublime/**/Package Control.ca-bundle
+sublime/**/Package Control.system-ca-bundle
+sublime/**/Package Control.merged-ca-bundle
+sublime/**/Package Control.user-ca-bundle
+sublime/**/Package Control.cache/
+sublime/**/Package Control.ca-certs/
+sublime/**/oscrypto-ca-bundle.crt
 
-.sublime/**/Color Highlighter/
+sublime/**/Color Highlighter/
 
 *.sublime-workspace
 
-.config/gh
-.config/gh-update
-.config/git
-.config/hub
-.config/configstore
-.config/robomongo
-.config/ThingM
+config/gh
+config/gh-update
+config/git
+config/hub
+config/configstore
+config/robomongo
+config/ThingM
 
-.config/beets/state.pickle
+config/beets/state.pickle
 
-.zsh/private/*.zsh
+zsh/private/*.zsh
 
-.vim/autoload/*.vim
-.vim/colors/*.vim
-.vim/plugged
-.vim/.netrwhist
+vim/autoload/*.vim
+vim/colors/*.vim
+vim/plugged
+vim/.netrwhist
 
-.atom/.apm
-.atom/.node-gyp
-.atom/blob-store
-.atom/compile-cache
-.atom/git-time-machine
-.atom/init.coffee
-.atom/packages
-.atom/recovery
-.atom/storage
+atom/.apm
+atom/.node-gyp
+atom/blob-store
+atom/compile-cache
+atom/git-time-machine
+atom/init.coffee
+atom/packages
+atom/recovery
+atom/storage
 
-.config/nvim/plugged
-.config/nvim/.netrwhist
-.config/nvim/autoload
+config/nvim/plugged
+config/nvim/.netrwhist
+config/nvim/autoload
 
-.config/yarn
+config/yarn

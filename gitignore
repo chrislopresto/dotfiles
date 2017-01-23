@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.pyc
+tags
+
+*.sublime-project
+*.sublime-workspace
+.pryrc
