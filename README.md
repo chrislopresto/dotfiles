@@ -1,6 +1,6 @@
 # chrislopresto dotfiles
 
-These are my dotfiles. This repository is a [homesick castle](https://github.com/technicalpickles/homesick). 
+These are my main dotfiles. They use [ellipsis](https://ellipsis.sh/) for installation.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Run the [bootstrap script](script/bootstrap). It is intended to play nicely with
     - Launch the Sublime Text console: ``ctrl+` ``
     - Paste and execute the Package Control install script
 - Load iTerm preferences
-    - Load preferences from `~/.homesick/repos/dotfiles/iterm2`
+    - Load preferences from `~/iterm2`
 - Map `CAPS LOCK` to `CTRL`
 - Setup Alfred
     - Activate Powerpack
@@ -22,7 +22,3 @@ Run the [bootstrap script](script/bootstrap). It is intended to play nicely with
 - Setup Tower
     - Activate
     - Install command line utility
-
-## Notes
-
-- Pairing the `homesick clone`/`pull` commands and the `homesick unlink`/`symlink` commands allows the script to be run repeatedly. Homesick spits out warnings that can be safely ignored.

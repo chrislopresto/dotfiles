@@ -43531,7 +43531,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/chrislopresto/.homesick/repos/dotfiles/iterm2</string>
+	<string>/Users/chrislopresto/.iterm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>

@@ -18,21 +18,16 @@ function install_zgen() {
   cd -
 }
 
-function install_homesick() {
-  echo "Installing dotfiles homesick castle"
-  gem_install_or_update homesick
-  homesick clone chrislopresto/dotfiles
-  homesick pull dotfiles
-  homesick unlink dotfiles
-  homesick symlink dotfiles --force
-  homesick list
+function install_ellipsis_dotfiles() {
+  echo "Installing ellipsis"
+  curl -sL ellipsis.sh | PACKAGES='https://github.com/chrislopresto/dotfiles.git' sh
 }
 
 function setup_sublime_text() {
   echo "Setting up Sublime Text"
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
-  ln -s ~/.homesick/repos/dotfiles/sublime/Packages/User
+  ln -s ~/.dotfiles/.sublime/Packages/User
   cd -
 }
 
@@ -45,12 +40,12 @@ function install_homebrew_dependencies() {
   brew tap 'homebrew/services'
   brew tap 'homebrew/versions'
   brew tap 'neovim/neovim'
-  if [ -f "$HOME/.dotfiles/home/.Brewfile" ]; then
-    echo "Installing Homebrew Dependencies from $HOME/.dotfiles/home/.Brewfile"
-    brew bundle --file="$HOME/.dotfiles/home/.Brewfile"
-  else
+  if [ -f "$HOME/.Brewfile" ]; then
     echo "Installing Homebrew Dependencies"
     brew bundle --global
+  else
+    echo "Installing Homebrew Dependencies from $HOME/.dotfiles/.Brewfile"
+    brew bundle --file="$HOME/.dotfiles/.Brewfile"
   fi
 }
 
@@ -83,17 +78,11 @@ function restore_cider() {
   cider restore
 }
 
-function cleanup_after_strap() {
-  echo "Cleaning up after strap"
-  rm -rf "${HOME}/.dotfiles"
-}
-
 install_zgen
+install_ellipsis_dotfiles
 install_homebrew_dependencies
-install_homesick
 install_ruby_gems
 install_npm_packages
 install_python_packages
 restore_cider
 setup_sublime_text
-cleanup_after_strap
