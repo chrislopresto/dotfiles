@@ -2,10 +2,12 @@
 
 export ZSH_CONFIG_PATH=~/.zsh/
 
-for zsh_config_directory in `ls $ZSH_CONFIG_PATH | sort`
+for zsh_config_directory in `ls $ZSH_CONFIG_PATH*^.bak | sort`
 do
+  echo "found $zsh_config_directory"
   for zsh_config_file in `ls $ZSH_CONFIG_PATH/$zsh_config_directory/*.zsh | sort`
   do
+    echo "found $zsh_config_file"
     source $zsh_config_file
   done
 done
