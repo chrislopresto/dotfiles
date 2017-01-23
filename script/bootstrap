@@ -27,7 +27,7 @@ function setup_sublime_text() {
   echo "Setting up Sublime Text"
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
-  ln -s ~/.dotfiles/.sublime/Packages/User
+  ln -s ~/.dotfiles/sublime/Packages/User
   cd -
 }
 
