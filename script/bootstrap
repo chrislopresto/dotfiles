@@ -20,10 +20,7 @@ function install_zgen() {
 
 function install_ellipsis_dotfiles() {
   echo "Installing ellipsis"
-  curl -sL ellipsis.sh | sh
-
-  echo "Installing dotfiles"
-  ellipsis install chrislopresto/dotfiles
+  curl -sL ellipsis.sh | PACKAGES='chrislopresto/dotfiles' sh
 }
 
 function setup_sublime_text() {
