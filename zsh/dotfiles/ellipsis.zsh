@@ -1,1 +1,1 @@
-export PATH="~/.ellipsis/bin:$PATH"
+export PATH="$HOME/.ellipsis/bin:$PATH"
