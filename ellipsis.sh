@@ -41,5 +41,7 @@ pkg.unlink() {
 
 pkg.install() {
   mkdir -p "$ELLIPSIS_HOME/.zsh-private"
-  \cp $ELLIPSIS_HOME/.zsh-private/*.zsh $PKG_PATH/zsh/private
+  if [ -f "$ELLIPSIS_HOME/.zsh-private/*.zsh" ]; then
+    \cp $ELLIPSIS_HOME/.zsh-private/*.zsh $PKG_PATH/zsh/private
+  fi
 }
