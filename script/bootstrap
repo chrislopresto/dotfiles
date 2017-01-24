@@ -45,8 +45,6 @@ function install_homebrew_dependencies() {
 function install_ruby_gems() {
   echo "Installing ruby gems"
   gem_install_or_update bundler
-
-  gem_install_or_update cocoapods
   gem_install_or_update pry-theme
   gem_install_or_update tmuxinator
 }
