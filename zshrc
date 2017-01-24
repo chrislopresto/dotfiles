@@ -20,15 +20,10 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 
-echo "------------------"
-export ZSH_CONFIG_PATH=~/.zsh
-
 for zsh_config_directory in `print -l ~/.zsh/^*.bak* | sort`
 do
-  echo "> found $zsh_config_directory"
   for zsh_config_file in `ls $zsh_config_directory/*.zsh | sort`
   do
-    echo ">>> found $zsh_config_file"
     source $zsh_config_file
   done
 done
