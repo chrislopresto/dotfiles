@@ -39,9 +39,22 @@ pkg.unlink() {
   hooks.unlink
 }
 
-pkg.install() {
+function copy_zsh_private() {
   mkdir -p "$ELLIPSIS_HOME/.zsh-private"
   if [ -f "$ELLIPSIS_HOME/.zsh-private/*.zsh" ]; then
     \cp $ELLIPSIS_HOME/.zsh-private/*.zsh $PKG_PATH/zsh/private
   fi
+}
+
+function setup_sublime_text() {
+  echo "Setting up Sublime Text"
+  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+  rm -r User
+  ln -s $PKG_PATH/sublime/Packages/User
+  cd -
+}
+
+pkg.install() {
+  copy_zsh_private
+  setup_sublime_text
 }
