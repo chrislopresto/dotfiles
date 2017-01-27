@@ -17,7 +17,7 @@ function df {
 function stpf {
   if test -z "$(find . -maxdepth 1 -name '*.sublime-project' -print -quit)"; then
     DIRECTORY_NAME=${PWD##*/}
-    cp ~/.dotfiles/sublime/example.sublime-project "$DIRECTORY_NAME.sublime-project"
+    cp ~/.ellipsis/packages/dotfiles/sublime/example.sublime-project "$DIRECTORY_NAME.sublime-project"
   fi
   st *.sublime-project
 }
