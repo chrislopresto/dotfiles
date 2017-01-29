@@ -11,7 +11,7 @@ function app_on_port {
 }
 
 function df {
-  cd ~/.dotfiles && stpf
+  cd ~/.ellipsis/packages/dotfiles && stpf
 }
 
 function stpf {
