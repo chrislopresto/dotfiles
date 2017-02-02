@@ -66,7 +66,7 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "dracula-ui"
+      "one-dark-ui"
       "dracula-theme"
     ]
     useCustomTitleBar: true
@@ -92,7 +92,7 @@
     disableFSCache: true
     eslintrcPath: '''
       /Users/chrislopresto/src/.eslintrc.js
-
+      
     '''
     globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v6.3.1"
     useGlobalEslint: true

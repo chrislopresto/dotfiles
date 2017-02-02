@@ -26,5 +26,3 @@
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
-  'alt-cmd-r': 'find-and-replace:toggle-regex-option'
-  'alt-cmd-r': 'project-find:toggle-regex-option'
