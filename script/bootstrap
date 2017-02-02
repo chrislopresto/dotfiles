@@ -36,6 +36,9 @@ function install_homebrew_dependencies() {
   if [ -f "$HOME/.Brewfile" ]; then
     echo "Installing Homebrew Dependencies"
     brew bundle --global
+  elif [ -f "$HOME/.ellipsis/packages/dotfiles/.Brewfile" ]; then
+    echo "Installing Homebrew Dependencies from $HOME/.ellipsis/packages/dotfiles/.Brewfile"
+    brew bundle --file="$HOME/.ellipsis/packages/dotfiles/.Brewfile"
   else
     echo "Installing Homebrew Dependencies from $HOME/.dotfiles/.Brewfile"
     brew bundle --file="$HOME/.dotfiles/.Brewfile"
