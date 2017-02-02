@@ -12,6 +12,9 @@
     { "keys": ["ctrl+option+h"], "command": "create_pane", "args": {"direction": "left"} },
 
     { "keys": ["super+k", "super+w"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+    { "keys": ["ctrl+shift+l"], "command": "toggle_setting", "args": { "setting": "line_numbers" } },
+
     {
       "keys": ["tab"],
       "command": "expand_abbreviation_by_tab",
