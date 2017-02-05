@@ -32703,6 +32703,8 @@
 	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
+	<key>LeftTabBarWidth</key>
+	<real>403.296875</real>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>MaxVertically</key>
@@ -32754,11 +32756,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>798 263 770 381 0 0 1920 1200 </string>
+	<string>550 732 770 381 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1200 0 0 1920 1200 </string>
+	<string>0 0 1920 1200 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -43531,7 +43533,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/chrislopresto/.iterm2</string>
+	<string>/Users/chrislopresto/.ellipsis/packages/dotfiles/iterm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -43549,7 +43551,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-28T02:34:40Z</date>
+	<date>2017-02-03T22:34:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -43559,7 +43561,7 @@
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -54775,7 +54777,7 @@
 	<key>globalSettingsRestartBOOL</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.11</string>
+	<string>3.0.14</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
