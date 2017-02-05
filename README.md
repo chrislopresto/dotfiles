@@ -16,6 +16,8 @@ Run the [bootstrap script](script/bootstrap). It is intended to play nicely with
 - Load iTerm preferences
     - Load preferences from `~/iterm2`
 - Map `CAPS LOCK` to `CTRL`
+- Install Dropbox
+    - Symlink `~/Dropbox` to `~/Dropbox (Personal)` if not connecting work Dropbox account `ln -s "/Users/chrislopresto/Dropbox/" "/Users/chrislopresto/Dropbox (Personal)"`
 - Setup Alfred
     - Activate Powerpack
     - Set sync folder to `~/Dropbox/Alfred`
