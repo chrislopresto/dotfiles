@@ -1,0 +1,4 @@
+nnoremap <Leader>l :vsp<CR>
+nnoremap <Leader>j :sp<CR>
+set splitbelow
+set splitright

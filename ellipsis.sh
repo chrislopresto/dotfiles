@@ -54,7 +54,13 @@ function setup_sublime_text() {
   cd -
 }
 
+function install_dein() {
+  mkdir -p "$HOME/.config/dein/repos/github.com/Shougo/dein.vim"
+  git clone https://github.com/Shougo/dein.vim "$HOME/.config/dein/repos/github.com/Shougo/dein.vim"
+}
+
 pkg.install() {
   copy_zsh_private
   setup_sublime_text
+  install_dein
 }
