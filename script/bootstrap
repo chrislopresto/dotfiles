@@ -62,9 +62,14 @@ function install_npm_packages() {
 }
 
 function install_python_packages() {
+  echo "Installing python 3.5.0"
+  pyenv install 3.5.0
+  pyenv local 3.5.0
+
   echo "Installing python packages"
-  pip install -U cider
-  pip install -U requests
+  pip3 install -U cider
+  pip3 install -U requests
+  pip3 install neovim
 }
 
 function restore_cider() {
