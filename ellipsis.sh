@@ -10,6 +10,9 @@ pkg.link() {
   fs.link_file config/nvim "$ELLIPSIS_HOME/.config/nvim"
   fs.link_file config/pgcli "$ELLIPSIS_HOME/.config/pgcli"
 
+  mkdir -p "$ELLIPSIS_HOME/.pyenv"
+  fs.link_file pyenv/version "$ELLIPSIS_HOME/.pyenv/version"
+
   fs.link_file tmuxinator
   fs.link_file vim
 
@@ -33,6 +36,7 @@ pkg.unlink() {
   rm "$ELLIPSIS_HOME/.config/heroku"
   rm "$ELLIPSIS_HOME/.config/nvim"
   rm "$ELLIPSIS_HOME/.config/pgcli"
+  rm "$ELLIPSIS_HOME/.pyenv/version"
   rm "$ELLIPSIS_HOME/.zsh/dotfiles"
   rm "$ELLIPSIS_HOME/.zsh/private"
 

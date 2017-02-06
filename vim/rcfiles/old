@@ -1,0 +1,59 @@
+set number
+" Toggle line numbers
+:nmap <C-N><C-N> :set invnumber<CR>
+
+" Shift indents with Command+[ or ]
+map <D-]> >gv
+nmap <D-]> >>
+imap <D-]> <Esc><D-]>
+map <D-[> <gv
+nmap <D-[> <<
+imap <D-[> <Esc><D-[>
+
+" Use ; for commands.
+" nnoremap ; :
+
+" set vb
+" set bs=2
+" set foldmethod=manual
+set mouse=a
+set colorcolumn=140
+
+set modelines=0
+
+" Whitespace
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Quicker splits
+" nnoremap <Leader>l :vsp<CR>
+" nnoremap <Leader>j :sp<CR>
+
+" buffer
+nmap <leader>h :leftabove  vnew<CR>
+nmap <leader>l :rightbelow vnew<CR>
+nmap <leader>k :leftabove  new<CR>
+nmap <leader>j :rightbelow new<CR>

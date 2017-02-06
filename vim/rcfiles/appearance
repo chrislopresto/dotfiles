@@ -1,0 +1,8 @@
+filetype plugin indent on
+set background=dark
+syntax enable
+syntax on
+color dracula
+
+set guifont=Inconsolata
+" set guioptions=cemg

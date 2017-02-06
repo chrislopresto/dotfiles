@@ -1,0 +1,14 @@
+nnoremap <C-p> :FZF<cr>
+
+" ctrlp
+" let g:ctrlp_max_files=0
+" let g:ctrlp_max_depth=40
+" let g:ctrlp_working_path_mode = ''
+" let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+
+" Open file menu
+nnoremap <Leader>o :CtrlP<CR>
+" Open buffer menu
+nnoremap <Leader>b :CtrlPBuffer<CR>
+" Open most recently used files
+nnoremap <Leader>f :CtrlPMRUFiles<CR>
