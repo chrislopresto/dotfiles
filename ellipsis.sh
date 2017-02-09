@@ -25,6 +25,7 @@ pkg.link() {
   fs.link_file gemrc
   fs.link_file gitconfig
   fs.link_file gitignore
+  fs.link_file gitthings
   fs.link_file hyper.js
   fs.link_file node-version
   fs.link_file pryrc

@@ -18,3 +18,7 @@ alias localip="ifconfig -a | grep -o 'inet \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say cache flushed"
 
 alias st="subl"
+
+function marked() {
+  open $1 -a Marked\ 2
+}

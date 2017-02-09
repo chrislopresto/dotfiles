@@ -30,3 +30,6 @@
 	user = chrislopresto
 [ghi]
 	token = !security find-internet-password -a chrislopresto -s github.com -l 'ghi token' -w
+
+[include]
+  path = .gitthings
