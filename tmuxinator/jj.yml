@@ -6,8 +6,21 @@ windows:
       layout: b7a2,272x73,0,0{80x73,0,0[80x27,0,0,1,80x23,0,28,6,80x21,0,52,2],191x73,81,0[191x27,81,0,3,191x23,81,28,4,191x21,81,52,5]}
       panes:
         - bundle exec thin -R config.ru start -p 3000 -e development
-        - echo "would have fun mongod --config /opt/boxen/homebrew/etc/mongod.conf"
         - devlog
         - beg
         - rails c
         -
+        -
+  - git:
+      layout: tiled
+      panes:
+        -
+  - code:
+      layout: tiled
+      panes:
+        - vim .
+  - services:
+      layout: tiled
+      panes:
+        - mongodb/mongodb-osx-x86_64-v2.6-2017-02-14/bin/mongod --dbpath mongodb/data/db
+        - redis-server /usr/local/etc/redis.conf
