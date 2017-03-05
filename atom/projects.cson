@@ -1,0 +1,14 @@
+[
+  {
+    title: "dotfiles"
+    paths: [
+      "/Users/chrislopresto/.ellipsis/packages/dotfiles"
+    ]
+  },
+  {
+    title: "notes"
+    paths: [
+      "/Users/chrislopresto/Dropbox (Personal)/Notes"
+    ]
+  }
+]

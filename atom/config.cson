@@ -67,13 +67,13 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "dracula-theme"
+      "gloom"
     ]
     useCustomTitleBar: true
     useReactEditor: true
   editor:
     autoIndent: true
-    fontFamily: "Inconsolata"
+    fontFamily: "Hack"
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 140
@@ -116,15 +116,17 @@
     userId: "9a373aacc08946c8b7940a4b381e936d87675c70"
   "one-dark-ui":
     layoutMode: "Compact"
+  "one-light-ui":
+    layoutMode: "Compact"
   "release-notes":
     viewedVersion: "0.95.0"
+  "status-bar": {}
   tabs:
     enableVcsColoring: true
   "toggle-gutter": {}
   "travis-ci-status": {}
   "tree-view":
     hideIgnoredNames: true
-    showOnRightSide: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
