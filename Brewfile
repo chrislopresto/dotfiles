@@ -60,3 +60,4 @@ mas 'Moom', id: 419330170
 mas 'Pixelmator', id: 407963104
 mas 'Quiver', id: 866773894
 mas 'Soulver', id: 413965349
+mas 'Skitch', id: 425955336
