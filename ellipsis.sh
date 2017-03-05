@@ -16,6 +16,12 @@ pkg.link() {
   fs.link_file tmuxinator
   fs.link_file vim
 
+  mkdir -p "$ELLIPSIS_HOME/Library/Application Support/Code/User"
+  fs.link_file vscode/User/snippets "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
+  fs.link_file vscode/User/keybindings.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/keybindings.json"
+  fs.link_file vscode/User/projects.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/projects.json"
+  fs.link_file vscode/User/settings.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/settings.json"
+
   mkdir -p "$ELLIPSIS_HOME/.zsh"
   fs.link_file zsh/dotfiles "$ELLIPSIS_HOME/.zsh/dotfiles"
   fs.link_file zsh/private "$ELLIPSIS_HOME/.zsh/private"
@@ -38,6 +44,10 @@ pkg.unlink() {
   rm "$ELLIPSIS_HOME/.config/nvim"
   rm "$ELLIPSIS_HOME/.config/pgcli"
   rm "$ELLIPSIS_HOME/.pyenv/version"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/keybindings.json"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/projects.json"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/settings.json"
   rm "$ELLIPSIS_HOME/.zsh/dotfiles"
   rm "$ELLIPSIS_HOME/.zsh/private"
 
@@ -53,10 +63,10 @@ function copy_zsh_private() {
 
 function setup_sublime_text() {
   echo "Setting up Sublime Text"
-  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+  pushd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s $PKG_PATH/sublime/Packages/User
-  cd -
+  popd
 }
 
 function install_dein() {

@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 15,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [],
+    "editor.tabSize": 2,
+    "ruby.rubocop.executePath": "/Users/chrislopresto/src/better-core/retail/bin/",
+    "ruby.rubocop.onSave": true,
+    "ruby.rubocop.configFilePath": "/Users/chrislopresto/src/better-core/retail/.rubocop.yml",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.sideBar.location": "left",
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Dracula",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false
+  }

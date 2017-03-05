@@ -1,0 +1,20 @@
+[
+	{
+		"name": "better-core",
+		"rootPath": "$home/src/better-core",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "Notes",
+		"rootPath": "$home/Dropbox (Personal)/Notes",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "dotfiles",
+		"rootPath": "$home/.ellipsis/packages/dotfiles",
+		"paths": [],
+		"group": ""
+	}
+]
