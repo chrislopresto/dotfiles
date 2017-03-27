@@ -1,5 +1,6 @@
 brew 'ack'
 brew 'awscli'
+brew 'exiftool'
 brew 'fasd'
 brew 'git'
 brew 'httpie'
