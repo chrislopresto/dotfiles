@@ -1,9 +1,9 @@
 [user]
   name = Chris LoPresto
-  email = chris@chrislopresto.com
+  email = chris.lopresto@betterment.com
 
 [credential]
-  helper = osxkeychain
+  helper = /opt/boxen/bin/boxen-git-credential
 
 [color]
   ui = true

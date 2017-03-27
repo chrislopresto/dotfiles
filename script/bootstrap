@@ -18,6 +18,11 @@ function install_zgen() {
   cd -
 }
 
+function install_fisherman() {
+  echo "Installing fisherman"
+  curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+}
+
 function install_ellipsis_dotfiles() {
   echo "Installing ellipsis"
   curl -sL ellipsis.sh | sh
@@ -88,6 +93,7 @@ function cleanup_after_strap() {
 }
 
 install_zgen
+install_fisherman
 install_ellipsis_dotfiles
 install_homebrew_dependencies
 install_ruby_gems

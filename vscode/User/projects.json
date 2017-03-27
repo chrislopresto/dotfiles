@@ -16,5 +16,17 @@
 		"rootPath": "$home/.ellipsis/packages/dotfiles",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "elegant-sass-things",
+		"rootPath": "$home/p/chrislopresto/elegant-sass-things",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "style-closet",
+		"rootPath": "$home/src/style-closet",
+		"paths": [],
+		"group": ""
 	}
 ]

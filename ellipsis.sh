@@ -6,6 +6,8 @@ pkg.link() {
   fs.link_file cider
 
   mkdir -p "$ELLIPSIS_HOME/.config"
+  fs.link_file config/fish/config.fish "$ELLIPSIS_HOME/.config/fish/config.fish"
+  fs.link_file config/fish/fishfile "$ELLIPSIS_HOME/.config/fish/fishfile"
   fs.link_file config/heroku "$ELLIPSIS_HOME/.config/heroku"
   fs.link_file config/nvim "$ELLIPSIS_HOME/.config/nvim"
   fs.link_file config/pgcli "$ELLIPSIS_HOME/.config/pgcli"
@@ -26,6 +28,9 @@ pkg.link() {
   fs.link_file zsh/dotfiles "$ELLIPSIS_HOME/.zsh/dotfiles"
   fs.link_file zsh/private "$ELLIPSIS_HOME/.zsh/private"
 
+  mkdir -p "$ELLIPSIS_HOME/.fish"
+  fs.link_file fish/dotfiles "$ELLIPSIS_HOME/.fish/dotfiles"
+
   # Files
   fs.link_file Brewfile
   fs.link_file gemrc
@@ -40,6 +45,8 @@ pkg.link() {
 }
 
 pkg.unlink() {
+  rm "$ELLIPSIS_HOME/.config/fish/config.fish"
+  rm "$ELLIPSIS_HOME/.config/fish/fishfile"
   rm "$ELLIPSIS_HOME/.config/heroku"
   rm "$ELLIPSIS_HOME/.config/nvim"
   rm "$ELLIPSIS_HOME/.config/pgcli"
@@ -50,6 +57,7 @@ pkg.unlink() {
   rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/settings.json"
   rm "$ELLIPSIS_HOME/.zsh/dotfiles"
   rm "$ELLIPSIS_HOME/.zsh/private"
+  rm "$ELLIPSIS_HOME/.fish/dotfiles"
 
   hooks.unlink
 }

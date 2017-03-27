@@ -6,6 +6,7 @@ alias reloadt!='tmux source-file ~/.tmux.conf'
 autoload -U zmv
 alias mmv='noglob zmv -W'
 
+alias ls='ls'
 # List only directories
 alias lsd='ls -l | grep "^d"'
 # List only files

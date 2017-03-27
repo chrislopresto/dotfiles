@@ -8,3 +8,9 @@ windows:
         - emss
         - echo 'Freestyle remained a largely underground genre with a sizeable following in New York, but has seen a comeback in the cities where the music experienced its greatest success.'
         - emts
+  - docs:
+      root: ~/p/chrislopresto/ember-freestyle-docs
+      layout: tiled
+      panes:
+        - hugo server
+        -
