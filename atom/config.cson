@@ -67,7 +67,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "gloom"
+      "dracula-theme"
     ]
     useCustomTitleBar: true
     useReactEditor: true
@@ -80,6 +80,7 @@
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    showLineNumbers: false
   emmet: {}
   "exception-reporting":
     userId: "12898d24-f025-e415-2151-a3d70939fe60"
@@ -116,11 +117,11 @@
     userId: "9a373aacc08946c8b7940a4b381e936d87675c70"
   "one-dark-ui":
     layoutMode: "Compact"
-  "one-light-ui":
-    layoutMode: "Compact"
+  "one-light-ui": {}
   "release-notes":
     viewedVersion: "0.95.0"
-  "status-bar": {}
+  "status-bar":
+    isVisible: false
   tabs:
     enableVcsColoring: true
   "toggle-gutter": {}

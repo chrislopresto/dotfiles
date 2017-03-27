@@ -6,5 +6,6 @@
   { "key": "ctrl+2", "command": "workbench.action.focusSecondEditorGroup" },
   { "key": "ctrl+3", "command": "workbench.action.focusThirdEditorGroup" },
   { "key": "cmd+k cmd+z", "command": "workbench.action.maximizeEditor" },
-  { "key": "cmd+k cmd+shift+z", "command": "workbench.action.evenEditorWidths" }
+  { "key": "cmd+k cmd+shift+z", "command": "workbench.action.evenEditorWidths" },
+  { "key": "cmd+\\", "command": "workbench.action.toggleSidebarVisibility" },
 ]

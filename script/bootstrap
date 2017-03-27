@@ -58,7 +58,7 @@ function install_npm_packages() {
   nodenv install 6.9.4
 
   echo "Installing npm packages"
-  yarn global upgrade bower ember-cli phantomjs hpm-cli eslint grunt-cli webpack@beta
+  yarn global upgrade bower ember-cli phantomjs hpm-cli eslint sass-lint grunt-cli webpack@beta
 }
 
 function install_python_packages() {
