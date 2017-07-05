@@ -6,3 +6,5 @@ tags
 *.sublime-project
 *.sublime-workspace
 .pryrc
+
+.vscode/settings.json

@@ -2,9 +2,23 @@ name: ember-freestyle
 root: ~/p/chrislopresto/ember-freestyle
 
 windows:
-  - main:
+  - freestyle:
       layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
       panes:
         - emss
         - echo 'Freestyle remained a largely underground genre with a sizeable following in New York, but has seen a comeback in the cities where the music experienced its greatest success.'
         - emts
+  - test-app:
+      root: /Users/chrislopresto/p/chrislopresto/ember-freestyle-test-app/node_modules/ember-freestyle-test-app
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - emss
+        -
+        -
+  - test-addon:
+      root: /Users/chrislopresto/p/chrislopresto/ember-freestyle-test-app/node_modules/ember-freestyle-test-addon
+      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      panes:
+        - emss
+        -
+        -

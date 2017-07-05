@@ -26,3 +26,7 @@
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-cmd-j': 'window:move-active-item-to-pane-below'
+  'ctrl-cmd-k': 'window:move-active-item-to-pane-above'
+  'ctrl-cmd-h': 'window:move-active-item-to-pane-on-left'
+  'ctrl-cmd-l': 'window:move-active-item-to-pane-on-right'

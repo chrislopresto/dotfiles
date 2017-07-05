@@ -4,11 +4,17 @@
     paths: [
       "/Users/chrislopresto/.ellipsis/packages/dotfiles"
     ]
-  },
+  }
   {
-    title: "notes"
+    title: "Notes"
     paths: [
       "/Users/chrislopresto/Dropbox (Personal)/Notes"
+    ]
+  }
+  {
+    title: "Ember Freestyle"
+    paths: [
+      "/Users/chrislopresto/p/chrislopresto/ember-freestyle"
     ]
   }
 ]

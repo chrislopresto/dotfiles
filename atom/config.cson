@@ -1,23 +1,15 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor:
-        alpha: 1
-        blue: 79
-        green: 213
-        red: 255
-      accentColor:
-        alpha: 1
-        blue: 50
-        green: 136
-        red: 162
+      abaseColor: "#2196f3"
+      accentColor: "#00fdff"
       genAccent: true
-      predefinedColor: "Amber"
+      paintCursor: true
+      predefinedColor: "Blue"
     fonts:
       fontSize: 15
     tabs:
       compactTabs: true
-      tintedTabBar: true
     treeView:
       blendTabs: true
       compactList: true
@@ -38,9 +30,9 @@
       "atom-ternjs"
       "pane-layout-plus"
       "toggle-gutter"
-      "linter-rubocop"
       "linter-ruby"
       "linter-slim"
+      "linter-sass-lint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -60,42 +52,46 @@
       "*.sublime-workspace"
       "**/.sass-cache/**"
       "source_maps"
-    ]
-    packagesWithKeymapsDisabled: [
-      "emmet"
+      ".vscode"
+      ".sass-cache"
+      ".bundle"
+      ".gradle"
+      "coverage"
+      "public/assets"
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "dracula-theme"
+      "one-light-ui"
+      "solarized-light-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
     useReactEditor: true
+  "duotone-light-syntax":
+    color:
+      duo: "#6f7ed5"
+      uno: "#d775bc"
   editor:
     autoIndent: true
-    fontFamily: "Hack"
+    fontFamily: "Source Code Pro"
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 140
     scrollPastEnd: true
     showIndentGuide: true
-    showInvisibles: true
-    showLineNumbers: false
   emmet: {}
   "exception-reporting":
     userId: "12898d24-f025-e415-2151-a3d70939fe60"
   "fuzzy-finder": {}
   "git-diff": {}
-  linter:
-    lintOnFlyInterval: 3000
-    showErrorPanel: false
+  linter: {}
   "linter-eslint":
     disableFSCache: true
     eslintrcPath: '''
       /Users/chrislopresto/src/.eslintrc.js
       
     '''
-    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v6.3.1"
+    globalNodePath: "/opt/nodes/6.9.2"
     useGlobalEslint: true
   "linter-jscs":
     esnext: true
@@ -103,9 +99,15 @@
     preset: "node-style-guide"
   "linter-jshint":
     executablePath: "/usr/local/bin/jshint"
+  "linter-rubocop":
+    command: "/Users/chrislopresto/src/better-core/retail_core/bin/rubocop"
   "linter-sass-lint":
-    globalNodePath: "/Users/chrislopresto/.nvm/versions/node/v5.6.0"
+    globalNodePath: "/opt/nodes/6.9.4"
     noConfigDisable: true
+  "linter-scss-lint":
+    executablePath: "/opt/boxen/rbenv/shims/scss-lint"
+  "linter-ui-default":
+    panelHeight: 69
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -115,9 +117,21 @@
     ]
   metrics:
     userId: "9a373aacc08946c8b7940a4b381e936d87675c70"
-  "one-dark-ui":
-    layoutMode: "Compact"
+  "nord-atom-syntax":
+    accessibility: {}
+  "nord-atom-ui":
+    tabSizing: false
+  "one-dark-ui": {}
   "one-light-ui": {}
+  pigments:
+    sassShadeAndTintImplementation: "bourbon"
+  "platformio-ide-terminal":
+    style:
+      theme: "one-dark"
+  "prettier-atom":
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
   "release-notes":
     viewedVersion: "0.95.0"
   "status-bar":
