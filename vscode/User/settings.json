@@ -1,10 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Source Code Pro",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.lineHeight": 15,
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [],
@@ -16,10 +16,10 @@
     "files.trimTrailingWhitespace": true,
     "workbench.iconTheme": "vs-seti",
     "workbench.sideBar.location": "left",
-    "window.zoomLevel": -1,
-    "workbench.colorTheme": "Solarized Light",
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Kimbie Dark",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
     "vsicons.projectDetection.autoReload": true,
     "vsicons.dontShowNewVersionMessage": true
   }

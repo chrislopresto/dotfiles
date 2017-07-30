@@ -33,3 +33,6 @@
 
 [include]
   path = .gitthings
+
+[hub]
+protocol = https

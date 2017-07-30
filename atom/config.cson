@@ -33,6 +33,7 @@
       "linter-ruby"
       "linter-slim"
       "linter-sass-lint"
+      "linter-rubocop"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -54,36 +55,36 @@
       "source_maps"
       ".vscode"
       ".sass-cache"
+      "_site"
       ".bundle"
-      ".gradle"
-      "coverage"
-      "public/assets"
     ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
+      "dash-ui"
+      "dash-syntax"
     ]
     titleBar: "custom"
     useReactEditor: true
+  "dash-ui": {}
   "duotone-light-syntax":
     color:
       duo: "#6f7ed5"
       uno: "#d775bc"
   editor:
     autoIndent: true
-    fontFamily: "Source Code Pro"
-    fontSize: 12
+    fontFamily: "Hasklig"
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 140
     scrollPastEnd: true
     showIndentGuide: true
+    showLineNumbers: false
   emmet: {}
   "exception-reporting":
     userId: "12898d24-f025-e415-2151-a3d70939fe60"
   "fuzzy-finder": {}
   "git-diff": {}
+  github: {}
   linter: {}
   "linter-eslint":
     disableFSCache: true
@@ -105,9 +106,10 @@
     globalNodePath: "/opt/nodes/6.9.4"
     noConfigDisable: true
   "linter-scss-lint":
-    executablePath: "/opt/boxen/rbenv/shims/scss-lint"
+    executablePath: "/Users/chrislopresto/.rbenv/shims/scss-lint"
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 152
+    showPanel: true
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -134,8 +136,7 @@
     useEslint: true
   "release-notes":
     viewedVersion: "0.95.0"
-  "status-bar":
-    isVisible: false
+  "status-bar": {}
   tabs:
     enableVcsColoring: true
   "toggle-gutter": {}
