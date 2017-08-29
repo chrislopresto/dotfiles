@@ -33,6 +33,14 @@ function destage {
   fi
 }
 
+function delete-branches() {
+  if [[ $# -eq 0 ]] ; then
+    echo "Specify a branch pattern so as not to delete everything"
+  else
+    git branch -D `git branch | grep -E "$1"`
+  fi
+}
+
 alias g='git'
 
 alias ga='git add'
