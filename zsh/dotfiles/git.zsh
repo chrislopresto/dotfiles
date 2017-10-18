@@ -41,6 +41,10 @@ function delete-branches() {
   fi
 }
 
+function git-current-branch() {
+  git rev-parse --abbrev-ref HEAD
+}
+
 alias g='git'
 
 alias ga='git add'
@@ -101,12 +105,12 @@ alias gga='git gui citool --amend'
 
 alias ggpur='ggu'
 
-alias ggpull='git pull origin $(git_current_branch)'
+alias ggpull='git pull origin $(git-current-branch)'
 
-alias ggpush='git push origin $(git_current_branch)'
+alias ggpush='git push origin $(git-current-branch)'
 
-alias ggsup='git branch --set-upstream-to=origin/$(git_current_branch)'
-alias gpsup='git push --set-upstream origin $(git_current_branch)'
+alias ggsup='git branch --set-upstream-to=origin/$(git-current-branch)'
+alias gpsup='git push --set-upstream origin $(git-current-branch)'
 
 alias ghh='git help'
 
