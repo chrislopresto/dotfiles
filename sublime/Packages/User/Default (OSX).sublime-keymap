@@ -1,6 +1,7 @@
 [
     { "keys": ["command+\\"], "command": "toggle_side_bar" },
     { "keys": ["command+shift+\\"], "command": "reveal_in_side_bar" },
+    { "keys": ["command+shift+k"], "command": "toggle_zoom_pane" },
     { "keys": ["ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"} },
     { "keys": ["ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
     { "keys": ["ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
