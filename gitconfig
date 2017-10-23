@@ -14,6 +14,8 @@
 
 [mergetool]
   keepBackup = true
+	keepTemporaries = false
+	prompt = false
 
 [push]
   default = simple
@@ -22,12 +24,10 @@
   required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-[filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+
 [github]
 	user = chrislopresto
+
 [ghi]
 	token = !security find-internet-password -a chrislopresto -s github.com -l 'ghi token' -w
 
@@ -36,3 +36,19 @@
 
 [hub]
 protocol = https
+
+[alias]
+  showtool = "!f() { git difftool $1^ $1; }; f"
+  added = difftool --cached
+
+[diff]
+  tool = icdiff
+
+[difftool]
+  prompt = false
+
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
+[pager]
+  difftool = true
