@@ -5,9 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Alignment",
 		"All Autocomplete",
 		"Babel",
+		"Boxy Theme",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"Console Wrap",

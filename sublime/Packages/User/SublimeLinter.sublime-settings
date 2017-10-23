@@ -85,6 +85,12 @@
 			"python django": "python",
 			"pythonimproved": "python"
 		},
+		"tooltip_fontsize": "1rem",
+		"tooltip_theme": "none",
+		"tooltip_theme_excludes":
+		[
+		],
+		"tooltips": false,
 		"warning_color": "DDB700",
 		"wrap_find": true
 	}
