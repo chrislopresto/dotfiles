@@ -1,6 +1,12 @@
+.apm
+.node-gyp
+.npm
 blob-store
 compile-cache
 dev
+github.cson
+git-time-machine
+init.coffee
+packages
+recovery
 storage
-.node-gyp
-.npm

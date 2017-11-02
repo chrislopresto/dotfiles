@@ -29,17 +29,6 @@ vim/colors/*.vim
 vim/plugged
 vim/.netrwhist
 
-atom/.apm
-atom/.node-gyp
-atom/blob-store
-atom/compile-cache
-atom/github.cson
-atom/git-time-machine
-atom/init.coffee
-atom/packages
-atom/recovery
-atom/storage
-
 config/nvim/plugged
 config/nvim/.netrwhist
 config/nvim/autoload
