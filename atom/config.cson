@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
       abaseColor: "#2196f3"
@@ -73,6 +76,7 @@
   editor:
     autoIndent: true
     fontFamily: "Hasklig"
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 140
@@ -108,7 +112,7 @@
   "linter-scss-lint":
     executablePath: "/Users/chrislopresto/.rbenv/shims/scss-lint"
   "linter-ui-default":
-    panelHeight: 152
+    panelHeight: 69
     showPanel: true
   "markdown-preview":
     grammars: [
@@ -125,6 +129,9 @@
     tabSizing: false
   "one-dark-ui": {}
   "one-light-ui": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   pigments:
     sassShadeAndTintImplementation: "bourbon"
   "platformio-ide-terminal":
