@@ -21,7 +21,10 @@ if dein#load_state(expand('~/.config/dein'))
 call dein#begin(expand('~/.config/dein'))
   call dein#add('~/.config/dein/repos/github.com/Shougo/dein.vim/')
 
+  " Color schemes
   call dein#add('dracula/vim')
+  call dein#add('tomasr/molokai')
+
   call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
   call dein#add('itchyny/lightline.vim')
