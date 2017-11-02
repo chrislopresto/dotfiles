@@ -3,7 +3,6 @@
 pkg.link() {
   # Directories
   fs.link_file atom
-  fs.link_file cider
 
   mkdir -p "$ELLIPSIS_HOME/.config"
   fs.link_file config/heroku "$ELLIPSIS_HOME/.config/heroku"
