@@ -13,7 +13,6 @@ brew 'libyaml'
 brew 'macvim'
 brew 'mas'
 brew 'mediainfo'
-brew 'neovim'
 brew 'node'
 brew 'nodenv'
 brew 'openssl'
@@ -37,7 +36,6 @@ brew 'zsh'
 cask 'alfred'
 cask 'atom'
 cask 'atom-beta'
-cask 'caffeine'
 cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-inconsolata'
@@ -54,6 +52,7 @@ cask 'sublime-text'
 cask 'taskpaper'
 cask 'tower'
 cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
 
 mas '1Password', id: 443987910
 mas 'Amphetamine', id: 937984704
@@ -61,6 +60,4 @@ mas 'DaisyDisk', id: 411643860
 mas 'Fantastical 2', id: 975937182
 mas 'Moom', id: 419330170
 mas 'Pixelmator', id: 407963104
-mas 'Quiver', id: 866773894
 mas 'Soulver', id: 413965349
-mas 'Skitch', id: 425955336
