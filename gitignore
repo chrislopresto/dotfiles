@@ -8,3 +8,4 @@ tags
 .pryrc
 
 .vscode/settings.json
+.byebug_history
