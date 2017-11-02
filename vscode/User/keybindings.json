@@ -5,7 +5,9 @@
   { "key": "ctrl+1", "command": "workbench.action.focusFirstEditorGroup" },
   { "key": "ctrl+2", "command": "workbench.action.focusSecondEditorGroup" },
   { "key": "ctrl+3", "command": "workbench.action.focusThirdEditorGroup" },
+  { "key": "ctrl+4", "command": "workbench.action.focusPanel" },
   { "key": "cmd+k cmd+z", "command": "workbench.action.maximizeEditor" },
+  { "key": "cmd+shift+k", "command": "workbench.action.toggleMaximizedPanel" },
   { "key": "cmd+k cmd+shift+z", "command": "workbench.action.evenEditorWidths" },
   { "key": "cmd+\\", "command": "workbench.action.toggleSidebarVisibility" },
 ]
