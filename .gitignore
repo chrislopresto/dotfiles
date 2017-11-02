@@ -12,25 +12,9 @@ sublime/**/Color Highlighter/
 
 *.sublime-workspace
 
-config/gh
-config/gh-update
-config/git
-config/hub
-config/configstore
-config/robomongo
-config/ThingM
-
-config/beets/state.pickle
-
 zsh/private/*.zsh
 
 vim/autoload/*.vim
 vim/colors/*.vim
 vim/plugged
 vim/.netrwhist
-
-config/nvim/plugged
-config/nvim/.netrwhist
-config/nvim/autoload
-
-config/yarn
