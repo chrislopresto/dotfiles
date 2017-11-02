@@ -11,7 +11,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -38,6 +38,7 @@
 	"spacegray_tabs_large": false,
 	"tab_size": 2,
 	"theme": "Boxy Solarized Light.sublime-theme",
+	"theme_accent_sky": true,
 	"theme_bar": true,
 	"theme_bar_colored": true,
 	"translate_tabs_to_spaces": true,
