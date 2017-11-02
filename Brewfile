@@ -1,5 +1,6 @@
 brew 'ack'
 brew 'awscli'
+brew 'dfu-util'
 brew 'exiftool'
 brew 'fasd'
 brew 'git'
