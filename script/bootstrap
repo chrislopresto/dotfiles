@@ -32,7 +32,6 @@ function install_homebrew_dependencies() {
   brew tap 'homebrew/core'
   brew tap 'homebrew/services'
   brew tap 'homebrew/versions'
-  brew tap 'neovim/neovim'
   if [ -f "$HOME/.Brewfile" ]; then
     echo "Installing Homebrew Dependencies"
     brew bundle --global
@@ -81,9 +80,15 @@ function cleanup_after_strap() {
   rm -rf "${HOME}/.dotfiles"
 }
 
+function setup_iterm() {
+  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "/Users/chrislopresto/.ellipsis/packages/dotfiles/iterm2"
+  defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+}
+
 install_zgen
 install_ellipsis_dotfiles
 install_homebrew_dependencies
+setup_iterm
 install_ruby_gems
 install_npm_packages
 install_python_packages
