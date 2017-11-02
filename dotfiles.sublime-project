@@ -9,18 +9,11 @@
         "Package Control.system-ca-bundle",
         "Package Control.cache",
         "Package Control.ca-certs",
-        "state.pickle",
-        ".config/configstore",
-        ".config/gh",
-        ".config/gh-update"
+        "state.pickle"
       ],
       "folder_exclude_patterns": [
-        ".config/configstore",
-        ".config/robomongo",
         "Package Control.cache",
         "Color Highlighter",
-        "home/.atom/compile-cache",
-        "home/.atom/storage"
       ],
       "follow_symlinks": true,
 			"path": "."

@@ -4,11 +4,6 @@ pkg.link() {
   # Directories
   fs.link_file atom
 
-  mkdir -p "$ELLIPSIS_HOME/.config"
-  fs.link_file config/heroku "$ELLIPSIS_HOME/.config/heroku"
-  fs.link_file config/nvim "$ELLIPSIS_HOME/.config/nvim"
-  fs.link_file config/pgcli "$ELLIPSIS_HOME/.config/pgcli"
-
   mkdir -p "$ELLIPSIS_HOME/.pyenv"
   fs.link_file pyenv/version "$ELLIPSIS_HOME/.pyenv/version"
 
@@ -38,9 +33,6 @@ pkg.link() {
 }
 
 pkg.unlink() {
-  rm "$ELLIPSIS_HOME/.config/heroku"
-  rm "$ELLIPSIS_HOME/.config/nvim"
-  rm "$ELLIPSIS_HOME/.config/pgcli"
   rm "$ELLIPSIS_HOME/.pyenv/version"
   rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
   rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/keybindings.json"
@@ -67,13 +59,7 @@ function setup_sublime_text() {
   popd
 }
 
-function install_dein() {
-  mkdir -p "$HOME/.config/dein/repos/github.com/Shougo/dein.vim"
-  git clone https://github.com/Shougo/dein.vim "$HOME/.config/dein/repos/github.com/Shougo/dein.vim"
-}
-
 pkg.install() {
   copy_zsh_private
   setup_sublime_text
-  install_dein
 }
