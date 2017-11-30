@@ -2,11 +2,11 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Solarized Light.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/panda-syntax (SL).tmTheme",
 	"draw_shadows": false,
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Fira Mono",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"subpixel_antialias"
@@ -37,8 +37,7 @@
 	"spacegray_tabs_font_small": true,
 	"spacegray_tabs_large": false,
 	"tab_size": 2,
-	"theme": "Boxy Solarized Light.sublime-theme",
-	"theme_accent_sky": true,
+	"theme": "Boxy Monokai.sublime-theme",
 	"theme_bar": true,
 	"theme_bar_colored": true,
 	"translate_tabs_to_spaces": true,
