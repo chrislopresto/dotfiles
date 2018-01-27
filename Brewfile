@@ -4,6 +4,9 @@ brew 'dfu-util'
 brew 'exiftool'
 brew 'fasd'
 brew 'git'
+brew 'gpg'
+brew 'gpg-agent'
+brew 'heroku'
 brew 'httpie'
 brew 'hub'
 brew 'icdiff'
@@ -51,7 +54,6 @@ cask 'sublime-text'
 cask 'taskpaper'
 cask 'tower'
 cask 'visual-studio-code'
-cask 'visual-studio-code-insiders'
 
 mas '1Password', id: 443987910
 mas 'Amphetamine', id: 937984704
