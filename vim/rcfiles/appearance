@@ -1,8 +1,15 @@
 filetype plugin indent on
-set background=dark
-syntax enable
 syntax on
-color default
+syntax enable
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
+set background=dark
+" colorscheme settings
+colorscheme molokai
+
+set fillchars=""
 
 set guifont=Inconsolata
 " set guioptions=cemg
