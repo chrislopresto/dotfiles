@@ -18,3 +18,5 @@ vim/autoload/*.vim
 vim/colors/*.vim
 vim/plugged
 vim/.netrwhist
+
+vscode/workspaces/private/*.code-workspace
