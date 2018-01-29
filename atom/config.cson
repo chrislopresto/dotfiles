@@ -63,8 +63,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "dash-ui"
-      "dash-syntax"
+      "apex-ui"
+      "apex-syntax"
     ]
     titleBar: "custom"
     useReactEditor: true
