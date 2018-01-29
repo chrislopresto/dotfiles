@@ -22,6 +22,10 @@ pkg.link() {
   fs.link_file zsh/dotfiles "$ELLIPSIS_HOME/.zsh/dotfiles"
   fs.link_file zsh/private "$ELLIPSIS_HOME/.zsh/private"
 
+  mkdir -p "$ELLIPSIS_HOME/.gnupg"
+  fs.link_file gnupg/dotfiles "$ELLIPSIS_HOME/.gnupg/gpg.conf"
+  fs.link_file gnupg/private "$ELLIPSIS_HOME/.gnupg/gpg-agent.conf"
+
   # Files
   fs.link_file Brewfile
   fs.link_file gemrc
@@ -43,6 +47,8 @@ pkg.unlink() {
   rm "$ELLIPSIS_HOME/.vscode/workspaces"
   rm "$ELLIPSIS_HOME/.zsh/dotfiles"
   rm "$ELLIPSIS_HOME/.zsh/private"
+  rm "$ELLIPSIS_HOME/.gnupg/gpg.conf"
+  rm "$ELLIPSIS_HOME/.gnupg/gpg-agent.conf"
 
   hooks.unlink
 }
