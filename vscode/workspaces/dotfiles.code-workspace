@@ -4,5 +4,50 @@
 			"path": "/Users/chrislopresto/.ellipsis/packages/dotfiles"
 		}
 	],
-	"settings": {}
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"EditorConfig.EditorConfig",
+			"HookyQR.beautify",
+			"Ikuyadeu.lucario",
+			"PeterJausovec.vscode-docker",
+			"abusaidm.html-snippets",
+			"alefragnani.project-manager",
+			"alexanderbast.vscode-snazzy",
+			"arcticicestudio.nord-visual-studio-code",
+			"be5invis.theme-verdandi",
+			"dbaeumer.vscode-eslint",
+			"donjayamanne.githistory",
+			"dracula-theme.theme-dracula",
+			"eamodio.gitlens",
+			"esbenp.prettier-vscode",
+			"fallenwood.vimL",
+			"fisheva.eva-theme",
+			"formulahendry.auto-close-tag",
+			"formulahendry.auto-rename-tag",
+			"gerane.Theme-Meteor",
+			"glen-84.sass-lint",
+			"idleberg.hopscotch",
+			"kuscamara.electron",
+			"miguel-savignano.ruby-symbols",
+			"misogi.ruby-rubocop",
+			"ms-vscode.sublime-keybindings",
+			"msjsdiag.debugger-for-chrome",
+			"naumovs.color-highlight",
+			"nonylene.dark-molokai-theme",
+			"peymanslh.blueberry-dark-theme",
+			"philipbe.theme-gray-matter",
+			"rebornix.Ruby",
+			"robert.ruby-snippet",
+			"robertohuertasm.vscode-icons",
+			"sadesyllas.vscode-workspace-switcher",
+			"teabyii.ayu",
+			"tinaciousdesign.theme-tinaciousdesign",
+			"tinkertrain.theme-panda",
+			"wart.ariake-dark",
+			"wesbos.theme-cobalt2",
+			"whizkydee.material-palenight-theme",
+			"xaver.theme-ysgrifennwr"
+		]
+	}
 }
