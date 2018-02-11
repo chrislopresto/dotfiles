@@ -20,5 +20,12 @@
 			"Rails.logger.info \"clop >>> ${1:message}\""
 		],
 		"description": "Log output to Rails log"
+	},
+	"require byebug": {
+		"prefix": "rbb",
+		"body": [
+			"require 'byebug'; byebug"
+		],
+		"description": "require byebug"
 	}
 }
