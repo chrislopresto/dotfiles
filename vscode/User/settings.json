@@ -15,9 +15,6 @@
   "emmet.includeLanguages": {
     "erb": "html"
   },
-  "ruby.rubocop.executePath": "/Users/chrislopresto/src/better-core/retail/bin/",
-  "ruby.rubocop.onSave": true,
-  "ruby.rubocop.configFilePath": "/Users/chrislopresto/src/better-core/retail/.rubocop.yml",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vs-seti",
@@ -51,5 +48,8 @@
   "vscodeWorkspaceSwitcher.paths": [
     "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces",
     "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces/private"
-  ]
+  ],
+  "files.associations": {
+    ".env.sample": "dotenv"
+  }
 }
