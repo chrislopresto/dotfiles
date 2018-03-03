@@ -13,15 +13,16 @@
   "editor.tabSize": 2,
   "editor.quickSuggestionsDelay": 1,
   "emmet.includeLanguages": {
-    "erb": "html"
+    "erb": "html",
+    "twig": "html"
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vs-seti",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Dracula",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
   "vsicons.dontShowNewVersionMessage": true,
@@ -29,6 +30,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
   "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -41,9 +43,6 @@
   },
   "git.enableCommitSigning": true,
   "workbench.editor.showTabs": true,
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 140,
-  "prettier.arrowParens": "always",
   "gitlens.gitExplorer.files.layout": "list",
   "vscodeWorkspaceSwitcher.paths": [
     "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces",

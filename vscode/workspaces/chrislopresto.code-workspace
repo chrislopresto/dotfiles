@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "rails",
+      "path": "/Users/chrislopresto/p/chrislopresto/chrislopresto-rails"
+    },
+    {
+      "name": "rebrand",
+      "path": "/Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza"
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Meteor"
+  }
+}

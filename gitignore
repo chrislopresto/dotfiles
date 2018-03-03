@@ -10,3 +10,4 @@ tags
 .vscode/settings.json
 .byebug_history
 npm-debug.log
+jsconfig.json

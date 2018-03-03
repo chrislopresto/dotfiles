@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "/Users/chrislopresto/p/chrislopresto/ember-freestyle"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+    },
+    "workbench.colorTheme": "Panda Syntax",
+  },
+  "extensions": {
+    "recommendations": [
+      "emberjs.emberjs"
+    ]
+  }
+}
