@@ -1,4 +1,7 @@
 "*":
+  "atom-focus-mode":
+    whenFocusModeIsActivated:
+      useTypeWriterMode: true
   "atom-ide-ui":
     use:
       "atom-ide-diagnostics-ui": false
@@ -75,10 +78,9 @@
       uno: "#d775bc"
   editor:
     autoIndent: true
-    fontFamily: "Hasklig"
-    fontSize: 12
+    fontFamily: "iA Writer Duospace"
     invisibles: {}
-    lineHeight: 1.2
+    lineHeight: 1.8
     preferredLineLength: 140
     scrollPastEnd: true
     showIndentGuide: true

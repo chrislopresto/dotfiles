@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 15,
@@ -20,7 +20,7 @@
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vs-seti",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.colorTheme": "Dracula",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
@@ -50,5 +50,6 @@
   ],
   "files.associations": {
     ".env.sample": "dotenv"
-  }
+  },
+  "gitlens.keymap": "alternate"
 }

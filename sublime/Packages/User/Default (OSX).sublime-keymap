@@ -19,7 +19,7 @@
 
     { "keys": ["super+k", "super+w"], "command": "destroy_pane", "args": {"direction": "self"} },
 
-    { "keys": ["ctrl+shift+l"], "command": "toggle_setting", "args": { "setting": "line_numbers" } },
+    { "keys": ["command+k", "l"], "command": "toggle_setting", "args": { "setting": "line_numbers" } },
 
     {
       "keys": ["tab"],
