@@ -7,13 +7,13 @@ function gem_install_or_update() {
   fi
 }
 
-function install_zgen() {
-  echo "Installing zgen"
+function install_zplug() {
+  echo "Installing zplug"
   cd ~
-  if [ -d "${HOME}/.zgen" ]; then
-    git -C "${HOME}/.zgen" pull
+  if [ -d "${HOME}/.zplug" ]; then
+    git -C "${HOME}/.zplug" pull
   else
-    git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+    git clone https://github.com/zplug/zplug.git "${HOME}/.zplug"
   fi
   cd -
 }
@@ -85,7 +85,7 @@ function setup_iterm() {
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 }
 
-install_zgen
+install_zplug
 install_ellipsis_dotfiles
 install_homebrew_dependencies
 setup_iterm
