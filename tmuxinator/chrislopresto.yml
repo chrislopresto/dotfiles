@@ -1,43 +1,29 @@
 name: chrislopresto
 root: /Users/chrislopresto/p/chrislopresto
-startup_window: rails
+startup_window: rebrand
 
 windows:
   - rails:
       root: /Users/chrislopresto/p/chrislopresto/chrislopresto-rails
-      layout: tiled
+      layout: even-vertical
       panes:
-        - foreman start -f Procfile.dev
+        - sh -c 'rm app/assets/webpack/* || true && cd client && npm run build:dev:client'
+        - rails s -p 5000
         - redis-server /usr/local/etc/redis.conf
         - echo "bundle exec guard someday"
         - tail -f log/development.log
         -
-        -
-  - islands:
-      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-ember-islands
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
-      panes:
-        - ems
-        -
-        -
-  - bateman:
-      root: /Users/chrislopresto/p/chrislopresto/bateman-ember
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
-      panes:
-        - ems
-        -
-        -
   - living:
       root: /Users/chrislopresto/p/chrislopresto/living-style-guide-driven-development
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+      layout: even-vertical
       panes:
         - ems
         -
         -
-  - modal:
-      root: /Users/chrislopresto/p/chrislopresto/ember-modal-dialog-intro
-      layout: fcf7,272x73,0,0{80x73,0,0[80x51,0,0,0,80x21,0,52,2],191x73,81,0,1}
+  - rebrand:
+      root: /Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza
+      layout: even-vertical
       panes:
         - ems
-        -
+        - redis-server /usr/local/etc/redis.conf
         -

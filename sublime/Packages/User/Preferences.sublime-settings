@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Solarized Light.tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
 	"draw_shadows": false,
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
@@ -16,6 +16,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SublimeLinter-eslint",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby"
 	],
 	"indent_guide_options": "draw_normal",
 	"line_numbers": true,
@@ -36,7 +39,7 @@
 	"spacegray_tabs_font_small": true,
 	"spacegray_tabs_large": false,
 	"tab_size": 2,
-	"theme": "Boxy Solarized Light.sublime-theme",
+	"theme": "Boxy Yesterday.sublime-theme",
 	"theme_bar": true,
 	"theme_bar_colored": true,
 	"translate_tabs_to_spaces": true,

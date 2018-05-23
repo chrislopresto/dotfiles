@@ -1,6 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Hasklig",
+  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.external.osxExec": "iTerm.app",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 15,
@@ -18,10 +20,10 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": -1,
-  "workbench.colorTheme": "Dracula",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Shades of Purple",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
@@ -29,7 +31,7 @@
   "sublimeTextKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
-  "editor.formatOnPaste": true,
+  // "editor.formatOnPaste": true,
   // "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -38,6 +40,8 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": true
   },
@@ -49,7 +53,9 @@
     "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces/private"
   ],
   "files.associations": {
-    ".env.sample": "dotenv"
+    ".env.sample": "dotenv",
+    "*.css": "postcss"
   },
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "chorded",
+  "gitlens.historyExplorer.enabled": true
 }
