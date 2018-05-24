@@ -17,26 +17,3 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# Disable Gatekeeper
-alias gateoff="sudo spctl --master-disable"
-# Enable Gatekeeper
-alias gateon="sudo spctl --master-enable"
-
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
-
-# > cd /Applications/Mail.app/Contents/MacOS
-# > lsf
-# -rwxr-xr-x 1 root wheel 4890176 Oct  8 13:31 Mail*
-# Disable Mail
-alias mailoff="sudo chmod 000 /Applications/Mail.app/Contents/MacOS/Mail"
-# Enable Mail
-alias mailon="sudo chmod 755 /Applications/Mail.app/Contents/MacOS/Mail"
-
-# Disable Dashboard
-alias dashboardoff="defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock"
-# Enable Dashboard
-alias dashboardon="defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock"

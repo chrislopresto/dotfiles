@@ -54,7 +54,7 @@ function install_ruby_gems() {
 function install_npm_packages() {
   echo "Installing node versions"
   nodenv init
-  nodenv install 6.9.4
+  nodenv install 10.1.0
 
   echo "Installing npm packages"
   yarn global upgrade bower ember-cli phantomjs hpm-cli eslint sass-lint grunt-cli webpack@beta
