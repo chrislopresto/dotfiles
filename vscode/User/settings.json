@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Hasklig",
+  "editor.fontFamily": "Courier Prime Code",
   "terminal.integrated.fontFamily": "Fira Mono for Powerline",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontSize": 14,
@@ -20,7 +20,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Shades of Purple",
@@ -28,11 +28,8 @@
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
   "vsicons.dontShowNewVersionMessage": true,
-  "sublimeTextKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
-  // "editor.formatOnPaste": true,
-  // "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,

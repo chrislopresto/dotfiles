@@ -9,7 +9,6 @@
   { "key": "cmd+k cmd+z", "command": "workbench.action.maximizeEditor" },
   { "key": "cmd+k cmd+shift+z", "command": "workbench.action.evenEditorWidths" },
   { "key": "cmd+k cmd+m", "command": "workbench.action.toggleMaximizedPanel" },
-  { "key": "cmd+\\", "command": "workbench.action.toggleSidebarVisibility" },
   {
     "key": "cmd+k l",
     "command": "toggle",
