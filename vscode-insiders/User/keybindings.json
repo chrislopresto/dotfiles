@@ -1,0 +1,48 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  { "key": "ctrl+h", "command": "workbench.action.focusPreviousGroup" },
+  { "key": "ctrl+l", "command": "workbench.action.focusNextGroup" },
+  { "key": "ctrl+0", "command": "workbench.action.focusPanel" },
+  { "key": "ctrl+1", "command": "workbench.action.focusFirstEditorGroup" },
+  { "key": "ctrl+2", "command": "workbench.action.focusSecondEditorGroup" },
+  { "key": "ctrl+3", "command": "workbench.action.focusThirdEditorGroup" },
+  { "key": "cmd+k cmd+z", "command": "workbench.action.maximizeEditor" },
+  { "key": "cmd+k cmd+shift+z", "command": "workbench.action.evenEditorWidths" },
+  { "key": "cmd+k cmd+m", "command": "workbench.action.toggleMaximizedPanel" },
+  {
+    "key": "cmd+k l",
+    "command": "toggle",
+    "when": "editorTextFocus",
+    "args": {
+      "id": "minimap",
+      "value": [
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "off"
+        }
+      ]
+    }
+  },
+  {
+    "key": "cmd+f4",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f4",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+f4",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f4",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorTextFocus"
+  },
+]

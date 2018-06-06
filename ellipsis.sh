@@ -11,12 +11,20 @@ pkg.link() {
   fs.link_file vim
 
   mkdir -p "$ELLIPSIS_HOME/Library/Application Support/Code/User"
+  mkdir -p "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
   fs.link_file vscode/User/snippets "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
   fs.link_file vscode/User/keybindings.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/keybindings.json"
-  fs.link_file vscode/User/projects.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/projects.json"
   fs.link_file vscode/User/settings.json "$ELLIPSIS_HOME/Library/Application Support/Code/User/settings.json"
   mkdir -p "$ELLIPSIS_HOME/.vscode"
+  mkdir -p "$ELLIPSIS_HOME/.vscode/workspaces"
   fs.link_file vscode/workspaces "$ELLIPSIS_HOME/.vscode/workspaces"
+
+  mkdir -p "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User"
+  mkdir -p "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/snippets"
+  fs.link_file vscode-insiders/User/snippets "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/snippets"
+  fs.link_file vscode-insiders/User/keybindings.json "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/keybindings.json"
+  fs.link_file vscode-insiders/User/settings.json "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/settings.json"
+  mkdir -p "$ELLIPSIS_HOME/.vscode-insiders"
 
   mkdir -p "$ELLIPSIS_HOME/.zsh"
   fs.link_file zsh/dotfiles "$ELLIPSIS_HOME/.zsh/dotfiles"
@@ -40,11 +48,13 @@ pkg.link() {
 
 pkg.unlink() {
   rm "$ELLIPSIS_HOME/.pyenv/version"
-  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
+  rm -rf "$ELLIPSIS_HOME/Library/Application Support/Code/User/snippets"
   rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/keybindings.json"
-  rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/projects.json"
   rm "$ELLIPSIS_HOME/Library/Application Support/Code/User/settings.json"
-  rm "$ELLIPSIS_HOME/.vscode/workspaces"
+  # rm -rf "$ELLIPSIS_HOME/.vscode/workspaces"
+  rm -rf "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/snippets"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/keybindings.json"
+  rm "$ELLIPSIS_HOME/Library/Application Support/Code - Insiders/User/settings.json"
   rm "$ELLIPSIS_HOME/.zsh/dotfiles"
   rm "$ELLIPSIS_HOME/.zsh/private"
   rm "$ELLIPSIS_HOME/.gnupg/gpg.conf"
