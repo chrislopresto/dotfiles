@@ -69,5 +69,3 @@ if zplug check "zsh-users/zsh-history-substring-search"; then
   bindkey -M vicmd 'k' history-substring-search-up
   bindkey -M vicmd 'j' history-substring-search-down
 fi
-
-source "$HOME/.bootstrap/env.sh"
