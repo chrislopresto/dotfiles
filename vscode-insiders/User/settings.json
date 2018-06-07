@@ -20,7 +20,7 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-great-icons",
     "workbench.sideBar.location": "right",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Light",
