@@ -35,7 +35,8 @@ pkg.link() {
   fs.link_file gnupg/private "$ELLIPSIS_HOME/.gnupg/gpg-agent.conf"
 
   mkdir -p "$ELLIPSIS_HOME/Library/Application Support/TaskPaper/StyleSheets"
-  fs.link_file TaskPaper/StyleSheets "$ELLIPSIS_HOME/Library/Application Support/TaskPaper/StyleSheets"
+  fs.link_file "TaskPaper/StyleSheets/iA Writer.less" "$ELLIPSIS_HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer.less"
+  fs.link_file "TaskPaper/StyleSheets/Light.less" "$ELLIPSIS_HOME/Library/Application Support/TaskPaper/StyleSheets/Light.less"
 
   # Files
   fs.link_file Brewfile
