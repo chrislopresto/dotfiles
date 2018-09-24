@@ -51,7 +51,10 @@
 			"whizkydee.material-palenight-theme",
 			"xaver.theme-ysgrifennwr",
 			"ahmadawais.shades-of-purple",
-			"emmanuelbeziat.vscode-great-icons"
+			"emmanuelbeziat.vscode-great-icons",
+			"sleistner.vscode-fileutils",
+			"pnp.polacode",
+			"framer.framer-syntax"
 		]
 	}
 }

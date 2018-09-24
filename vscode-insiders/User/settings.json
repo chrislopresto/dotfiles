@@ -1,12 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Courier Prime Code",
+    "editor.fontFamily": "Fira Code",
     "terminal.integrated.fontFamily": "Fira Mono for Powerline",
     "terminal.external.osxExec": "iTerm.app",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.lineHeight": 15,
-    "editor.lineNumbers": "on",
+    "editor.lineNumbers": "off",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
@@ -23,7 +23,7 @@
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.sideBar.location": "right",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Abyss",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
     "vsicons.projectDetection.autoReload": true,
@@ -54,5 +54,7 @@
       "*.css": "postcss"
     },
     "gitlens.keymap": "chorded",
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always"
   }

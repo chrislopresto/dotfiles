@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Courier Prime Code",
+  "editor.fontFamily": "Fira Code",
   "terminal.integrated.fontFamily": "Fira Mono for Powerline",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontSize": 14,
@@ -16,14 +16,15 @@
   "editor.quickSuggestionsDelay": 1,
   "emmet.includeLanguages": {
     "erb": "html",
-    "twig": "html"
+    "twig": "html",
+    "mdx": "Markdown React (mdx)"
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Framer Syntax",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
@@ -54,5 +55,16 @@
     "*.css": "postcss"
   },
   "gitlens.keymap": "chorded",
-  "gitlens.historyExplorer.enabled": true
+  "gitlens.historyExplorer.enabled": true,
+  "vscodeWorkspaceSwitcher.codeExecutable": "/usr/local/bin/code",
+  "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
+  "breadcrumbs.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ]
 }
