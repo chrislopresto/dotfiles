@@ -18,15 +18,15 @@
 #
 
 'atom-text-editor':
-  'ctrl-alt-j': 'pane:split-down'
-  'ctrl-alt-k': 'pane:split-up'
-  'ctrl-alt-h': 'pane:split-left'
-  'ctrl-alt-l': 'pane:split-right'
+  'ctrl-cmd-j': 'pane:split-down'
+  'ctrl-cmd-k': 'pane:split-up'
+  'ctrl-cmd-h': 'pane:split-left'
+  'ctrl-cmd-l': 'pane:split-right'
   'ctrl-j': 'window:focus-pane-below'
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
-  'ctrl-cmd-j': 'window:move-active-item-to-pane-below'
-  'ctrl-cmd-k': 'window:move-active-item-to-pane-above'
-  'ctrl-cmd-h': 'window:move-active-item-to-pane-on-left'
-  'ctrl-cmd-l': 'window:move-active-item-to-pane-on-right'
+  'ctrl-alt-j': 'window:move-active-item-to-pane-below'
+  'ctrl-alt-k': 'window:move-active-item-to-pane-above'
+  'ctrl-alt-h': 'window:move-active-item-to-pane-on-left'
+  'ctrl-alt-l': 'window:move-active-item-to-pane-on-right'

@@ -25,6 +25,7 @@
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
     includeCompletionsFromAllBuffers: true
   core:
     audioBeep: false
@@ -79,6 +80,7 @@
   editor:
     autoIndent: true
     fontFamily: "iA Writer Duospace"
+    fontSize: 13
     invisibles: {}
     lineHeight: 1.8
     preferredLineLength: 140
