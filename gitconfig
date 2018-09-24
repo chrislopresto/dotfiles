@@ -28,9 +28,6 @@
 [github]
 	user = chrislopresto
 
-[ghi]
-	token = !security find-internet-password -a chrislopresto -s github.com -l 'ghi token' -w
-
 [include]
   path = .gitthings
 
@@ -52,12 +49,12 @@ protocol = https
 
 [pager]
   difftool = true
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
 [gpg]
 	program = gpg
 [commit]
 	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
