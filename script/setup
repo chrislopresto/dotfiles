@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail
+set -uxo pipefail
 
 DOTFILES="$HOME/.dotfiles"
 
@@ -32,7 +32,7 @@ function setup_homebrew() {
 
 function setup_tmuxinator() {
   echo 'Installing tmuxinator'
-  gem_install tmuxinator
+  gem install tmuxinator
 }
 
 setup_zplug
