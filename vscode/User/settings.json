@@ -23,7 +23,7 @@
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.colorTheme": "Framer Syntax",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
@@ -60,11 +60,13 @@
   "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
   "breadcrumbs.enabled": true,
   "editor.cursorBlinking": "expand",
-  "github.hosts": [
+  "githubPullRequests.hosts": [
     {
       "host": "https://github.com",
       "username": "oauth",
       "token": "system"
     }
-  ]
+  ],
+  "window.nativeTabs": true,
+  "window.nativeFullScreen": false
 }
