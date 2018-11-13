@@ -2,15 +2,15 @@
 
 # VS Code
 mkdir -p "$HOME/Library/Application Support/Code/User/snippets"
-ln -s "${HOME}/.dotfiles/vscode/User/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
-ln -s "${HOME}/.dotfiles/vscode/User/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
-ln -s "${HOME}/.dotfiles/vscode/User/snippets" "${HOME}/Library/Application Support/Code/User/snippets"
+ln -sf "${HOME}/.dotfiles/vscode/User/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
+ln -sf "${HOME}/.dotfiles/vscode/User/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+ln -sf "${HOME}/.dotfiles/vscode/User/snippets" "${HOME}/Library/Application Support/Code/User/snippets"
 
 # TaskPaper
 mkdir -p "$HOME/Library/Application Support/TaskPaper/StyleSheets"
-ln -s "${HOME}/TaskPaper/StyleSheets/iA Writer.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer.less"
-ln -s "${HOME}/TaskPaper/StyleSheets/iA Writer Night Mode.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer Night Mode.less"
-ln -s "${HOME}/TaskPaper/StyleSheets/Light.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/Light.less"
+ln -sf "${HOME}/TaskPaper/StyleSheets/iA Writer.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer.less"
+ln -sf "${HOME}/TaskPaper/StyleSheets/iA Writer Night Mode.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer Night Mode.less"
+ln -sf "${HOME}/TaskPaper/StyleSheets/Light.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/Light.less"
 
 # tmuxinator
 gem install tmuxinator
