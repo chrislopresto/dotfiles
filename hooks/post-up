@@ -11,3 +11,6 @@ mkdir -p "$HOME/Library/Application Support/TaskPaper/StyleSheets"
 ln -s "${HOME}/TaskPaper/StyleSheets/iA Writer.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer.less"
 ln -s "${HOME}/TaskPaper/StyleSheets/iA Writer Night Mode.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer Night Mode.less"
 ln -s "${HOME}/TaskPaper/StyleSheets/Light.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/Light.less"
+
+# tmuxinator
+gem install tmuxinator

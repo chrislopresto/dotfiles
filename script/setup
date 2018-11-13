@@ -30,11 +30,5 @@ function setup_homebrew() {
   fi
 }
 
-function setup_tmuxinator() {
-  echo 'Installing tmuxinator'
-  gem install tmuxinator
-}
-
 setup_zplug
 setup_homebrew
-setup_tmuxinator
