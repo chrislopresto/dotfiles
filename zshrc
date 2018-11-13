@@ -7,6 +7,8 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt NO_CASE_GLOB
+# fix: (eval):setopt:3: no such option: NO_warnnestedvar
+_comp_options="${_comp_options/NO_warnnestedvar/}"
 
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh

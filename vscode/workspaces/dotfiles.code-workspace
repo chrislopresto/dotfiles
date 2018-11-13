@@ -64,7 +64,8 @@
 			"sleistner.vscode-fileutils",
 			"pnp.polacode",
 			"framer.framer-syntax",
-			"wallabyjs.quokka-vscode"
+			"loiane.ts-extension-pack",
+			"github.vscode-pull-request-github"
 		]
 	}
 }
