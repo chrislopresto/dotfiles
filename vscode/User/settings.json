@@ -47,8 +47,8 @@
   "workbench.editor.showTabs": true,
   "gitlens.gitExplorer.files.layout": "list",
   "vscodeWorkspaceSwitcher.paths": [
-    "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces",
-    "/Users/chrislopresto/.ellipsis/packages/dotfiles/vscode/workspaces/private"
+    "/Users/chrislopresto/.dotfiles/vscode/workspaces",
+    "/Users/chrislopresto/.dotfiles/vscode/workspaces/private"
   ],
   "files.associations": {
     ".env.sample": "dotenv",
