@@ -8,37 +8,34 @@ setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt NO_CASE_GLOB
 
-# bindkey -e
-
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
 
-# zsh-users
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search", defer:3
 
-# plugins
-zplug "supercrabtree/k", at:1fa7c03, frozen:1
-
-# prezto
 zplug 'modules/environment', from:prezto
-zplug 'modules/terminal', from:prezto, frozen:1
-zplug "modules/history", from:prezto, frozen:1
-zplug "modules/directory", from:prezto, frozen:1
-zplug 'modules/utility', from:prezto, frozen:1
-zplug "modules/completion", from:prezto, frozen:1
-zplug "modules/ruby", from:prezto, frozen:1
-zplug "modules/tmux", from:prezto, frozen:1
-zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme, frozen:1
+zplug 'modules/terminal', from:prezto
+zplug 'modules/history', from:prezto
+zplug 'modules/directory', from:prezto
+zplug 'modules/utility', from:prezto
+zplug 'modules/completion', from:prezto
+zplug 'zsh-users/zsh-completions', from:github
+zplug 'modules/ruby', from:prezto
+zplug mafredri/zsh-async, from:github
+
+zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+# zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
+
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
-zplug "~/.zsh/dotfiles", from:local
-zplug "~/.zsh/private", from:local
+zplug '~/.zsh/dotfiles', from:local
+zplug '~/.zsh/private', from:local
 
 if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
+  printf 'Install? [y/N]: '
   if read -q; then
     echo; zplug install
   fi
