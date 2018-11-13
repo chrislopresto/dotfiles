@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE hooks script TaskPaper tmuxinator vscode zsh"
-SYMLINK_DIRS="gnupg"
+EXCLUDES="README.md LICENSE hooks script TaskPaper vscode zsh"
+SYMLINK_DIRS="gnupg tmuxinator"
