@@ -6,7 +6,6 @@ brew 'dfu-util'
 brew 'exiftool'
 brew 'fasd'
 brew 'git'
-brew 'heroku'
 brew 'hub'
 brew 'macvim', args: ['with-cscope', 'with-lua', 'with-features=huge', 'with-luajit', 'with-override-system-vim']
 brew 'mas'
