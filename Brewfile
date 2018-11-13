@@ -10,6 +10,7 @@ brew 'hub'
 brew 'macvim', args: ['with-cscope', 'with-lua', 'with-features=huge', 'with-luajit', 'with-override-system-vim']
 brew 'mas'
 brew 'nodenv'
+brew 'pinentry-mac'
 brew 'rbenv'
 brew 'reattach-to-user-namespace'
 brew 'ripgrep'
@@ -61,6 +62,7 @@ mas '1Password', id: 443987910
 mas 'Amphetamine', id: 937984704
 mas 'DaisyDisk', id: 411643860
 mas 'Fantastical 2', id: 975937182
+mas 'iA Writer', id: 775737590
 mas 'Moom', id: 419330170
 mas 'Pixelmator', id: 407963104
 mas 'Soulver', id: 413965349
