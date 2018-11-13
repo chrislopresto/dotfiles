@@ -1,4 +1,5 @@
 zsh/private/*.zsh
+tmuxinator/private/*.yml
 
 vim/autoload/*.vim
 vim/colors/*.vim
