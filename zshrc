@@ -31,8 +31,8 @@ zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
-zplug '~/.zsh/dotfiles', from:local
-zplug '~/.zsh/private', from:local
+zplug '~/.dotfiles/zsh/dotfiles', from:local
+zplug '~/.dotfiles/zsh/private', from:local
 
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
