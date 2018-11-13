@@ -1,5 +1,0 @@
-<snippet>
-  <content>Rails.logger.info "clop >>> ${1:message}"</content>
-  <tabTrigger>rl</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

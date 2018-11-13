@@ -1,9 +1,0 @@
-{
-  "node_path": {
-    "osx": "/Users/chrislopresto/.nvm/versions/node/v5.6.0/bin/node"
-  },
-
-  "jscs_path": {
-    "osx": "/Users/chrislopresto/.nvm/versions/node/v5.6.0/bin/jscs"
-  }
-}
