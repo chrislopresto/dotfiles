@@ -28,31 +28,15 @@
 [github]
 	user = chrislopresto
 
-[include]
-  path = .gitthings
-
 [hub]
 protocol = https
 
-[alias]
-  showtool = "!f() { git difftool $1^ $1; }; f"
-  added = difftool --cached
-
-[diff]
-  tool = icdiff
-
-[difftool]
-  prompt = false
-
-[difftool "icdiff"]
-  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
-
-[pager]
-  difftool = true
 [gpg]
 	program = gpg
+
 [commit]
 	gpgsign = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
