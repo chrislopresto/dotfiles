@@ -11,6 +11,7 @@
 [core]
 	editor = subl -n -w
   excludesfile = ~/.gitignore
+	hooksPath = /Users/chrislopresto/.git-templates/hooks
 
 [mergetool]
   keepBackup = true

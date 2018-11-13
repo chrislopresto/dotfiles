@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.integrated.fontFamily": "Fira Code",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,

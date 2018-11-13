@@ -13,3 +13,7 @@ gnupg/*.kbx
 gnupg/*.kbx~
 gnupg/**/*.key
 gnupg/**/*.rev
+
+hooks/~
+
+~/**

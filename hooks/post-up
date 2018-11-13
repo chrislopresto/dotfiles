@@ -12,5 +12,11 @@ ln -sf "${HOME}/TaskPaper/StyleSheets/iA Writer.less" "$HOME/Library/Application
 ln -sf "${HOME}/TaskPaper/StyleSheets/iA Writer Night Mode.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/ia Writer Night Mode.less"
 ln -sf "${HOME}/TaskPaper/StyleSheets/Light.less" "$HOME/Library/Application Support/TaskPaper/StyleSheets/Light.less"
 
+# node
+nodenv install 10.13.0
+
+# rbenv
+rbenv install 2.5.3
+
 # tmuxinator
 gem install tmuxinator

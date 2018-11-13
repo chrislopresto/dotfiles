@@ -53,9 +53,7 @@ function dbrr() {
 }
 
 # rbenv
-if [ -n "$TMUX" ]; then
-  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-fi
+eval "$(rbenv init -)"
 
 # tmux
 export DISABLE_AUTO_TITLE=true
