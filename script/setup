@@ -1,0 +1,40 @@
+#!/bin/bash
+set -euxo pipefail
+
+DOTFILES="$HOME/.dotfiles"
+
+function setup_zplug() {
+  echo 'Installing zplug'
+  cd ~
+  if [ -d "${HOME}/.zplug" ]; then
+    git -C "${HOME}/.zplug" pull
+  else
+    git clone https://github.com/zplug/zplug.git "${HOME}/.zplug"
+  fi
+  cd -
+}
+
+function setup_homebrew() {
+  if ! type brew 2> /dev/null; then
+    echo 'Installing brew things'
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+  if [ -f "$HOME/.Brewfile" ]; then
+    brew update
+    brew bundle --global
+  elif [ -f "$DOTFILES/Brewfile" ]; then
+    # on first run, rcup hasn't run yet, so
+    # let's brew bundle from a special location
+    brew update
+    brew bundle --file="$DOTFILES/Brewfile"
+  fi
+}
+
+function setup_tmuxinator() {
+  echo 'Installing tmuxinator'
+  gem_install tmuxinator
+}
+
+setup_zplug
+setup_homebrew
+setup_tmuxinator
