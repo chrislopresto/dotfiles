@@ -62,6 +62,7 @@ cask 'font-source-code-pro'
 
 mas '1Password', id: 443987910
 mas 'Amphetamine', id: 937984704
+mas 'Cardhop', id: 1290358394
 mas 'DaisyDisk', id: 411643860
 mas 'Fantastical 2', id: 975937182
 mas 'iA Writer', id: 775737590
