@@ -123,6 +123,30 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    paneNavigation: {
+      debug: false,
+      hotkeys: {
+        navigation: {
+          up: 'ctrl+shift+k',
+          down: 'ctrl+shift+j',
+          left: 'ctrl+shift+h',
+          right: 'ctrl+shift+l'
+        },
+        jump_prefix: 'ctrl+alt', // completed with 1-9 digits
+        permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
+        maximize: 'meta+enter'
+      },
+      showIndicators: false, // Show pane number
+      indicatorPrefix: '^⌥', // Will be completed with pane number
+      indicatorStyle: { // Added to indicator <div>
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        fontSize: '10px'
+      },
+      focusOnMouseHover: false,
+      inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -133,7 +157,10 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'shades-of-purple-hyper',
-    'hyper-opacity'
+    'hyper-opacity',
+    'hyperterm-summon',
+    'hyperterm-cursor',
+    'hyper-pane'
   ],
 
   // in development, you can create a directory under
