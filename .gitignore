@@ -17,3 +17,5 @@ gnupg/**/*.rev
 hooks/~
 
 ~/**
+
+**/gitconfig.local

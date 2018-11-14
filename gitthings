@@ -1,7 +1,3 @@
-[user]
-  name = Chris LoPresto
-  email = chris@chrislopresto.com
-
 [credential]
   helper = osxkeychain
 
