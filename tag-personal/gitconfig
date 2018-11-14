@@ -1,0 +1,7 @@
+[user]
+  name = Chris LoPresto
+  email = chris@chrislopresto.com
+
+[include]
+  path = .gitconfig.local
+  path = .gitthings
