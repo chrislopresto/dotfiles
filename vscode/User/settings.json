@@ -1,11 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Monoid",
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.external.osxExec": "iTerm.app",
-  "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 15,
+  "editor.lineHeight": 20,
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
@@ -68,5 +67,7 @@
     }
   ],
   "window.nativeTabs": true,
-  "window.nativeFullScreen": false
+  "window.nativeFullScreen": false,
+  "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+  "editor.fontSize": 14
 }

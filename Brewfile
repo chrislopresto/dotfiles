@@ -59,6 +59,7 @@ cask 'font-hack'
 cask 'font-ia-writer-duospace'
 cask 'font-ibm-plex'
 cask 'font-inconsolata'
+cask 'font-monoid'
 cask 'font-source-code-pro'
 
 mas '1Password', id: 443987910

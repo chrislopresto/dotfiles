@@ -65,7 +65,9 @@
 			"pnp.polacode",
 			"framer.framer-syntax",
 			"loiane.ts-extension-pack",
-			"github.vscode-pull-request-github"
+			"github.vscode-pull-request-github",
+			"coenraads.bracket-pair-colorizer-2",
+			"sdras.night-owl"
 		]
 	}
 }
