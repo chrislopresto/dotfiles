@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Monoid",
-  "terminal.integrated.fontFamily": "Fira Code",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
   "editor.lineHeight": 20,
@@ -69,5 +68,6 @@
   "window.nativeTabs": true,
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
-  "editor.fontSize": 14
+  "editor.fontSize": 14,
+  "terminal.integrated.fontFamily": "Iosevka"
 }

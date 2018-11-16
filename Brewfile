@@ -60,6 +60,7 @@ cask 'font-hack'
 cask 'font-ia-writer-duospace'
 cask 'font-ibm-plex'
 cask 'font-inconsolata'
+cask 'font-iosevka'
 cask 'font-monoid'
 cask 'font-source-code-pro'
 
