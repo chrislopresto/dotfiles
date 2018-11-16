@@ -37,6 +37,10 @@ function app_on_port {
 # fasd
 eval "$(fasd --init auto)"
 
+# autojump
+brewery=$(brew --prefix)
+[[ -s $brewery/etc/autojump.sh ]] && source $brewery/etc/autojump.sh
+
 # node
 eval "$(nodenv init -)"
 
