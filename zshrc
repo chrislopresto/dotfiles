@@ -52,6 +52,8 @@ fi
 zplug load # --verbose
 
 
+# zsh-autosuggestions
+bindkey '^\n' autosuggest-accept
 
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
