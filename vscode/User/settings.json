@@ -69,5 +69,6 @@
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "Iosevka"
+  "terminal.integrated.fontFamily": "Iosevka",
+  "terminal.integrated.fontSize": 16
 }
