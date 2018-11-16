@@ -18,39 +18,65 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt NO_CASE_GLOB
 
 # zplug
-export ZPLUG_HOME=$HOME/.zplug
-source $ZPLUG_HOME/init.zsh
+# export ZPLUG_HOME=$HOME/.zplug
+# source $ZPLUG_HOME/init.zsh
 
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search", defer:3
+# zplug "zsh-users/zsh-autosuggestions"
+# zplug "zsh-users/zsh-completions"
+# zplug "zsh-users/zsh-syntax-highlighting", defer:2
+# zplug "zsh-users/zsh-history-substring-search", defer:3
 
-zplug 'modules/environment', from:prezto
-zplug 'modules/terminal', from:prezto
-zplug 'modules/history', from:prezto
-zplug 'modules/directory', from:prezto
-zplug 'modules/utility', from:prezto
-zplug 'modules/completion', from:prezto
-zplug 'zsh-users/zsh-completions', from:github
-zplug mafredri/zsh-async, from:github
+# zplug 'modules/environment', from:prezto
+# zplug 'modules/terminal', from:prezto
+# zplug 'modules/history', from:prezto
+# zplug 'modules/directory', from:prezto
+# zplug 'modules/utility', from:prezto
+# zplug 'modules/completion', from:prezto
+# zplug 'zsh-users/zsh-completions', from:github
+# zplug mafredri/zsh-async, from:github
 
-zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+# zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 
-zstyle ':prezto:module:terminal' auto-title 'yes'
+# zstyle ':prezto:module:terminal' auto-title 'yes'
 
-zplug '~/.dotfiles/zsh/dotfiles', from:local
-zplug '~/.dotfiles/zsh/private', from:local
+# zplug '~/.dotfiles/zsh/dotfiles', from:local
+# zplug '~/.dotfiles/zsh/private', from:local
 
-if ! zplug check --verbose; then
-  printf 'Install? [y/N]: '
-  if read -q; then
-    echo; zplug install
-  fi
+# if ! zplug check --verbose; then
+#   printf 'Install? [y/N]: '
+#   if read -q; then
+#     echo; zplug install
+#   fi
+# fi
+
+# zplug load # --verbose
+
+#zgen
+source "${HOME}/.zgen/zgen.zsh"
+
+# if the init script doesn't exist
+if ! zgen saved; then
+  zgen load zsh-users/zsh-autosuggestions
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen load zsh-users/zsh-history-substring-search
+  zgen load denysdovhan/spaceship-prompt spaceship
+  zgen prezto prompt theme 'spaceship'
+
+  zgen prezto
+  zgen prezto environment
+  zgen prezto terminal
+  zgen prezto history
+  zgen prezto directory
+  zgen prezto utility
+  zgen prezto completion
+
+  zgen load ~/.dotfiles/zsh/dotfiles
+  zgen load ~/.dotfiles/zsh/private
+
+  zgen load zsh-users/zsh-completions src
+
+  zgen save
 fi
-
-zplug load # --verbose
-
 
 # zsh-autosuggestions
 bindkey '^\n' autosuggest-accept
