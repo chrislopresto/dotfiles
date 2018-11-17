@@ -51,7 +51,6 @@ fi
 
 zplug load # --verbose
 
-
 # zsh-autosuggestions
 bindkey '^\n' autosuggest-accept
 

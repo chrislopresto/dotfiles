@@ -6,6 +6,7 @@ brew 'awscli'
 brew 'dfu-util'
 brew 'exiftool'
 brew 'fasd'
+brew 'fzf'
 brew 'git'
 brew 'hub'
 brew 'macvim', args: ['with-cscope', 'with-lua', 'with-features=huge', 'with-luajit', 'with-override-system-vim']
