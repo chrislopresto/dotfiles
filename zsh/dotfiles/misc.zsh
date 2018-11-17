@@ -25,6 +25,16 @@ function app_on_port {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
+function vs {
+  if [ -f "$HOME/.vscode/workspaces/$1.code-workspace" ]; then
+    code "$HOME/.vscode/workspaces/$1.code-workspace"
+  elif [ -f "$HOME/.vscode/workspaces/private/$1.code-workspace" ]; then
+    code "$HOME/.vscode/workspaces/private/$1.code-workspace"
+  else
+    code $1
+  fi
+}
+
 # zsh
 alias cp='nocorrect cp'
 alias ln='nocorrect ln'
