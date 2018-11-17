@@ -17,13 +17,13 @@ windows:
       root: /Users/chrislopresto/p/chrislopresto/living-style-guide-driven-development
       layout: even-vertical
       panes:
-        - ems
+        - ember server
         -
         -
   - rebrand:
       root: /Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza
       layout: even-vertical
       panes:
-        - ems
+        - ember server -p 4201
         - redis-server /usr/local/etc/redis.conf
         -
