@@ -7,7 +7,7 @@ HISTSIZE=100000
 HISTFILESIZE=$HISTSIZE
 
 # Make some commands not show up in history
-HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:ll:"
+HISTIGNORE='ls:cd:cd -:pwd:exit:date:* --help:ll:'
 
 setopt APPEND_HISTORY
 setopt EXTENDED_GLOB
@@ -21,10 +21,10 @@ setopt NO_CASE_GLOB
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search", defer:3
+zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-completions'
+zplug 'zsh-users/zsh-syntax-highlighting', defer:2
+zplug 'zsh-users/zsh-history-substring-search', defer:3
 
 zplug 'modules/environment', from:prezto
 zplug 'modules/terminal', from:prezto
@@ -61,4 +61,4 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # spaceship prompt
-SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_CHAR_SUFFIX=' '
