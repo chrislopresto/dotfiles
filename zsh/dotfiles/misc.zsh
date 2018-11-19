@@ -93,3 +93,6 @@ function aws-set {
 # fzf
 [[ $- == *i* ]] && source "$brewery/opt/fzf/shell/completion.zsh" 2> /dev/null
 source "$brewery/opt/fzf/shell/key-bindings.zsh"
+
+# clo
+alias clo="$HOME/p/clo/bin/run"
