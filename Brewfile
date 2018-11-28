@@ -74,5 +74,6 @@ mas 'iA Writer', id: 775737590
 mas 'Moom', id: 419330170
 mas 'Pixelmator', id: 407963104
 mas 'Snappy', id: 512617038
+mas 'Spark', id: 1176895641
 mas 'Soulver', id: 413965349
-mas 'Things 3': id 904280696
+mas 'Things 3', id: 904280696
