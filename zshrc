@@ -61,5 +61,17 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # spaceship prompt
-SPACESHIP_CHAR_SUFFIX=''
+SPACESHIP_CHAR_SUFFIX=' '
 SPACESHIP_CHAR_SYMBOL='🍀 '
+SPACESHIP_GIT_STATUS_SHOW=false
+SPACESHIP_RUBY_SYMBOL='💎  '
+SPACESHIP_PROMPT_ORDER=(
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  node          # Node.js section
+  ruby          # Ruby section
+  line_sep      # Line break
+  exit_code     # Exit code section
+  char          # Prompt character
+)

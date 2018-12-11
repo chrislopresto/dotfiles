@@ -54,7 +54,7 @@
   "gitlens.keymap": "chorded",
   "vscodeWorkspaceSwitcher.codeExecutable": "/usr/local/bin/code",
   "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "expand",
   "githubPullRequests.hosts": [
     {
@@ -67,7 +67,7 @@
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "Iosevka",
+  "terminal.integrated.fontFamily": "IosevkaCC",
   "terminal.integrated.fontSize": 16,
   "gitlens.views.repositories.files.layout": "list",
   "gitlens.views.fileHistory.enabled": true,
