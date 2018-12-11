@@ -38,7 +38,7 @@ function vs {
 # zsh
 alias cp='nocorrect cp'
 alias ln='nocorrect ln'
-alias mv='nocorrect mv'
+alias mv='nocorrect _mv'
 alias rm='nocorrect rm'
 alias cpi="${aliases[cp]:-cp} -i"
 alias lni="${aliases[ln]:-ln} -i"

@@ -18,7 +18,7 @@ brew 'reattach-to-user-namespace'
 brew 'ripgrep'
 brew 'ruby-build'
 brew 'tldr'
-brew 'tmux'
+brew 'tmux', args: ['with-utf8proc']
 brew 'tmuxinator-completion'
 brew 'tree'
 brew 'yarn'

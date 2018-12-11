@@ -7,9 +7,21 @@
     {
       "name": "rebrand",
       "path": "/Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza"
-    }
+    },
+    {
+      "name": "gatsby",
+      "path": "/Users/chrislopresto/p/chrislopresto/chrislopresto-gatsby"
+    },
   ],
   "settings": {
-    "workbench.colorTheme": "Meteor"
+    "workbench.colorTheme": "Meteor",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+    }
   }
 }
