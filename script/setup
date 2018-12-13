@@ -30,5 +30,10 @@ function setup_homebrew() {
   fi
 }
 
+function setup_zsh() {
+  echo 'Changing to brew-installed zsh'
+  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+}
 setup_zplug
 setup_homebrew
+setup_zsh
