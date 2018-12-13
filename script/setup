@@ -34,6 +34,27 @@ function setup_zsh() {
   echo 'Changing to brew-installed zsh'
   sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 }
+
+function setup_node() {
+  echo 'Installing node'
+  nodenv install 10.13.0
+  nodenv rehash
+}
+
+function setup_ruby() {
+  echo 'Installing ruby'
+  rbenv install 2.5.3
+  rbenv rehash
+}
+
+function setup_tmuxinator() {
+  echo 'Installing tmuxinator'
+  gem install tmuxinator
+}
+
 setup_zplug
 setup_homebrew
 setup_zsh
+setup_node
+setup_ruby
+setup_tmuxinator
