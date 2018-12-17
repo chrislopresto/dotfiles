@@ -6,7 +6,7 @@ module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
-    updateChannel: 'stable',
+    updateChannel: 'canary',
 
     // default font size in pixels for all tabs
     fontSize: 14,
@@ -27,10 +27,10 @@ module.exports = {
     cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: '#fff',
@@ -110,7 +110,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
