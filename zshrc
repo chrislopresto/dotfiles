@@ -62,12 +62,13 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # spaceship prompt
 SPACESHIP_CHAR_SUFFIX=' '
-SPACESHIP_CHAR_SYMBOL='🍀'
+SPACESHIP_CHAR_SYMBOL='>'
 SPACESHIP_GIT_STATUS_SHOW=false
 SPACESHIP_RUBY_SYMBOL='💎 '
 SPACESHIP_PHP_SYMBOL='🐘  '
-SPACESHIP_PACKAGE_SYMBOL='📦 '
-SPACESHIP_NODE_SYMBOL='☊ '
+SPACESHIP_PACKAGE_SYMBOL='🎟️  '
+SPACESHIP_NODE_SYMBOL='💚 '
+SPACESHIP_AWS_SYMBOL='☁️  '
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   host          # Hostname section
@@ -76,6 +77,7 @@ SPACESHIP_PROMPT_ORDER=(
   node          # Node.js section
   ruby          # Ruby section
   php           # PHP section
+  aws           # Amazon Web Services section
   line_sep      # Line break
   exit_code     # Exit code section
   char          # Prompt character
