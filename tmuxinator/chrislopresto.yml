@@ -1,29 +1,11 @@
 name: chrislopresto
 root: /Users/chrislopresto/p/chrislopresto
-startup_window: rebrand
+startup_window: gatsby
 
 windows:
-  - rails:
-      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-rails
+  - gatsby:
+      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-gatsby
       layout: even-vertical
       panes:
-        - sh -c 'rm app/assets/webpack/* || true && cd client && npm run build:dev:client'
-        - rails s -p 5000
-        - redis-server /usr/local/etc/redis.conf
-        - echo "bundle exec guard someday"
-        - tail -f log/development.log
-        -
-  - living:
-      root: /Users/chrislopresto/p/chrislopresto/living-style-guide-driven-development
-      layout: even-vertical
-      panes:
-        - ember server
-        -
-        -
-  - rebrand:
-      root: /Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza
-      layout: even-vertical
-      panes:
-        - ember server -p 4201
-        - redis-server /usr/local/etc/redis.conf
+        - yarn develop
         -
