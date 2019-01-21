@@ -22,7 +22,7 @@
   "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": -1,
-  "workbench.colorTheme": "Night Owl No Italics",
+  "workbench.colorTheme": "Noctis Obscuro",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
@@ -59,7 +59,7 @@
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "gitlens.views.repositories.files.layout": "list",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
@@ -72,6 +72,7 @@
     "**/node_modules": true
   },
   "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
-  "editor.suggestSelection": "recentlyUsedByPrefix"
+  "terminal.integrated.lineHeight": 1.1
 }
