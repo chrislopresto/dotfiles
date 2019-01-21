@@ -19,10 +19,10 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": -1,
-  "workbench.colorTheme": "Framer Syntax",
+  "workbench.colorTheme": "Night Owl No Italics",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
@@ -56,11 +56,9 @@
   "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
   "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "expand",
-  "window.nativeTabs": true,
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "IosevkaCC",
   "terminal.integrated.fontSize": 16,
   "gitlens.views.repositories.files.layout": "list",
   "gitlens.views.fileHistory.enabled": true,
@@ -72,5 +70,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/node_modules": true
-  }
+  },
+  "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+  "terminal.integrated.fontWeightBold": "normal",
+  "editor.suggestSelection": "recentlyUsedByPrefix"
 }
