@@ -3,7 +3,6 @@
   "editor.fontFamily": "Monoid",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
-  "editor.lineHeight": 20,
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
@@ -22,8 +21,8 @@
   "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": -1,
-  "workbench.colorTheme": "Noctis Obscuro",
-  "workbench.statusBar.visible": false,
+  "workbench.colorTheme": "Framer Syntax",
+  "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
   "vsicons.dontShowNewVersionMessage": true,
@@ -74,5 +73,6 @@
   "terminal.integrated.fontFamily": "FuraCode Nerd Font",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.lineHeight": 1.1
+  "terminal.integrated.lineHeight": 1.1,
+  "editor.lineHeight": 20
 }

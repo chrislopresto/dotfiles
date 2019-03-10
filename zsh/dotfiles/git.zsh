@@ -86,6 +86,7 @@ alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase -i'
 alias grim="git rebase --interactive --autosquash master"
+alias gri="git rebase --interactive --autosquash $1"
 
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
