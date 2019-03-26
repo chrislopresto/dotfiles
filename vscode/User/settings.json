@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Monoid",
+  "editor.fontFamily": "Fira Code",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
   "editor.lineNumbers": "off",
@@ -20,9 +20,9 @@
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Framer Syntax",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
   "vsicons.dontShowNewVersionMessage": true,
@@ -74,5 +74,5 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.1,
-  "editor.lineHeight": 20
+  "editor.lineHeight": 17
 }
