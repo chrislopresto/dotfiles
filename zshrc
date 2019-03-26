@@ -84,3 +84,5 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+
+alias replug="rm -rf $HOME/.zplug ; git clone https://github.com/zplug/zplug.git ${HOME}/.zplug"

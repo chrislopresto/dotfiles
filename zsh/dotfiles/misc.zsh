@@ -52,7 +52,7 @@ eval "$(fasd --init auto)"
 [[ -s $brewery/etc/autojump.sh ]] && source $brewery/etc/autojump.sh
 
 # node
-eval "$(nodenv init -)"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # rails
 alias rake='noglob bundle exec rake'
@@ -65,7 +65,7 @@ function dbrr() {
 }
 
 # rbenv
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # tmux
 export DISABLE_AUTO_TITLE=true
