@@ -18,7 +18,6 @@
 		"recommendations": [
 			"EditorConfig.EditorConfig",
 			"abusaidm.html-snippets",
-			"alexanderbast.vscode-snazzy",
 			"dbaeumer.vscode-eslint",
 			"donjayamanne.githistory",
 			"eamodio.gitlens",
@@ -49,9 +48,11 @@
 			"sleistner.vscode-fileutils",
 			"pnp.polacode",
 			"framer.framer-syntax",
-			"loiane.ts-extension-pack",
 			"coenraads.bracket-pair-colorizer-2",
-			"sdras.night-owl"
+			"sdras.night-owl",
+			"eliverlara.andromeda",
+			"mariorodeghiero.vue-theme",
+			"hsnazar.hyper-term-theme"
 		]
 	}
 }
