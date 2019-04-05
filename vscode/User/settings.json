@@ -22,7 +22,7 @@
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Framer Syntax",
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "vsicons.projectDetection.autoReload": true,
   "vsicons.dontShowNewVersionMessage": true,
@@ -57,8 +57,6 @@
   "editor.cursorBlinking": "expand",
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
-  "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
   "gitlens.views.repositories.files.layout": "list",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
@@ -73,6 +71,14 @@
   "terminal.integrated.fontFamily": "FuraCode Nerd Font",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.lineHeight": 1.1,
-  "editor.lineHeight": 17
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.lineHeight": 17,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggest.filteredTypes": {
+    "keyword": false
+  },
+  "editor.suggest.maxVisibleSuggestions": 8,
+  "editor.suggest.showIcons": false
 }

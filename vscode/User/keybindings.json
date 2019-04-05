@@ -17,7 +17,6 @@
   { "key": "ctrl+j",        "command": "workbench.action.focusBelowGroup" },
   { "key": "ctrl+h",        "command": "workbench.action.focusLeftGroup" },
   { "key": "ctrl+l",       "command": "workbench.action.focusRightGroup" },
-  { "key": "ctrl+w ctrl+w",         "command": "extension.switchWorkspaceNewWindow" },
   {
     "key": "cmd+k l",
     "command": "toggle",
@@ -69,5 +68,13 @@
   {
     "key": "ctrl+alt+l",
     "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+w ctrl+w",
+    "command": "vscodeWorkspaceSwitcher.switchWorkspaceNewWindow"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-vscodeWorkspaceSwitcher.switchWorkspaceNewWindow"
   },
 ]
