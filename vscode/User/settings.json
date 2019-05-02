@@ -21,13 +21,9 @@
   "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Andromeda Colorizer",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
-  "vsicons.projectDetection.autoReload": true,
-  "vsicons.dontShowNewVersionMessage": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -80,5 +76,11 @@
     "keyword": false
   },
   "editor.suggest.maxVisibleSuggestions": 8,
-  "editor.suggest.showIcons": false
+  "editor.suggest.showIcons": false,
+  "workbench.colorTheme": "Andromeda Colorizer",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.suggest.localityBonus": true
 }

@@ -77,4 +77,14 @@
     "key": "ctrl+k ctrl+w",
     "command": "-vscodeWorkspaceSwitcher.switchWorkspaceNewWindow"
   },
+  {
+    "key": "ctrl+alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+space",
+    "command": "toggleSuggestionDetails",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
 ]
