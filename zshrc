@@ -23,8 +23,8 @@ source $ZPLUG_HOME/init.zsh
 
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting', defer:2
-zplug 'zsh-users/zsh-history-substring-search', defer:3
+zplug 'zsh-users/zsh-syntax-highlighting', defer:1
+zplug 'zsh-users/zsh-history-substring-search', defer:2
 
 zplug 'modules/environment', from:prezto
 zplug 'modules/terminal', from:prezto
@@ -40,7 +40,7 @@ zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 zplug '$HOME/.dotfiles/zsh/dotfiles', from:local
-zplug '$HOME/.dotfiles/zsh/private', from:local
+zplug '$HOME/.dotfiles/zsh/private', from:local, defer:1
 
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
