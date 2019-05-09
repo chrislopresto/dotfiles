@@ -52,9 +52,17 @@ function setup_tmuxinator() {
   gem install tmuxinator
 }
 
+function setup_macos() {
+  echo 'Tweaking macOS settings'
+  defaults write -g ApplePressAndHoldEnabled -bool false
+  defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+  defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+}
+
 setup_zplug
 setup_homebrew
 setup_zsh
 setup_node
 setup_ruby
 setup_tmuxinator
+setup_macos
