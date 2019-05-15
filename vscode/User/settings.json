@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fantasque Sans Mono",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
   "editor.lineNumbers": "off",
@@ -37,7 +37,6 @@
     "suppressWelcomeNotice": true
   },
   "git.enableCommitSigning": true,
-  "workbench.editor.showTabs": true,
   "vscodeWorkspaceSwitcher.paths": [
     "/Users/chrislopresto/.dotfiles/vscode/workspaces",
     "/Users/chrislopresto/.dotfiles/vscode/workspaces/private"
@@ -68,7 +67,7 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
-  "editor.lineHeight": 17,
+  "editor.lineHeight": 16,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -84,5 +83,12 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
-  "liveshare.featureSet": "insiders"
+  "liveshare.featureSet": "insiders",
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.showTabs": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 14,
+  "workbench.editor.enablePreview": false
 }
