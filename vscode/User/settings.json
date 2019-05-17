@@ -21,7 +21,7 @@
   "workbench.iconTheme": null,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "gitlens.advanced.messages": {
@@ -48,7 +48,7 @@
   "gitlens.keymap": "chorded",
   "vscodeWorkspaceSwitcher.codeExecutable": "/usr/local/bin/code",
   "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "expand",
   "window.nativeFullScreen": false,
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
