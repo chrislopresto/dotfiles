@@ -1,10 +1,6 @@
 [user]
   name = Chris LoPresto
-  email = chris.lopresto@betterment.com
 
 [include]
   path = .gitconfig.local
   path = .gitthings
-
-[init]
-	templatedir = ~/.git-templates

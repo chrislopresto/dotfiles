@@ -5,36 +5,40 @@
   ui = true
 
 [core]
-	editor = subl -n -w
+  editor = code -n -w
   excludesfile = ~/.gitignore
+
+[rerere]
+  enabled = true
+  autoupdate = true
 
 [mergetool]
   keepBackup = true
-	keepTemporaries = false
-	prompt = false
+  keepTemporaries = false
+  prompt = false
 
 [push]
   default = simple
 
 [filter "media"]
   required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  clean = git media clean %f
+  smudge = git media smudge %f
 
 [github]
-	user = chrislopresto
+  user = chrislopresto
 
 [hub]
 protocol = https
 
 [gpg]
-	program = gpg
+  program = gpg
 
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true

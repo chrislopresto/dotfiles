@@ -87,4 +87,28 @@
     "command": "toggleSuggestionDetails",
     "when": "editorTextFocus && suggestWidgetVisible"
   },
+  {
+    "key": "ctrl+cmd+e",
+    "command": "workbench.action.joinAllGroups"
+  },
+  {
+    "key": "ctrl+cmd+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "cmd+k z",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+shift+cmd+f",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "workbench.action.togglePanelPosition"
+  },
 ]

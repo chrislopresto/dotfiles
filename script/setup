@@ -37,13 +37,13 @@ function setup_zsh() {
 
 function setup_node() {
   echo 'Installing node'
-  nodenv install 10.13.0
+  nodenv install 10.16.0
   nodenv rehash
 }
 
 function setup_ruby() {
   echo 'Installing ruby'
-  rbenv install 2.5.3
+  rbenv install 2.6.5
   rbenv rehash
 }
 
@@ -55,7 +55,7 @@ function setup_tmuxinator() {
 function setup_macos() {
   echo 'Tweaking macOS settings'
   defaults write -g ApplePressAndHoldEnabled -bool false
-  defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+  defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
   defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 }
 

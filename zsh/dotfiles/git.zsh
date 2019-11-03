@@ -37,7 +37,6 @@ alias gclean='git clean -fd'
 alias gpristine='git reset --hard && git clean -dfx'
 
 alias gcm='git checkout master'
-alias gcb='git checkout -b'
 alias gco='git checkout'
 alias gcof='git checkout $(git branch  | fzf)'
 
@@ -110,6 +109,11 @@ alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias git=hub
 alias hcm='hub compare master...$(git-current-branch)'
 
+function hc() {
+  COMPARE="$1"..."$(git-current-branch)"
+  hub compare $COMPARE
+}
+
 alias gdlm="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d"
 alias gcmm="git checkout master ; git pull --prune ; gdlm"
 
@@ -118,3 +122,8 @@ alias gltc="glt | awk '\$1=\"\" ; sub(/^ /, \"\")'"
 alias gltcs="gltc | awk '{printf \"%s. \",\$0}'"
 
 alias gundo="git reset --soft HEAD~1"
+
+# Android development
+alias talkbackon="adb shell settings put secure enabled_accessibility_services com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService"
+alias talkbackoff="adb shell settings put secure enabled_accessibility_services com.android.talkback/com.google.android.marvin.talkback.TalkBackService"
+alias android_debug="adb shell input keyevent 82"

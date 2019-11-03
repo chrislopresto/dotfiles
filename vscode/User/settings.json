@@ -76,19 +76,33 @@
   },
   "editor.suggest.maxVisibleSuggestions": 8,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Andromeda Colorizer",
+  "workbench.colorTheme": "Hyper Term Black",
+  "editor.suggest.localityBonus": true,
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.showTabs": true,
+  "editor.fontSize": 14,
+  "workbench.editor.enablePreview": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.suggest.localityBonus": true,
-  "terminal.integrated.macOptionClickForcesSelection": true,
-  "liveshare.featureSet": "insiders",
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.showTabs": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "typescript.tsdk": "/Users/chrislopresto/.nodenv/versions/10.13.0/lib/node_modules/typescript/lib",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 14,
-  "workbench.editor.enablePreview": false
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editor.revealIfOpen": true,
+  "zenMode.fullScreen": false,
+  "eslint.packageManager": "yarn"
 }
