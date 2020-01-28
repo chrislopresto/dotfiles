@@ -1,11 +1,21 @@
 name: chrislopresto
-root: /Users/chrislopresto/p/chrislopresto
-startup_window: gatsby
+root: /Users/chrislopresto/p/chrislopresto/chrislopresto-gatsby
+startup_window: server
 
 windows:
-  - gatsby:
-      root: /Users/chrislopresto/p/chrislopresto/chrislopresto-gatsby
+  - server:
       layout: even-vertical
       panes:
         - yarn develop
+  - storybook:
+      layout: even-vertical
+      panes:
+        - yarn storybook
+  - test:
+      layout: even-vertical
+      panes:
+        - yarn test --watch
+  - git:
+      layout: even-vertical
+      panes:
         -

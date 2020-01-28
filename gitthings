@@ -29,16 +29,25 @@
   user = chrislopresto
 
 [hub]
-protocol = https
+  protocol = https
 
 [gpg]
   program = gpg
-
-[commit]
-  gpgsign = true
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+
+[merge]
+  tool = vscode
+
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+
+[diff]
+  tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE

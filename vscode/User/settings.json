@@ -5,12 +5,12 @@
   "editor.fontLigatures": true,
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "selection",
   "editor.rulers": [
     140
   ],
   "editor.tabSize": 2,
-  "editor.quickSuggestionsDelay": 1,
+  "editor.quickSuggestionsDelay": 0,
   "emmet.includeLanguages": {
     "erb": "html",
     "twig": "html",
@@ -18,10 +18,10 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "gitlens.advanced.messages": {
@@ -43,7 +43,8 @@
   ],
   "files.associations": {
     ".env.sample": "dotenv",
-    "*.css": "postcss"
+    "*.css": "postcss",
+    "gitthings": "properties"
   },
   "gitlens.keymap": "chorded",
   "vscodeWorkspaceSwitcher.codeExecutable": "/usr/local/bin/code",
@@ -68,15 +69,10 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
   "editor.lineHeight": 16,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.suggest.filteredTypes": {
-    "keyword": false
-  },
+  "editor.suggest.showKeywords": false,
   "editor.suggest.maxVisibleSuggestions": 8,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Hyper Term Black",
+  "workbench.colorTheme": "Cyberpunk",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
@@ -92,11 +88,13 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
   "typescript.tsdk": "/Users/chrislopresto/.nodenv/versions/10.13.0/lib/node_modules/typescript/lib",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -104,5 +102,14 @@
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.revealIfOpen": true,
   "zenMode.fullScreen": false,
-  "eslint.packageManager": "yarn"
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "mdx"
+  ],
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.centeredLayoutAutoResize": false,
 }

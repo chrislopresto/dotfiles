@@ -4,6 +4,7 @@ function demaster {
   if [[ $# -eq 0 ]] ; then
     echo "Specify a feature branch name"
   else
+    git stash save -u "demaster"
     git branch $1
     git reset --hard origin/master
     git checkout $1
@@ -72,6 +73,7 @@ alias gmom='git merge origin/master'
 alias gmum='git merge upstream/master'
 
 alias gp='git push'
+alias gpf='git push --force-with-lease'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
 alias gpu='git push upstream'

@@ -5,3 +5,6 @@
 [include]
   path = .gitconfig.local
   path = .gitthings
+
+[commit]
+  gpgsign = true
