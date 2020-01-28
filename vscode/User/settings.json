@@ -95,7 +95,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "typescript.tsdk": "/Users/chrislopresto/.nodenv/versions/10.13.0/lib/node_modules/typescript/lib",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
