@@ -108,7 +108,23 @@
     "command": "-workbench.action.terminal.new"
   },
   {
-    "key": "ctrl+shift+`",
-    "command": "workbench.action.togglePanelPosition"
+    "key": "ctrl+shift+[",
+    "command": "workbench.action.previousPanelView"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "workbench.action.nextPanelView"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.positionPanelLeft"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.positionPanelRight"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.positionPanelBottom"
   },
 ]
