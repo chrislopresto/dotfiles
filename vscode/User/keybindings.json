@@ -127,4 +127,18 @@
     "key": "ctrl+shift+j",
     "command": "workbench.action.positionPanelBottom"
   },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+    "when": "!inEditorsPicker"
+  },
+  {
+      "key": "ctrl+shift+tab",
+      "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
+      "when": "!inEditorsPicker"
+  },
+  {
+    "key": "ctrl+cmd+t",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  }
 ]
