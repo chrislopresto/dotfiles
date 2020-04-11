@@ -1,5 +1,5 @@
 directory: /Volumes/Blue Lube/Media/Music
 library: ~/Dropbox (Personal)/Music/library.db
-plugins: fetchart
+plugins: fetchart discogs
 paths:
     comp: Various Artists/$album%aunique{}/$track $title
