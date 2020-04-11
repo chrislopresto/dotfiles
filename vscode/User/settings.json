@@ -64,7 +64,7 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-  "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
