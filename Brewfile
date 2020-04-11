@@ -29,28 +29,21 @@ cask_args appdir: '/Applications'
 cask 'alfred'
 cask 'discord'
 cask 'gitup'
-cask 'hazel'
-cask 'google-chrome'
 cask 'gpg-suite'
 cask 'insomnia'
 cask 'iterm2'
 cask 'keycastr'
 cask 'licecap'
-cask 'postico'
 cask 'raindropio'
-cask 'slack'
 cask 'spectrum'
 cask 'sublime-text'
+cask 'tableplus'
 cask 'taskpaper'
 cask 'visual-studio-code'
 cask 'whatsapp'
 
 tap 'caskroom/fonts'
 cask 'font-cascadia'
-cask 'font-courier-prime'
-cask 'font-courier-prime-code'
-cask 'font-courier-prime-sans'
-cask 'font-courier-prime-medium-and-semi-bold'
 cask 'font-fantasque-sans-mono'
 cask 'font-fira-code'
 cask 'font-fira-mono'
@@ -65,15 +58,9 @@ cask 'font-iosevka-nerd-font'
 cask 'font-monoid'
 cask 'font-source-code-pro'
 
-mas '1Password', id: 443987910
 mas 'Amphetamine', id: 937984704
-mas 'Cardhop', id: 1290358394
-mas 'DaisyDisk', id: 411643860
 mas 'Fantastical 2', id: 975937182
 mas 'iA Writer', id: 775737590
 mas 'Moom', id: 419330170
-mas 'Pixelmator', id: 407963104
 mas 'Snappy', id: 512617038
-mas 'Spark', id: 1176895641
-mas 'Soulver', id: 413965349
 mas 'Things 3', id: 904280696
