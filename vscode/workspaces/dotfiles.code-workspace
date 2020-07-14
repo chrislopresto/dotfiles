@@ -62,7 +62,11 @@
 			"uloco.theme-bluloco-dark",
 			"uloco.theme-bluloco-light",
 			"jaredkent.laserwave",
-			"pshershov.blueberry-banana"
+			"pshershov.blueberry-banana",
+			"gerane.theme-rainbow",
+			"github.github-vscode-theme",
+			"streetsidesoftware.code-spell-checker",
+			"iocave.customize-ui"
 		]
 	}
 }

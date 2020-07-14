@@ -57,6 +57,7 @@ cask 'font-ia-writer-quattro'
 cask 'font-ibm-plex'
 cask 'font-iosevka'
 cask 'font-iosevka-nerd-font'
+cask 'font-jetbrains-mono'
 cask 'font-monoid'
 cask 'font-source-code-pro'
 

@@ -5,7 +5,7 @@
   ui = true
 
 [core]
-  editor = code -n -w
+  editor = subl -n -w
   excludesfile = ~/.gitignore
 
 [rerere]
