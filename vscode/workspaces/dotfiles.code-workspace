@@ -66,7 +66,8 @@
 			"gerane.theme-rainbow",
 			"github.github-vscode-theme",
 			"streetsidesoftware.code-spell-checker",
-			"iocave.customize-ui"
+			"iocave.customize-ui",
+			"beardedbear.beardedtheme"
 		]
 	}
 }

@@ -115,8 +115,8 @@
   "cSpell.enabledLanguageIds": [
     "markdown",
   ],
-  "window.nativeFullScreen": false,
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
-  "customizeUI.titleBar": "frameless"
+  "customizeUI.titleBar": "frameless",
+  "window.nativeFullScreen": false
 }

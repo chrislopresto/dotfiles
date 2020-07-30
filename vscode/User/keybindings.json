@@ -71,11 +71,11 @@
   },
   {
     "key": "ctrl+w ctrl+w",
-    "command": "vscodeWorkspaceSwitcher.switchWorkspaceNewWindow"
+    "command": "vscodeWorkspaceSwitcher.openWorkspaceInNewWindow"
   },
   {
     "key": "ctrl+k ctrl+w",
-    "command": "-vscodeWorkspaceSwitcher.switchWorkspaceNewWindow"
+    "command": "-vscodeWorkspaceSwitcher.openWorkspaceInNewWindow"
   },
   {
     "key": "ctrl+alt+space",
