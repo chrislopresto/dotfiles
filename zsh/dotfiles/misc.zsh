@@ -96,3 +96,6 @@ source "$brewery/opt/fzf/shell/key-bindings.zsh"
 
 # clo
 alias clo="$HOME/p/clo/bin/run"
+
+# Navigate to chrome://inspect
+alias ebdebug="JOBS=1 node --inspect-brk ./node_modules/.bin/ember build"

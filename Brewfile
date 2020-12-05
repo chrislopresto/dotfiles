@@ -60,6 +60,7 @@ cask 'font-iosevka-nerd-font'
 cask 'font-jetbrains-mono'
 cask 'font-monoid'
 cask 'font-source-code-pro'
+cask 'font-victor-mono'
 
 mas 'Amphetamine', id: 937984704
 mas 'Fantastical 2', id: 975937182

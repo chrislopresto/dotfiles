@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontFamily": "Victor Mono",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
   "editor.lineNumbers": "off",
@@ -16,7 +16,6 @@
     "twig": "html",
     "mdx": "Markdown React (mdx)"
   },
-  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.sideBar.location": "right",
@@ -71,12 +70,12 @@
   "editor.suggest.showKeywords": false,
   "editor.suggest.maxVisibleSuggestions": 8,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Cyberpunk",
+  "workbench.colorTheme": "LaserWave",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.showTabs": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "workbench.editor.enablePreview": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -118,5 +117,7 @@
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
   "customizeUI.titleBar": "frameless",
-  "window.nativeFullScreen": false
+  "window.nativeFullScreen": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.insertFinalNewline": true
 }
