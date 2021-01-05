@@ -1,12 +1,12 @@
 export GPG_TTY=$(tty)
 
-function demaster {
+function demain {
   if [[ $# -eq 0 ]] ; then
     echo "Specify a feature branch name"
   else
-    git stash save -u "demaster"
+    git stash save -u "demain"
     git branch $1
-    git reset --hard origin/master
+    git reset --hard origin/main
     git checkout $1
   fi
 }
@@ -37,7 +37,7 @@ alias gc!='git commit -v --amend'
 alias gclean='git clean -fd'
 alias gpristine='git reset --hard && git clean -dfx'
 
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gco='git checkout'
 alias gcof='git checkout $(git branch  | fzf)'
 
@@ -86,7 +86,7 @@ alias grb='git rebase'
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase -i'
-alias grim="git rebase --interactive --autosquash master"
+alias grim="git rebase --interactive --autosquash main"
 alias gri="git rebase --interactive --autosquash $1"
 
 alias grh='git reset HEAD'
@@ -109,15 +109,15 @@ alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias git=hub
-alias hcm='hub compare master...$(git-current-branch)'
+alias hcm='hub compare main...$(git-current-branch)'
 
 function hc() {
   COMPARE="$1"..."$(git-current-branch)"
   hub compare $COMPARE
 }
 
-alias gdlm="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d"
-alias gcmm="git checkout master ; git pull --prune ; gdlm"
+alias gdlm="git branch --merged | grep -v '^* main$' | grep -v '^  main$' | xargs git branch -d"
+alias gcmm="git checkout main ; git pull --prune ; gdlm"
 
 alias glt="git log --since=midnight --author='Chris LoPresto' --oneline"
 alias gltc="glt | awk '\$1=\"\" ; sub(/^ /, \"\")'"
