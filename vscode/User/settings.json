@@ -17,7 +17,6 @@
     "mdx": "Markdown React (mdx)"
   },
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "city-lights-icons-vsc-light",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 0,
   "workbench.statusBar.visible": false,
@@ -68,9 +67,8 @@
   "terminal.integrated.lineHeight": 1.2,
   "editor.lineHeight": 16,
   "editor.suggest.showKeywords": false,
-  "editor.suggest.maxVisibleSuggestions": 8,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "LaserWave",
+  "workbench.colorTheme": "Kimbie Dark",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",

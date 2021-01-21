@@ -37,19 +37,14 @@ function setup_zsh() {
 
 function setup_node() {
   echo 'Installing node'
-  nodenv install 10.16.0
+  nodenv install 14.15.4
   nodenv rehash
 }
 
 function setup_ruby() {
   echo 'Installing ruby'
-  rbenv install 2.6.5
+  rbenv install 3.0.0
   rbenv rehash
-}
-
-function setup_tmuxinator() {
-  echo 'Installing tmuxinator'
-  gem install tmuxinator
 }
 
 function setup_macos() {
@@ -64,5 +59,4 @@ setup_homebrew
 setup_zsh
 setup_node
 setup_ruby
-setup_tmuxinator
 setup_macos

@@ -6,11 +6,11 @@ windows:
   - server:
       layout: even-vertical
       panes:
-        - ember server
+        - yarn start
   - test:
       layout: even-vertical
       panes:
-        - ember test
+        - yarn test --server --no-launch
   - git:
       layout: even-vertical
       panes:
