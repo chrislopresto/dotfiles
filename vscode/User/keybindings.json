@@ -34,6 +34,10 @@
     }
   },
   {
+    "key": "ctrl+shift+m",
+    "command": "editor.action.selectToBracket",
+  },
+  {
     "key": "cmd+f4",
     "command": "editor.action.nextMatchFindAction",
     "when": "editorTextFocus"

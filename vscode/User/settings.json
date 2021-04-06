@@ -6,9 +6,7 @@
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [
-    140
-  ],
+  "editor.rulers": [],
   "editor.tabSize": 2,
   "editor.quickSuggestionsDelay": 0,
   "emmet.includeLanguages": {
@@ -29,10 +27,6 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": true,
-    "suppressWelcomeNotice": true
   },
   "git.enableCommitSigning": true,
   "vscodeWorkspaceSwitcher.paths": [
@@ -42,17 +36,14 @@
   "files.associations": {
     ".env.sample": "dotenv",
     "*.css": "postcss",
+    "*.mdx": "markdown",
     "gitthings": "properties"
   },
   "gitlens.keymap": "chorded",
-  "vscodeWorkspaceSwitcher.codeExecutable": "/usr/local/bin/code",
-  "vscodeWorkspaceSwitcher.codeInsidersExecutable": "/usr/local/bin/code-insiders",
   "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "expand",
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "gitlens.views.repositories.files.layout": "list",
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -68,11 +59,10 @@
   "editor.lineHeight": 16,
   "editor.suggest.showKeywords": false,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Kimbie Dark",
+  "workbench.colorTheme": "Radical",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.showTabs": true,
   "editor.fontSize": 13,
   "workbench.editor.enablePreview": false,
   "[json]": {
@@ -117,5 +107,11 @@
   "customizeUI.titleBar": "frameless",
   "window.nativeFullScreen": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "gitlens.showWelcomeOnInstall": false,
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": false
 }
