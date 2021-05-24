@@ -37,7 +37,13 @@ function setup_homebrew() {
 
 function setup_zsh() {
   echo 'Changing to brew-installed zsh'
-  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+  if [ -d /opt/homebrew ]; then
+    echo 'brew found in /opt/homebrew. Assuming Apple Silicon.'
+    sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
+  else
+    echo '/opt/homebrew directory not found. Assuming macOS Intel.'
+    sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+  fi
 }
 
 function setup_node() {
