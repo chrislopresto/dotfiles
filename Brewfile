@@ -6,6 +6,7 @@ cask_args appdir: '/Applications'
 
 brew 'fasd'
 brew 'fzf'
+brew 'gh'
 brew 'git'
 brew 'gnupg'
 brew 'hub'
@@ -23,9 +24,6 @@ brew 'tmuxinator'
 brew 'yarn'
 brew 'zplug'
 brew 'zsh'
-
-tap 'github/gh'
-brew 'github/gh/gh'
 
 tap 'thoughtbot/formulae'
 brew 'rcm'
