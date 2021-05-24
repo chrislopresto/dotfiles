@@ -16,8 +16,13 @@ function setup_zplug() {
 
 function setup_homebrew() {
   if ! type brew 2> /dev/null; then
-    echo 'Installing brew things'
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    if [ -d /opt/homebrew ]; then
+      echo 'brew found in /opt/homebrew. Assuming Apple Silicon.'
+      echo 'Adding brew to path'
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+    else
+      echo 'brew not found on path. /opt/homebrew directory not found on disk.'
+    fi
   fi
   if [ -f "$HOME/.Brewfile" ]; then
     brew update

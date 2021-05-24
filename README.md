@@ -6,6 +6,8 @@ These are my dotfiles.
 
 
 ```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
 git clone https://github.com/chrislopresto/dotfiles "${HOME}/.dotfiles"
 cd "${HOME}/.dotfiles"
 ./script/setup

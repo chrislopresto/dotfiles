@@ -41,6 +41,9 @@ eval "$(fasd --init auto)"
 # autojump
 [[ -s $brewery/etc/autojump.sh ]] && source $brewery/etc/autojump.sh
 
+# homebrew
+if which brew > /dev/null; then ; eval "$(/opt/homebrew/bin/brew shellenv)" fi
+
 # node
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
