@@ -1,9 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Victor Mono",
+  "editor.fontFamily": "MonoLisa",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [],
@@ -16,8 +16,6 @@
   },
   "files.trimTrailingWhitespace": true,
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 0,
-  "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "gitlens.advanced.messages": {
@@ -40,7 +38,6 @@
     "gitthings": "properties"
   },
   "gitlens.keymap": "chorded",
-  "breadcrumbs.enabled": false,
   "editor.cursorBlinking": "expand",
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
   "gitlens.views.repositories.files.layout": "list",
@@ -52,18 +49,16 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-  "terminal.integrated.fontFamily": "Iosevka Nerd Font",
+  "terminal.integrated.fontFamily": "MonoLisa",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
-  "editor.lineHeight": 16,
   "editor.suggest.showKeywords": false,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Radical",
+  "workbench.colorTheme": "Tokyo Night Light",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
-  "editor.fontSize": 13,
   "workbench.editor.enablePreview": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -113,5 +108,9 @@
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.showTabs": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "specific"
 }

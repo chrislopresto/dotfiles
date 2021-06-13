@@ -15,7 +15,7 @@ windows:
       layout: tiled
       panes:
         -
-  - servi:ces:
+  - services:
       layout: tiled
       panes:
         - mongo/mongodb/bin/mongod --dbpath mongo/data/db

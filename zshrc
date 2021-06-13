@@ -62,24 +62,16 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # spaceship prompt
 SPACESHIP_CHAR_SUFFIX=' '
-SPACESHIP_CHAR_SYMBOL='\uf04b'
+SPACESHIP_CHAR_SYMBOL=''
 SPACESHIP_GIT_STATUS_SHOW=false
-SPACESHIP_GIT_SYMBOL='\uf418 '
-SPACESHIP_RUBY_SYMBOL='\ue21e '
-SPACESHIP_PHP_SYMBOL='\ue608 '
-SPACESHIP_PACKAGE_SYMBOL='\uf487 '
-SPACESHIP_NODE_SYMBOL='\uf898 '
-SPACESHIP_AWS_SYMBOL='\uf52c '
+SPACESHIP_GIT_SYMBOL=''
+SPACESHIP_NODE_SYMBOL='⬢ '
 SPACESHIP_PROMPT_PREFIXES_SHOW=false
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
-  host          # Hostname section
   git           # Git section (git_branch + git_status)
-  package       # Package version
   node          # Node.js section
   ruby          # Ruby section
-  php           # PHP section
-  aws           # Amazon Web Services section
   line_sep      # Line break
   exit_code     # Exit code section
   char          # Prompt character
