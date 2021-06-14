@@ -3,7 +3,7 @@
   "editor.fontFamily": "MonoLisa",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [],
@@ -24,12 +24,12 @@
     "suppressFileNotUnderSourceControlWarning": false,
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
+    "suppressNoRepositoryWarning": false
   },
   "git.enableCommitSigning": true,
   "vscodeWorkspaceSwitcher.paths": [
-    "/Users/chrislopresto/.dotfiles/vscode/workspaces",
-    "/Users/chrislopresto/.dotfiles/vscode/workspaces/private"
+    "/Users/clopresto/.dotfiles/vscode/workspaces",
+    "/Users/clopresto/.dotfiles/vscode/workspaces/private"
   ],
   "files.associations": {
     ".env.sample": "dotenv",
@@ -40,6 +40,22 @@
   "gitlens.keymap": "chorded",
   "editor.cursorBlinking": "expand",
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+  "bracket-pair-colorizer-2.colors": [
+    "#DFF959",
+    "#F834BB",
+    "#2BF5E9",
+    "#D831D7"
+  ],
+  "git-graph.graph.colours": [
+    "#FF428E",
+    "#A8FFEF",
+    "#DFF959",
+    "#F7A409",
+    "#F834BB",
+    "#2BF5E9",
+    "#D831D7",
+    "#FF594C"
+  ],
   "gitlens.views.repositories.files.layout": "list",
   "files.exclude": {
     "**/.git": true,
@@ -55,7 +71,7 @@
   "terminal.integrated.lineHeight": 1.2,
   "editor.suggest.showKeywords": false,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Tokyo Night Light",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
@@ -94,9 +110,7 @@
   "workbench.editor.centeredLayoutAutoResize": false,
   "gitlens.codeLens.enabled": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "cSpell.enabledLanguageIds": [
-    "markdown",
-  ],
+  "cSpell.enabledLanguageIds": ["markdown"],
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
   "customizeUI.titleBar": "frameless",
@@ -110,7 +124,7 @@
   },
   "workbench.statusBar.visible": false,
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.editor.showTabs": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.folders.theme": "specific"
+  "workbench.iconTheme": "sweet-vscode-icons",
+  "material-icon-theme.folders.theme": "specific",
+  "explorer.confirmDelete": false
 }
