@@ -60,9 +60,38 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+# Seasonal chevrons courtesy of https://dev.to/admhlt/terminal-tricks-from-my-dotfiles-2moe
+seasonal_chevrons () {
+  local date=$(date)
+  local chevrons="❯❯❯"
+
+  case $date in
+    # spring
+    *Mar*|*Apr*|*May*)
+      chevrons="%F{cyan}❯%F{green}❯%F{yellow}❯%f"
+      ;;
+    # summer
+    *Jun*|*Jul*|*Aug*)
+      chevrons="%F{green}❯%F{yellow}❯%F{red}❯%f"
+      ;;
+    # fall
+    *Sep*|*Oct*|*Nov*)
+      chevrons="%F{yellow}❯%F{red}❯%F{magenta}❯%f"
+      ;;
+    # winter
+    *Dec*|*Jan*|*Feb*)
+      chevrons="%F{magenta}❯%F{cyan}❯%F{green}❯%f"
+      ;;
+    *)
+      ;;
+  esac
+
+  echo -en $chevrons
+}
+
 # spaceship prompt
 SPACESHIP_CHAR_SUFFIX=' '
-SPACESHIP_CHAR_SYMBOL=''
+SPACESHIP_CHAR_SYMBOL=$(seasonal_chevrons)
 SPACESHIP_GIT_STATUS_SHOW=false
 SPACESHIP_GIT_SYMBOL=''
 SPACESHIP_NODE_SYMBOL='⬢ '
