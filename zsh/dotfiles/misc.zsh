@@ -101,3 +101,8 @@ alias clo="$HOME/p/clo/bin/run"
 
 # Navigate to chrome://inspect
 alias ebdebug="JOBS=1 node --inspect-brk ./node_modules/.bin/ember build"
+
+# Interactive preview with fzf and bat
+# https://pragmaticpineapple.com/four-useful-fzf-tricks-for-your-terminal/
+# https://github.com/sharkdp/bat
+alias p="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
