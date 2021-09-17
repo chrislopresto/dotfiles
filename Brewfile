@@ -41,6 +41,7 @@ cask 'licecap'
 cask 'meetingbar'
 cask 'obsidian'
 cask 'raindropio'
+cask 'shottr'
 cask 'sublime-text'
 cask 'tableplus'
 cask 'taskpaper'
@@ -63,9 +64,7 @@ cask 'font-jetbrains-mono'
 cask 'font-monoid'
 cask 'font-victor-mono'
 
-mas 'Amphetamine', id: 937984704
 mas 'Fantastical 2', id: 975937182
 mas 'iA Writer', id: 775737590
 mas 'Moom', id: 419330170
-mas 'Snappy', id: 512617038
 mas 'Things 3', id: 904280696
