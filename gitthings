@@ -54,3 +54,6 @@
 
 [commit]
   gpgsign = true
+
+[core]
+	pager = delta
