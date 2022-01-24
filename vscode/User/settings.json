@@ -40,12 +40,6 @@
   "gitlens.keymap": "chorded",
   "editor.cursorBlinking": "expand",
   "bracket-pair-colorizer-2.forceIterationColorCycle": true,
-  "bracket-pair-colorizer-2.colors": [
-    "#DFF959",
-    "#F834BB",
-    "#2BF5E9",
-    "#D831D7"
-  ],
   "git-graph.graph.colours": [
     "#FF428E",
     "#A8FFEF",
@@ -71,7 +65,7 @@
   "terminal.integrated.lineHeight": 1.2,
   "editor.suggest.showKeywords": false,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
@@ -122,9 +116,16 @@
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.statusBar.visible": false,
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.iconTheme": "sweet-vscode-icons",
   "material-icon-theme.folders.theme": "specific",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "workbench.statusBar.visible": false,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.tree.indent": 24
 }
