@@ -49,7 +49,7 @@ function setup_zsh() {
 
 function setup_node() {
   echo 'Installing node'
-  nodenv install 14.15.4
+  nodenv install "$(<$DOTFILES/node-version)"
   nodenv rehash
 }
 
