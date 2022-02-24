@@ -57,7 +57,11 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "terminal.integrated.fontFamily": "MonoLisa",
   "editor.suggestSelection": "recentlyUsedByPrefix",
@@ -65,7 +69,7 @@
   "terminal.integrated.lineHeight": 1.2,
   "editor.suggest.showKeywords": false,
   "editor.suggest.showIcons": false,
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
@@ -103,7 +107,6 @@
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.centeredLayoutAutoResize": false,
   "gitlens.codeLens.enabled": false,
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "cSpell.enabledLanguageIds": ["markdown"],
   "customizeUI.activityBar": "bottom",
   "customizeUI.activityBarHideSettings": true,
@@ -119,7 +122,6 @@
   "workbench.editor.untitled.hint": "hidden",
   "material-icon-theme.folders.theme": "specific",
   "explorer.confirmDelete": false,
-  "workbench.statusBar.visible": false,
   "editor.accessibilitySupport": "off",
   "editor.inlineSuggest.enabled": true,
   "terminal.integrated.env.osx": {
@@ -127,5 +129,9 @@
   },
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  "workbench.tree.indent": 24
+  "workbench.tree.indent": 24,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.statusBar.visible": false
 }

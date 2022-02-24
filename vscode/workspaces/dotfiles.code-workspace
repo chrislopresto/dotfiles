@@ -17,7 +17,6 @@
   "extensions": {
     "recommendations": [
       "abusaidm.html-snippets",
-      "coenraads.bracket-pair-colorizer-2",
       "cssho.vscode-svgviewer",
       "dbaeumer.vscode-eslint",
       "donjayamanne.githistory",
@@ -30,7 +29,6 @@
       "mikestead.dotenv",
       "ms-vscode.sublime-keybindings",
       "ms-vsliveshare.vsliveshare",
-      "msjsdiag.debugger-for-chrome",
       "naumovs.color-highlight",
       "pnp.polacode",
       "rebornix.toggle",
