@@ -5,6 +5,7 @@ tap 'homebrew/services'
 cask_args appdir: '/Applications'
 
 brew 'bat'
+brew 'devtoys'
 brew 'fasd'
 brew 'fzf'
 brew 'gh'
