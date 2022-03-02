@@ -1,5 +1,15 @@
 brewery=$(brew --prefix)
 
+# Configure zsh completions for brew-managed formulae
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # config
 alias reload!='. ~/.zshrc'
 alias reloadt!='tmux source-file ~/.tmux.conf'

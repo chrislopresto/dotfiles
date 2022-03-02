@@ -35,6 +35,7 @@ zplug 'modules/completion', from:prezto
 zplug 'zsh-users/zsh-completions', from:github
 zplug mafredri/zsh-async, from:github
 
+# zplug github/hub, from:github, use:etc/hub.zsh_completion
 zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 
 zstyle ':prezto:module:terminal' auto-title 'yes'
