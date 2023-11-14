@@ -144,5 +144,9 @@
   {
     "key": "ctrl+cmd+t",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "cmd+ctrl+w",
+    "command": "workbench.action.toggleTabsVisibility"
   }
 ]

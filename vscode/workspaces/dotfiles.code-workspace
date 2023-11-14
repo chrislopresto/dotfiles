@@ -16,7 +16,6 @@
   },
   "extensions": {
     "recommendations": [
-      "abusaidm.html-snippets",
       "cssho.vscode-svgviewer",
       "dbaeumer.vscode-eslint",
       "donjayamanne.githistory",
@@ -25,7 +24,6 @@
       "fallenwood.vimL",
       "formulahendry.auto-close-tag",
       "formulahendry.auto-rename-tag",
-      "glen-84.sass-lint",
       "mikestead.dotenv",
       "ms-vscode.sublime-keybindings",
       "ms-vsliveshare.vsliveshare",
@@ -64,7 +62,6 @@
       "gerane.theme-rainbow",
       "github.github-vscode-theme",
       "streetsidesoftware.code-spell-checker",
-      "iocave.customize-ui",
       "beardedbear.beardedtheme",
       "pkief.material-icon-theme",
       "mhutchie.git-graph",

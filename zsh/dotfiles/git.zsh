@@ -11,6 +11,17 @@ function demain {
   fi
 }
 
+function demaster {
+  if [[ $# -eq 0 ]] ; then
+    echo "Specify a feature branch name"
+  else
+    git stash save -u "demaster"
+    git branch $1
+    git reset --hard origin/master
+    git checkout $1
+  fi
+}
+
 function delete-branches() {
   if [[ $# -eq 0 ]] ; then
     echo "Specify a branch pattern so as not to delete everything"

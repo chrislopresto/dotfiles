@@ -3,7 +3,6 @@
   "editor.fontFamily": "MonoLisa",
   "terminal.external.osxExec": "iTerm.app",
   "editor.fontLigatures": true,
-  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [],
@@ -16,7 +15,6 @@
   },
   "files.trimTrailingWhitespace": true,
   "workbench.sideBar.location": "right",
-  "workbench.activityBar.visible": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -73,7 +71,6 @@
   "editor.suggest.localityBonus": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.enablePreview": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -96,7 +93,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.revealIfOpen": true,
   "zenMode.fullScreen": false,
-  "eslint.packageManager": "npm",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -108,9 +104,6 @@
   "workbench.editor.centeredLayoutAutoResize": false,
   "gitlens.codeLens.enabled": false,
   "cSpell.enabledLanguageIds": ["markdown"],
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.activityBarHideSettings": true,
-  "customizeUI.titleBar": "frameless",
   "window.nativeFullScreen": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.insertFinalNewline": true,
@@ -133,5 +126,17 @@
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "workbench.editor.enablePreview": false,
+  "livePreview.notifyOnOpenLooseFile": false,
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.lineNumbers": "off",
+  "circleci.apiToken": "",
+  "extensions.ignoreRecommendations": true,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open"
 }
