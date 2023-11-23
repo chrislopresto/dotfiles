@@ -4,9 +4,6 @@ tap 'homebrew/services'
 
 cask_args appdir: '/Applications'
 
-tap '1password/tap'
-cask '1password-cli'
-
 brew 'bat'
 brew 'fzf'
 brew 'gh'
@@ -40,6 +37,8 @@ brew 'zsh'
 tap 'thoughtbot/formulae'
 brew 'rcm'
 
+cask '1password'
+cask '1password-cli'
 cask 'arc'
 cask 'contexts'
 cask 'discord'
