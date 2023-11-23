@@ -42,6 +42,7 @@ brew 'zsh'
 tap 'thoughtbot/formulae'
 brew 'rcm'
 
+cask 'arc'
 cask 'discord'
 cask 'gitup'
 cask 'insomnia'
