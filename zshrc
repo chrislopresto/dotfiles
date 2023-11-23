@@ -35,9 +35,6 @@ zplug 'modules/completion', from:prezto
 zplug 'zsh-users/zsh-completions', from:github
 zplug mafredri/zsh-async, from:github
 
-# zplug github/hub, from:github, use:etc/hub.zsh_completion
-zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
-
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 zplug '$HOME/.dotfiles/zsh/dotfiles', from:local
@@ -61,51 +58,7 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-# Seasonal chevrons courtesy of https://dev.to/admhlt/terminal-tricks-from-my-dotfiles-2moe
-seasonal_chevrons () {
-  local date=$(date)
-  local chevrons="❯❯❯"
-
-  case $date in
-    # spring
-    *Mar*|*Apr*|*May*)
-      chevrons="%F{cyan}❯%F{green}❯%F{yellow}❯%f"
-      ;;
-    # summer
-    *Jun*|*Jul*|*Aug*)
-      chevrons="%F{green}❯%F{yellow}❯%F{red}❯%f"
-      ;;
-    # fall
-    *Sep*|*Oct*|*Nov*)
-      chevrons="%F{yellow}❯%F{red}❯%F{magenta}❯%f"
-      ;;
-    # winter
-    *Dec*|*Jan*|*Feb*)
-      chevrons="%F{magenta}❯%F{cyan}❯%F{green}❯%f"
-      ;;
-    *)
-      ;;
-  esac
-
-  echo -en $chevrons
-}
-
-# spaceship prompt
-SPACESHIP_CHAR_SUFFIX=' '
-SPACESHIP_CHAR_SYMBOL=$(seasonal_chevrons)
-SPACESHIP_GIT_STATUS_SHOW=false
-SPACESHIP_GIT_SYMBOL=''
-SPACESHIP_NODE_SYMBOL='⬢ '
-SPACESHIP_PROMPT_PREFIXES_SHOW=false
-SPACESHIP_PROMPT_ORDER=(
-  dir           # Current directory section
-  git           # Git section (git_branch + git_status)
-  node          # Node.js section
-  ruby          # Ruby section
-  line_sep      # Line break
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+eval "$(starship init zsh)"
 
 alias replug="rm -rf $HOME/.zplug ; git clone https://github.com/zplug/zplug.git ${HOME}/.zplug"
 
