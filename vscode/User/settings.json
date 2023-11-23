@@ -26,8 +26,8 @@
   },
   "git.enableCommitSigning": true,
   "vscodeWorkspaceSwitcher.paths": [
-    "/Users/clopresto/.dotfiles/vscode/workspaces",
-    "/Users/clopresto/.dotfiles/vscode/workspaces/private"
+    "/Users/chrislopresto/.dotfiles/vscode/workspaces",
+    "/Users/chrislopresto/.dotfiles/vscode/workspaces/private"
   ],
   "files.associations": {
     ".env.sample": "dotenv",
