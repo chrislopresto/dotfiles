@@ -73,6 +73,7 @@ cask 'font-iosevka-nerd-font'
 cask 'font-jetbrains-mono'
 cask 'font-monoid'
 cask 'font-victor-mono'
+cask 'font-work-sans'
 
 mas 'Fantastical 2', id: 975937182
 mas 'iA Writer', id: 775737590
