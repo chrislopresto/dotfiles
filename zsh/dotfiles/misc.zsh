@@ -56,7 +56,7 @@ if ! type brew > /dev/null; then
   if [ -d /opt/homebrew ]; then
     # echo 'brew found in /opt/homebrew. Assuming Apple Silicon.'
     # echo 'Adding brew to path'
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/clopresto/.profile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.profile"
     eval "$(/opt/homebrew/bin/brew shellenv)"
   else
     echo 'brew not found on path. /opt/homebrew directory not found on disk.'
