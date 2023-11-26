@@ -64,6 +64,10 @@ function setup_macos() {
   defaults write -g ApplePressAndHoldEnabled -bool false
   defaults write -g InitialKeyRepeat -int 12 # normal minimum is 15 (225 ms)
   defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+  # Use list view in all Finder windows by default
+  # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+  defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 }
 
 setup_zplug
