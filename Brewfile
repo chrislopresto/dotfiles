@@ -37,8 +37,8 @@ brew 'zsh'
 tap 'thoughtbot/formulae'
 brew 'rcm'
 
-cask '1password'
-cask '1password-cli'
+# cask '1password'
+# cask '1password-cli'
 cask 'arc'
 cask 'contexts'
 cask 'discord'
@@ -78,8 +78,6 @@ cask 'font-work-sans'
 mas 'Fantastical 2', id: 975937182
 mas 'Flow - Focus & Pomodoro Timer', id: 1423210932
 mas 'HazeOver • Distraction Dimmer™', id: 430798174
-mas 'iA Writer', id: 775737590
-mas 'Logic Pro', id: 634148309
-mas 'Moom', id: 419330170
+# mas 'Logic Pro', id: 634148309
 mas 'Things 3', id: 904280696
 # mas 'Xcode', id: 497799835
