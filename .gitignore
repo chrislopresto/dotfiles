@@ -8,12 +8,6 @@ vim/.netrwhist
 
 vscode/workspaces/private/*.code-workspace
 
-gnupg/*.gpg
-gnupg/*.kbx
-gnupg/*.kbx~
-gnupg/**/*.key
-gnupg/**/*.rev
-
 hooks/~
 
 ~/**

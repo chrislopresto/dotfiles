@@ -7,6 +7,7 @@
 [core]
   editor = subl -n -w
   excludesfile = ~/.gitignore
+  pager = delta
 
 [rerere]
   enabled = true
@@ -31,8 +32,6 @@
 [hub]
   protocol = https
 
-[gpg]
-  program = gpg
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
@@ -52,12 +51,6 @@
 [difftool "vscode"]
   cmd = code --wait --diff $LOCAL $REMOTE
 
-[commit]
-  gpgsign = true
-
-[core]
-	pager = delta
-
 [init]
 	defaultBranch = main
 
@@ -65,6 +58,7 @@
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILfBpn0mvBNQ1LjbAvAk91QlYsCZb9nZXa+AV9iCKjf1
 
 [gpg]
+  program = gpg
   format = ssh
 
 [gpg "ssh"]
