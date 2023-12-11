@@ -55,7 +55,7 @@ function setup_node() {
 
 function setup_ruby() {
   echo 'Installing ruby'
-  rbenv install 3.0.0
+  rbenv install "$(<$DOTFILES/ruby-version)"
   rbenv rehash
 }
 

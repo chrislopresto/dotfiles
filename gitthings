@@ -53,6 +53,7 @@
 
 [init]
 	defaultBranch = main
+	templatedir = /Users/chrislopresto/.git-templates
 
 [user]
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILfBpn0mvBNQ1LjbAvAk91QlYsCZb9nZXa+AV9iCKjf1
