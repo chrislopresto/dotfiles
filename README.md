@@ -13,7 +13,9 @@ cd "${HOME}/.dotfiles"
 rcup
 ```
 
-### Git config
+## Git config
+
+### Configure git
 
 Choose personal or work git config via tags.
 
@@ -24,18 +26,6 @@ rcup -t work
 rcdn -t work
 ```
 
-Add git user email and signingkey config to `tag-personal/gitconfig.local` or `tag-work/gitconfig.local`.
+### Configure SSH key for commit signing
 
-```
-[user]
-  email = xxx@yyy.zzz
-  signingkey = XXXXXXXXXXXXXXXX
-```
-
-### beets
-
-```sh
-rcup -t beets
-```
-
-Follow getting started instructions from [beets website](https://beets.io) to install  (python, beets, beets fetchart plugin, etc.).
+Follow [1Password instructions to configure git commit signing with SSH](https://developer.1password.com/docs/ssh/git-commit-signing#step-1-configure-git-commit-signing-with-ssh) for "GitHub SSH Key".
