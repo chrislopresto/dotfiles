@@ -119,13 +119,17 @@ alias gupv='git pull --rebase -v'
 alias glum='git pull upstream master'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
-alias git=hub
-alias hcm='hub compare main...$(git-current-branch)'
 
 function hc() {
-  COMPARE="$1"..."$(git-current-branch)"
-  hub compare $COMPARE
+  local BASE_BRANCH_NAME=${1:-main}
+  local CURRENT_BRANCH_NAME=$(git-current-branch)
+  local COMPARE_PATH_SEGMENT="$BASE_BRANCH_NAME...$CURRENT_BRANCH_NAME"
+  local COMPARE_BASE_URL=$(git remote get-url origin | sed "s|\.git||")
+  local COMPARE_URL="$COMPARE_BASE_URL/compare/$COMPARE_PATH_SEGMENT"
+  echo "Opening $COMPARE_URL"
+  open $COMPARE_URL
 }
+alias hcm='hc main'
 
 alias gdlm="git branch --merged | grep -v '^* main$' | grep -v '^  main$' | xargs git branch -d"
 alias gcmm="git checkout main ; git pull --prune ; gdlm"
