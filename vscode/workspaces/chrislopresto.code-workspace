@@ -1,27 +1,20 @@
 {
   "folders": [
     {
-      "name": "rails",
-      "path": "/Users/chrislopresto/p/chrislopresto/chrislopresto-rails"
-    },
-    {
-      "name": "rebrand",
-      "path": "/Users/chrislopresto/p/chrislopresto/betterment-rebranding-bonanza"
-    },
-    {
-      "name": "gatsby",
-      "path": "/Users/chrislopresto/p/chrislopresto/chrislopresto-gatsby"
-    },
+      "path": "/Users/chrislopresto/p/chrislopresto"
+    }
   ],
   "settings": {
-    "workbench.colorTheme": "Cyberpunk",
+    "workbench.colorTheme": "1984 - Light",
     "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
       "**/.hg": true,
       "**/CVS": true,
       "**/.DS_Store": true,
-      "**/node_modules": true
+      "**/node_modules": true,
+      "**/.cache": true,
+      "**/.wrangler": true
     }
   }
 }
