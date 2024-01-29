@@ -63,3 +63,6 @@
 
 [commit]
   gpgsign = true
+
+[rebase]
+	updateRefs = true
