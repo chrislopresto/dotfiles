@@ -33,6 +33,7 @@ cask 'shottr'
 cask 'sublime-text'
 cask 'topnotch'
 cask 'visual-studio-code'
+cask 'warp'
 
 cask 'font-caskaydia-mono-nerd-font'
 cask 'font-fira-code'

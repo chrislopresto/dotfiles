@@ -37,8 +37,8 @@ zplug mafredri/zsh-async, from:github
 
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
-zplug '$HOME/.dotfiles/zsh/dotfiles', from:local
-zplug '$HOME/.dotfiles/zsh/private', from:local
+zplug '~/.dotfiles/zsh/dotfiles', from:local
+zplug '~/.dotfiles/zsh/private', from:local
 
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
@@ -50,7 +50,7 @@ fi
 zplug load # --verbose
 
 # Accept zsh-autosuggestions with tab key
-bindkey '^I' autosuggest-accept
+# bindkey '^I' autosuggest-accept
 
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
@@ -70,3 +70,4 @@ alias cpi="${aliases[cp]:-cp} -i"
 alias lni="${aliases[ln]:-ln} -i"
 alias mvi="${aliases[mv]:-mv} -i"
 alias rmi="${aliases[rm]:-rm} -i"
+
