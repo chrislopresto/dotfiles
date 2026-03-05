@@ -1,17 +1,20 @@
-[battery]
-disabled = true
-threshold = 30
-full_symbol = "• "
-charging_symbol = "⇡ "
-discharging_symbol = "⇣ "
-unknown_symbol = "❓ "
-empty_symbol = "❗ "
+command_timeout = 1500
 
-[erlang]
-symbol = "ⓔ "
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$line_break\
+$character"""
 
-[nodejs]
-symbol = "[⬢](bold green) "
+[directory]
+fish_style_pwd_dir_length = 1
+style = "bold fg:112"
 
-[pulumi]
-symbol = "🧊 "
+[git_branch]
+style = "bold fg:1"
+
+[git_status]
+stashed = ""
+style = "bold fg:172"
