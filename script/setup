@@ -15,11 +15,11 @@ function setup_zplug() {
 }
 
 function setup_homebrew() {
-  if ! type brew 2> /dev/null; then
+  if ! type brew 2>/dev/null; then
     if [ -d /opt/homebrew ]; then
       echo 'brew found in /opt/homebrew. Assuming Apple Silicon.'
       echo 'Adding brew to path'
-      echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$USER/.profile"
+      echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>"/Users/$USER/.profile"
       eval "$(/opt/homebrew/bin/brew shellenv)"
     else
       echo 'brew not found on path. /opt/homebrew directory not found on disk.'
@@ -47,23 +47,11 @@ function setup_zsh() {
   fi
 }
 
-function setup_node() {
-  echo 'Installing node'
-  nodenv install "$(<$DOTFILES/node-version)"
-  nodenv rehash
-}
-
-function setup_ruby() {
-  echo 'Installing ruby'
-  rbenv install "$(<$DOTFILES/ruby-version)"
-  rbenv rehash
-}
-
 function setup_macos() {
   echo 'Tweaking macOS settings'
   defaults write -g ApplePressAndHoldEnabled -bool false
   defaults write -g InitialKeyRepeat -int 12 # normal minimum is 15 (225 ms)
-  defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+  defaults write -g KeyRepeat -int 1         # normal minimum is 2 (30 ms)
 
   # Use list view in all Finder windows by default
   # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
@@ -73,6 +61,4 @@ function setup_macos() {
 setup_zplug
 setup_homebrew
 setup_zsh
-setup_node
-setup_ruby
 setup_macos

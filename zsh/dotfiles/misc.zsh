@@ -116,3 +116,6 @@ alias ebdebug="JOBS=1 node --inspect-brk ./node_modules/.bin/ember build"
 # https://pragmaticpineapple.com/four-useful-fzf-tricks-for-your-terminal/
 # https://github.com/sharkdp/bat
 alias p="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+
+alias ls="eza --icons --grid --group-directories-first"
+
