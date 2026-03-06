@@ -1,5 +1,4 @@
 brew 'eza'
-brew 'fzf'
 brew 'gh'
 brew 'git'
 brew 'gitmoji'
@@ -9,15 +8,26 @@ brew 'neovim'
 brew 'pinentry-mac'
 brew 'pnpm'
 brew 'reattach-to-user-namespace'
-brew 'ripgrep'
-brew 'ruby-build'
 brew 'starship'
 brew 'tldr'
 brew 'tmux'
 brew 'tmuxinator'
 brew 'zplug'
-brew 'zoxide'
 brew 'zsh'
+
+# Yazi (and the optional dependencies):
+brew 'yazi'
+brew 'fd'
+brew 'ffmpeg-full'
+cask 'font-symbols-only-nerd-font'
+brew 'fzf'
+brew 'imagemagick-full'
+brew 'jq'
+brew 'poppler'
+brew 'resvg'
+brew 'ripgrep'
+brew 'sevenzip'
+brew 'zoxide'
 
 tap 'thoughtbot/formulae'
 brew 'rcm'
@@ -54,7 +64,7 @@ cask 'font-work-sans'
 
 mas 'Fantastical', id: 975937182
 mas 'Flow', id: 1423210932
-mas 'Googly Eyes', id: 6743048714 
+mas 'Googly Eyes', id: 6743048714
 mas 'HazeOver', id: 430798174
 mas 'iA Writer', id: 775737590
 mas 'Things', id: 904280696

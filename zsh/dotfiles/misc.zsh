@@ -84,8 +84,10 @@ function aws-set {
 }
 
 # fzf
-[[ $- == *i* ]] && source "$brewery/opt/fzf/shell/completion.zsh" 2> /dev/null
-source "$brewery/opt/fzf/shell/key-bindings.zsh"
+# [[ $- == *i* ]] && source "$brewery/opt/fzf/shell/completion.zsh" 2> /dev/null
+# source "$brewery/opt/fzf/shell/key-bindings.zsh"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # clo
 alias clo="$HOME/p/clo/bin/run"
@@ -97,3 +99,12 @@ alias ebdebug="JOBS=1 node --inspect-brk ./node_modules/.bin/ember build"
 alias ls="eza --icons --group-directories-first"
 
 eval "$(zoxide init zsh)"
+
+# yazi - https://yazi-rs.github.io/docs/quick-start
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
