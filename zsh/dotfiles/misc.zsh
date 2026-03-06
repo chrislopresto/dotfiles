@@ -1,5 +1,8 @@
 brewery=$(brew --prefix)
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(direnv hook zsh)"
+
 # Configure zsh completions for brew-managed formulae
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
 if type brew &>/dev/null
@@ -45,12 +48,6 @@ function vs {
   fi
 }
 
-# fasd
-eval "$(fasd --init auto)"
-
-# autojump
-[[ -s $brewery/etc/autojump.sh ]] && source $brewery/etc/autojump.sh
-
 # homebrew
 if ! type brew > /dev/null; then
   if [ -d /opt/homebrew ]; then
@@ -62,22 +59,6 @@ if ! type brew > /dev/null; then
     echo 'brew not found on path. /opt/homebrew directory not found on disk.'
   fi
 fi
-
-# node
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-
-# rails
-alias rake='noglob bundle exec rake'
-alias beg='bundle exec guard start'
-alias be='bundle exec'
-
-function dbrr() {
-  rake db:migrate:down VERSION=$1
-  rake db:migrate:up VERSION=$1
-}
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # tmux
 export DISABLE_AUTO_TITLE=true
@@ -112,10 +93,7 @@ alias clo="$HOME/p/clo/bin/run"
 # Navigate to chrome://inspect
 alias ebdebug="JOBS=1 node --inspect-brk ./node_modules/.bin/ember build"
 
-# Interactive preview with fzf and bat
-# https://pragmaticpineapple.com/four-useful-fzf-tricks-for-your-terminal/
-# https://github.com/sharkdp/bat
-alias p="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+# Alias ls to eza with some niceties
+alias ls="eza --icons --group-directories-first"
 
-alias ls="eza --icons --grid --group-directories-first"
-
+eval "$(zoxide init zsh)"

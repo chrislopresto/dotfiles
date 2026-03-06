@@ -16,6 +16,7 @@ brew 'tldr'
 brew 'tmux'
 brew 'tmuxinator'
 brew 'zplug'
+brew 'zoxide'
 brew 'zsh'
 
 tap 'thoughtbot/formulae'
@@ -51,7 +52,10 @@ cask 'font-victor-mono'
 cask 'font-source-code-pro'
 cask 'font-work-sans'
 
-mas 'Fantastical 2', id: 975937182
-mas 'Flow - Focus & Pomodoro Timer', id: 1423210932
-mas 'HazeOver • Distraction Dimmer™', id: 430798174
-mas 'Things 3', id: 904280696
+mas 'Fantastical', id: 975937182
+mas 'Flow', id: 1423210932
+mas 'Googly Eyes', id: 6743048714 
+mas 'HazeOver', id: 430798174
+mas 'iA Writer', id: 775737590
+mas 'Things', id: 904280696
+
