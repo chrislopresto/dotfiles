@@ -1,4 +1,7 @@
+brew 'ast-grep'
+brew 'difftastic'
 brew 'eza'
+brew 'fish'
 brew 'gh'
 brew 'git'
 brew 'gitmoji'
