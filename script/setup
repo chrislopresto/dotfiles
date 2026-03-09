@@ -58,7 +58,7 @@ function setup_macos() {
   defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 }
 
-setup_zplug
+# setup_zplug
 setup_homebrew
-setup_zsh
+# setup_zsh
 setup_macos
