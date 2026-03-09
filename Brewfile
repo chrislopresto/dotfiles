@@ -13,10 +13,6 @@ brew 'pnpm'
 brew 'reattach-to-user-namespace'
 brew 'starship'
 brew 'tldr'
-brew 'tmux'
-brew 'tmuxinator'
-brew 'zplug'
-brew 'zsh'
 
 # Yazi (and the optional dependencies):
 brew 'yazi'
