@@ -1,6 +1,0 @@
-[user]
-  name = Chris LoPresto
-
-[include]
-  path = .gitconfig.local
-  path = .gitthings
