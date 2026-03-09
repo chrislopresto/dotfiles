@@ -36,5 +36,26 @@ function setup_macos() {
   defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 }
 
+function setup_tools() {
+  echo 'Installing tools'
+  mise settings add idiomatic_version_file_enable_tools node
+  mise settings add idiomatic_version_file_enable_tools python
+  mise settings add idiomatic_version_file_enable_tools ruby
+
+  # Prepare to set up mise autocompletion
+  mise use -g usage
+
+  # install preferred tool versions
+  mise use --global \
+    node@latest \
+    python@latest \
+    ruby@latest
+
+  # set up global versions of common tools
+  mise use --global \
+    npm:markdownlint-cli2
+}
+
 setup_homebrew
 setup_macos
+setup_tools
