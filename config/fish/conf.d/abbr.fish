@@ -22,6 +22,7 @@ abbr --add grhh 'git reset HEAD --hard'
 abbr --add gsb 'git status -sb'
 abbr --add gup 'git pull --rebase'
 abbr --add gpsup 'git push --set-upstream origin (git branch --show-current)'
+abbr --add gwr 'git worktree remove'
 
 # Misc
 abbr --add pn pnpm
