@@ -3,5 +3,5 @@ function delete-branches
         echo "Specify a branch pattern so as not to delete everything"
         return 1
     end
-    git branch -D (git branch | grep -E $argv[1])
+    git branch -D (git branch | grep -E $argv[1] | string trim)
 end
