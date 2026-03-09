@@ -26,10 +26,17 @@ function cw --description "Create a git worktree and open a kitty tab for a feat
         return 1
     end
 
-    # Create worktree with new branch
+    # Create worktree, reusing branch and worktree if they already exist
     set -l worktree_dir .claude/worktrees/$name
-    git worktree add -b $branch $worktree_dir
-    or return 1
+    if test -d $worktree_dir
+        echo "Reusing existing worktree at $worktree_dir"
+    else if git show-ref --verify --quiet refs/heads/$branch
+        git worktree add $worktree_dir $branch
+        or return 1
+    else
+        git worktree add -b $branch $worktree_dir
+        or return 1
+    end
 
     set -l dir (realpath $worktree_dir)
 
