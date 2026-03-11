@@ -1,4 +1,5 @@
 brew 'ast-grep'
+brew 'bat'
 brew 'difftastic'
 brew 'eza'
 brew 'fish'

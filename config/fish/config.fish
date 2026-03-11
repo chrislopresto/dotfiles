@@ -17,6 +17,7 @@ if status is-interactive
         functions -e __load_full_config
         source ~/.config/fish/conf.d/abbr.fish 2>/dev/null || true
         source ~/.config/fish/conf.d/alias.fish 2>/dev/null || true
+        source ~/.config/fish/conf.d/export.fish 2>/dev/null || true
     end
 
     # Auto-load full config after first prompt
