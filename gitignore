@@ -11,3 +11,5 @@ tags
 .byebug_history
 npm-debug.log
 jsconfig.json
+
+local.fish

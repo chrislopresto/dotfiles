@@ -1,3 +1,9 @@
+# Set up homebrew path
+if test -f /opt/homebrew/bin/brew
+    /opt/homebrew/bin/brew shellenv | source
+    set --global --export BREWERY (brew --prefix)
+end
+
 # Make nvim the default editor
 set --global --export EDITOR nvim
 
@@ -18,5 +24,5 @@ set --global --export FZF_DEFAULT_COMMAND 'rg --files --hidden --glob "!.git/*"'
 set --global --export BAT_THEME ansi
 
 # Add ~/.bin and ~/.local/bin to PATH
-# fish_add_path --global ~/.bin
-# fish_add_path --global ~/.local/bin
+fish_add_path --global ~/.bin
+fish_add_path --global ~/.local/bin
