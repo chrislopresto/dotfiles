@@ -30,6 +30,12 @@ brew 'ripgrep'
 brew 'sevenzip'
 brew 'zoxide'
 
+# Lazyvim dependencies
+brew 'grpcurl'
+brew 'websocat'
+brew 'luarocks'
+brew 'rust-analyzer'
+
 tap 'thoughtbot/formulae'
 brew 'rcm'
 
