@@ -1,6 +1,9 @@
-function cw --description "Create a git worktree and open a kitty tab for a feature"
+function cwo --description "Create a git worktree in ~/src-worktrees and open a kitty tab for a feature"
+    argparse 'pnpm' -- $argv
+    or return 1
+
     if test (count $argv) -lt 1
-        echo "Usage: cw <feature-name>"
+        echo "Usage: cwo [--pnpm] <feature-name>"
         return 1
     end
 
@@ -26,8 +29,14 @@ function cw --description "Create a git worktree and open a kitty tab for a feat
         return 1
     end
 
+    # Derive repo name from the root of the git repo
+    set -l repo_name (basename (git rev-parse --show-toplevel))
+    set -l worktree_dir $HOME/src-worktrees/$repo_name/$name
+
+    # Ensure parent directory exists
+    mkdir -p (dirname $worktree_dir)
+
     # Create worktree, reusing branch and worktree if they already exist
-    set -l worktree_dir .claude/worktrees/$name
     if test -d $worktree_dir
         echo "Reusing existing worktree at $worktree_dir"
     else if git show-ref --verify --quiet refs/heads/$branch
@@ -49,8 +58,12 @@ function cw --description "Create a git worktree and open a kitty tab for a feat
     # Split vertically next to claude for lazygit
     kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
 
-    # Split horizontally below lazygit for whatever else
-    kitty @ launch --location=hsplit --cwd=$dir
+    # Split horizontally below lazygit for setup tasks
+    set -l setup_cmd 'mise trust'
+    if set -q _flag_pnpm
+        set setup_cmd "$setup_cmd; and pnpm install"
+    end
+    kitty @ launch --location=hsplit --cwd=$dir fish -c "$setup_cmd; exec fish"
 
     # Focus the claude window
     kitty @ focus-window --match=id:$claude_id

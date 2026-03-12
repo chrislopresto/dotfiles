@@ -6,7 +6,7 @@ function cc --description "Open a kitty tab with nvim, claude, lazygit, and what
     set -l nvim_id (kitty @ launch --type=tab --tab-title=$title --cwd=$dir fish -c 'nvim .')
 
     # Split horizontally below nvim for claude (on left)
-    kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c claude
+    set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c claude)
 
     # Split vertically next to claude for lazygit
     kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
@@ -15,5 +15,5 @@ function cc --description "Open a kitty tab with nvim, claude, lazygit, and what
     kitty @ launch --location=hsplit --cwd=$dir
 
     # Focus the claude window
-    kitty @ focus-window --match 'title:claude'
+    kitty @ focus-window --match=id:$claude_id
 end
