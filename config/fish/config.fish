@@ -1,12 +1,7 @@
 /opt/homebrew/bin/brew shellenv | source
-mise activate fish --shims | source
 set -g fish_greeting "🐟"
 
 if status is-interactive
-    if command --query mise
-        mise activate fish | source
-    end
-    
     # Lazy load zoxide
     function __lazy_zoxide
         functions -e __lazy_zoxide z
