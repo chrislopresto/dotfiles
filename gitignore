@@ -12,4 +12,6 @@ tags
 npm-debug.log
 jsconfig.json
 
+.claude/settings.local.json
+
 local.fish
