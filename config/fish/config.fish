@@ -3,9 +3,9 @@ status is-interactive; or return
 
 set -g fish_greeting "🐟"
 
-if test -f /opt/homebrew/bin/brew
-    /opt/homebrew/bin/brew shellenv | source
-end
+#if test -f /opt/homebrew/bin/brew
+#    /opt/homebrew/bin/brew shellenv | source
+#end
 
 if command --query starship
     starship init fish | source
