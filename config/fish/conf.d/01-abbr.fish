@@ -8,7 +8,9 @@ end
 
 # Git
 abbr --add lg lazygit
+abbr --add ga 'git add'
 abbr --add gb 'git branch'
+abbr --add gc 'git commit'
 abbr --add gco 'git checkout'
 abbr --add gd 'git diff'
 abbr --add gp 'git push'
