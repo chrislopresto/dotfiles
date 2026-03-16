@@ -1,5 +1,5 @@
 function cwo --description "Create a git worktree in ~/src-worktrees and open a kitty tab for a feature"
-    argparse 'pnpm' -- $argv
+    argparse pnpm -- $argv
     or return 1
 
     if test (count $argv) -lt 1
@@ -31,7 +31,7 @@ function cwo --description "Create a git worktree in ~/src-worktrees and open a 
 
     # Derive repo name from the root of the git repo
     set -l repo_name (basename (git rev-parse --show-toplevel))
-    set -l worktree_dir $HOME/src-worktrees/$repo_name/$name
+    set -l worktree_dir $HOME/worktrees/$repo_name/$name
 
     # Ensure parent directory exists
     mkdir -p (dirname $worktree_dir)
