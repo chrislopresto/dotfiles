@@ -23,6 +23,9 @@ set --global --export FZF_DEFAULT_COMMAND 'rg --files --hidden --glob "!.git/*"'
 # Attempt to have bat use terminal theme
 set --global --export BAT_THEME ansi
 
+# Git worktrees base directory
+set --global --export CLOP_WORKTREES_DIR $HOME/worktrees
+
 # Add ~/.bin and ~/.local/bin to PATH
 fish_add_path --global ~/.bin
 fish_add_path --global ~/.local/bin

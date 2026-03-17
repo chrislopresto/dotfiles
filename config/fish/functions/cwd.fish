@@ -18,7 +18,7 @@ function cwd --description "Delete a git worktree and remove its local branch"
 
     # Derive repo name from the root of the git repo
     set -l repo_name (basename (git rev-parse --show-toplevel))
-    set -l worktree_dir $HOME/worktrees/$repo_name/$name
+    set -l worktree_dir $CLOP_WORKTREES_DIR/$repo_name/$name
 
     # Check that the worktree exists
     if not test -d $worktree_dir

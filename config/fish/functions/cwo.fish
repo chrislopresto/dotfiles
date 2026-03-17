@@ -31,20 +31,20 @@ function cwo --description "Create a git worktree in ~/src-worktrees and open a 
 
     # Derive repo name from the root of the git repo
     set -l repo_name (basename (git rev-parse --show-toplevel))
-    set -l worktree_dir $HOME/worktrees/$repo_name/$name
-
-    # Ensure parent directory exists
-    mkdir -p (dirname $worktree_dir)
+    set -l worktree_dir $CLOP_WORKTREES_DIR/$repo_name/$name
 
     # Create worktree, reusing branch and worktree if they already exist
     if test -d $worktree_dir
         echo "Reusing existing worktree at $worktree_dir"
-    else if git show-ref --verify --quiet refs/heads/$branch
-        git worktree add $worktree_dir $branch
-        or return 1
     else
-        git worktree add -b $branch $worktree_dir
-        or return 1
+        mkdir -p (dirname $worktree_dir)
+        if git show-ref --verify --quiet refs/heads/$branch
+            git worktree add $worktree_dir $branch
+            or return 1
+        else
+            git worktree add -b $branch $worktree_dir
+            or return 1
+        end
     end
 
     set -l dir (realpath $worktree_dir)
