@@ -25,6 +25,18 @@ function setup_homebrew() {
   fi
 }
 
+function setup_fish_shell() {
+  if ! grep -q '/opt/homebrew/bin/fish' /etc/shells; then
+    echo 'Homebrew fish shell is not in shells list, adding...'
+    echo '/opt/homebrew/bin/fish' | sudo tee -a /etc/shells
+  fi
+
+  if [[ "$SHELL" != '/opt/homebrew/bin/fish' ]]; then
+    echo 'Current shell is not homebrew fish, switching...'
+    chsh -s /opt/homebrew/bin/fish
+  fi
+}
+
 function setup_macos() {
   echo 'Tweaking macOS settings'
   defaults write -g ApplePressAndHoldEnabled -bool false
@@ -57,5 +69,6 @@ function setup_tools() {
 }
 
 setup_homebrew
+setup_fish_shell
 setup_macos
 setup_tools
