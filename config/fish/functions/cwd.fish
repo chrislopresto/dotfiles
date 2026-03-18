@@ -16,19 +16,20 @@ function cwd --description "Delete a git worktree and remove its local branch"
         return 1
     end
 
-    # Derive repo name from the root of the git repo
-    set -l repo_name (basename (git rev-parse --show-toplevel))
-    set -l worktree_dir $CLOP_WORKTREES_DIR/$repo_name/$name
-
-    # Check that the worktree exists
-    if not test -d $worktree_dir
-        echo "Error: worktree not found at $worktree_dir"
-        return 1
+    # Find the worktree by its branch from git worktree list
+    set -l worktree_dir
+    for line in (git worktree list --porcelain)
+        if string match -q "worktree *" -- $line
+            set worktree_dir (string replace "worktree " "" -- $line)
+        else if string match -q "branch refs/heads/$branch" -- $line
+            break
+        else if string match -q "branch *" -- $line; or string match -q "detached" -- $line; or string match -q "bare" -- $line
+            set worktree_dir
+        end
     end
 
-    # Check that the branch exists
-    if not git show-ref --verify --quiet refs/heads/$branch
-        echo "Error: branch $branch does not exist"
+    if not test -n "$worktree_dir"
+        echo "Error: no worktree found for branch $branch"
         return 1
     end
 

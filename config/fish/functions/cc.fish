@@ -1,4 +1,10 @@
 function cc --description "Open a workspace with nvim, claude, lazygit, and whatever else"
+    # Ensure we're in cmux or kitty
+    if not set -q CMUX_WORKSPACE_ID; and not test "$TERM" = xterm-kitty; and not test -n "$KITTY_PID"
+        echo "cc requires cmux or kitty"
+        return 1
+    end
+
     set -l dir (realpath (test -n "$argv[1]" && echo $argv[1] || echo .))
     set -l title (test -n "$argv[2]" && echo $argv[2] || basename $dir)
 
@@ -27,8 +33,5 @@ function cc --description "Open a workspace with nvim, claude, lazygit, and what
         kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
         kitty @ launch --location=hsplit --cwd=$dir
         kitty @ focus-window --match=id:$claude_id
-    else
-        echo "cc requires cmux or kitty"
-        return 1
     end
 end

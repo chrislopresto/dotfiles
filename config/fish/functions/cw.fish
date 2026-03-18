@@ -1,4 +1,10 @@
-function cw --description "Create a git worktree and open a kitty tab for a feature"
+function cw --description "Create a git worktree and open a workspace for a feature"
+    # Ensure we're in cmux or kitty
+    if not set -q CMUX_WORKSPACE_ID; and not test "$TERM" = xterm-kitty; and not test -n "$KITTY_PID"
+        echo "cw requires cmux or kitty"
+        return 1
+    end
+
     if test (count $argv) -lt 1
         echo "Usage: cw <feature-name>"
         return 1
@@ -40,18 +46,30 @@ function cw --description "Create a git worktree and open a kitty tab for a feat
 
     set -l dir (realpath $worktree_dir)
 
-    # Create new tab with nvim (capture window id for targeting splits)
-    set -l nvim_id (kitty @ launch --type=tab --tab-title=$name --cwd=$dir fish -c 'nvim .')
+    if set -q CMUX_WORKSPACE_ID
+        # cmux
+        set -l ws (string split " " (cmux new-workspace --cwd $dir))[2]
+        set -l nvim_surface (string split " " (string trim (cmux list-pane-surfaces --workspace $ws)))[2]
 
-    # Split horizontally below nvim for claude (on left)
-    set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c claude)
+        cmux send --workspace $ws --surface $nvim_surface "printf '\\e]2;$name\\a' && nvim .\n"
 
-    # Split vertically next to claude for lazygit
-    kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
+        set -l claude_surface (string split " " (cmux new-split down --workspace $ws --surface $nvim_surface))[2]
+        cmux send --workspace $ws --surface $claude_surface "claude\n"
 
-    # Split horizontally below lazygit for whatever else
-    kitty @ launch --location=hsplit --cwd=$dir
+        set -l lazygit_surface (string split " " (cmux new-split right --workspace $ws --surface $claude_surface))[2]
+        cmux send --workspace $ws --surface $lazygit_surface "lazygit\n"
 
-    # Focus the claude window
-    kitty @ focus-window --match=id:$claude_id
+        cmux new-split down --workspace $ws --surface $lazygit_surface
+
+        set -l claude_pane (string replace "surface:" "pane:" $claude_surface)
+        cmux focus-pane --workspace $ws --pane $claude_pane
+        cmux select-workspace --workspace $ws
+    else if test "$TERM" = xterm-kitty; or test -n "$KITTY_PID"
+        # kitty
+        set -l nvim_id (kitty @ launch --type=tab --tab-title=$name --cwd=$dir fish -c 'nvim .')
+        set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c claude)
+        kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
+        kitty @ launch --location=hsplit --cwd=$dir
+        kitty @ focus-window --match=id:$claude_id
+    end
 end
