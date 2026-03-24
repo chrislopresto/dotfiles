@@ -29,3 +29,5 @@ abbr --add gwr 'git worktree remove'
 
 # Misc
 abbr --add pn pnpm
+abbr --add c claude
+abbr --add buc 'brew upgrade claude-code'
