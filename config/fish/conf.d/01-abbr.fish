@@ -13,6 +13,7 @@ abbr --add gb 'git branch'
 abbr --add gc 'git commit'
 abbr --add gco 'git checkout'
 abbr --add gd 'git diff'
+abbr --add gfc 'git commit -v --fixup'
 abbr --add gp 'git push'
 abbr --add gpf 'git push --force-with-lease'
 abbr --add grba 'git rebase --abort'
@@ -30,4 +31,4 @@ abbr --add gwr 'git worktree remove'
 # Misc
 abbr --add pn pnpm
 abbr --add c claude
-abbr --add buc 'brew upgrade claude-code'
+abbr --add buc 'brew upgrade claude-code@latest'

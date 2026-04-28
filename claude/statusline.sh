@@ -28,5 +28,4 @@ git rev-parse --git-dir >/dev/null 2>&1 && BRANCH=" | 🌿 $(git branch --show-c
 
 COST_FMT=$(printf '$%.2f' "$COST")
 
-echo -e "${CYAN}[$MODEL]${RESET} 🧠 ${PCT}% | 💰 ${YELLOW}${COST_FMT}${RESET} | ⏱️ ${MINS}m ${SECS}s | 📁 ${DIR##*/}$BRANCH ":workspace
-
+echo -e "${CYAN}[$MODEL]${RESET} 🧠 ${PCT}% | 💰 ${YELLOW}${COST_FMT}${RESET} | ⏱️ ${MINS}m ${SECS}s | 📁 ${DIR##*/}$BRANCH"

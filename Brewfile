@@ -54,7 +54,6 @@ cask 'obsidian'
 cask 'raycast'
 cask 'shottr'
 cask 'sublime-text'
-cask 'topnotch'
 cask 'visual-studio-code'
 
 cask 'font-caskaydia-mono-nerd-font'
@@ -73,10 +72,9 @@ cask 'font-victor-mono'
 cask 'font-source-code-pro'
 cask 'font-work-sans'
 
-mas 'Fantastical', id: 975937182
-mas 'Flow', id: 1423210932
-mas 'Googly Eyes', id: 6743048714
-mas 'HazeOver', id: 430798174
-mas 'iA Writer', id: 775737590
-mas 'Things', id: 904280696
-
+mas 'Fantastical', id: 975_937_182
+mas 'Flow', id: 1_423_210_932
+mas 'Googly Eyes', id: 6_743_048_714
+mas 'HazeOver', id: 430_798_174
+mas 'iA Writer', id: 775_737_590
+mas 'Things', id: 904_280_696
