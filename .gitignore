@@ -15,3 +15,5 @@ hooks/~
 **/gitconfig.local
 
 Brewfile.lock.json
+
+_*.fish

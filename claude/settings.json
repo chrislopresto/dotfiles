@@ -8,6 +8,18 @@
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
+    "filesystem": {
+      "allowRead": [
+        "~/Library/Group Containers/JLMPQHK86H.com.culturedcode.ThingsMac/"
+      ]
+    },
+    "network": {
+      "allowUnixSockets": [
+        "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      ]
+    },
     "enableWeakerNetworkIsolation": true
-  }
+  },
+  "autoCompactEnabled": false,
+  "effortLevel": "high"
 }
