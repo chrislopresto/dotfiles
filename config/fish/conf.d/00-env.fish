@@ -29,3 +29,4 @@ set --global --export CLOP_WORKTREES_DIR $HOME/worktrees
 # Add ~/.bin and ~/.local/bin to PATH
 fish_add_path --global ~/.bin
 fish_add_path --global ~/.local/bin
+fish_add_path --global /Applications/Obsidian.app/Contents/MacOS

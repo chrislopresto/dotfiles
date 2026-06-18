@@ -1,5 +1,7 @@
 {
-  "model": "opus[1m]",
+  "permissions": {
+    "defaultMode": "auto"
+  },
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
@@ -8,18 +10,19 @@
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
-    "filesystem": {
-      "allowRead": [
-        "~/Library/Group Containers/JLMPQHK86H.com.culturedcode.ThingsMac/"
-      ]
-    },
     "network": {
       "allowUnixSockets": [
         "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
       ]
     },
+    "filesystem": {
+      "allowRead": [
+        "~/Library/Group Containers/JLMPQHK86H.com.culturedcode.ThingsMac/"
+      ]
+    },
     "enableWeakerNetworkIsolation": true
   },
+  "effortLevel": "high",
   "autoCompactEnabled": false,
-  "effortLevel": "high"
+  "skipAutoPermissionPrompt": true
 }
