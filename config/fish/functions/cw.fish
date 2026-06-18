@@ -5,8 +5,11 @@ function cw --description "Create a git worktree and open a workspace for a feat
         return 1
     end
 
+    argparse bg -- $argv
+    or return 1
+
     if test (count $argv) -lt 1
-        echo "Usage: cw <feature-name>"
+        echo "Usage: cw [--bg] <feature-name>"
         return 1
     end
 
@@ -46,8 +49,13 @@ function cw --description "Create a git worktree and open a workspace for a feat
 
     set -l dir (realpath $worktree_dir)
 
-    set -l nvim_id (kitty @ launch --type=tab --tab-title=$name --cwd=$dir fish -c 'nvim .')
-    set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c claude)
+    set -l claude_cmd claude
+    if set -q _flag_bg
+        set claude_cmd "claude --bg"
+    end
+
+    set -l nvim_id (kitty @ launch --type=tab --tab-title=$name --cwd=$dir fish -c 'nvim .; exec fish')
+    set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c "$claude_cmd; exec fish")
     kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
     kitty @ launch --location=hsplit --cwd=$dir
     kitty @ focus-window --match=id:$claude_id
