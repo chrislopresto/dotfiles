@@ -18,6 +18,7 @@ brew 'pnpm'
 brew 'reattach-to-user-namespace'
 brew 'starship'
 brew 'tldr'
+brew 'worktrunk'
 
 # Yazi (and the optional dependencies):
 brew 'yazi'

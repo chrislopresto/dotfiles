@@ -1,7 +1,13 @@
-function cwo --description "Create a git worktree in ~/src-worktrees and open a workspace for a feature"
+function cwo --description "Create a git worktree (via worktrunk) and open a workspace for a feature"
     # Ensure we're in kitty
     if not test "$TERM" = xterm-kitty; and not test -n "$KITTY_PID"
         echo "cwo requires kitty"
+        return 1
+    end
+
+    # Ensure worktrunk is installed
+    if not command --query wt
+        echo "cwo requires worktrunk (wt); install it with: brew install worktrunk"
         return 1
     end
 
@@ -35,25 +41,29 @@ function cwo --description "Create a git worktree in ~/src-worktrees and open a 
         return 1
     end
 
-    # Derive repo name from the root of the git repo
-    set -l repo_name (basename (git rev-parse --show-toplevel))
-    set -l worktree_dir $CLOP_WORKTREES_DIR/$repo_name/$name
-
-    # Create worktree, reusing branch and worktree if they already exist
-    if test -d $worktree_dir
-        echo "Reusing existing worktree at $worktree_dir"
+    # Let worktrunk create (or reuse) the worktree at its default location and
+    # report the path back as JSON so we can open the workspace there. Only pass
+    # --create for a new branch; an existing branch just gets a worktree.
+    set -l result
+    if git show-ref --verify --quiet refs/heads/$branch
+        set result (command wt switch --no-cd -y --format json $branch)
+        or return 1
     else
-        mkdir -p (dirname $worktree_dir)
-        if git show-ref --verify --quiet refs/heads/$branch
-            git worktree add $worktree_dir $branch
-            or return 1
-        else
-            git worktree add -b $branch $worktree_dir
-            or return 1
-        end
+        set result (command wt switch --no-cd -y --create --base ^ --format json $branch)
+        or return 1
     end
 
-    set -l dir (realpath $worktree_dir)
+    set -l dir (echo $result | jq -r '.path // empty')
+    if test -z "$dir"
+        echo "Error: worktrunk did not return a worktree path"
+        return 1
+    end
+
+    if test (echo $result | jq -r '.action // empty') = existing
+        echo "Reusing existing worktree at $dir"
+    else
+        echo "Created worktree at $dir"
+    end
 
     # Build setup command
     set -l setup_cmd 'mise trust'
