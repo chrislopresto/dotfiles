@@ -1,0 +1,4 @@
+theme = "catppuccin-macchiato"
+
+# Surfaces Claude Code's inline notes when reviewing agent-authored diffs.
+agent_notes = true

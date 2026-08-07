@@ -8,7 +8,7 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore
-  pager = delta
+  pager = hunk pager
 
 [rerere]
   enabled = true
@@ -40,11 +40,14 @@
   cmd = code --wait $MERGED
 
 [diff]
-  tool = vscode
+  tool = hunk
   external = difft
 
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+[difftool "hunk"]
+	cmd = hunk difftool \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+
+[difftool]
+  prompt = false
 
 [init]
 	defaultBranch = main
