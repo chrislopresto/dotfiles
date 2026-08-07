@@ -2,10 +2,6 @@
   name = Chris LoPresto
   email = chris@chrislopresto.com
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILfBpn0mvBNQ1LjbAvAk91QlYsCZb9nZXa+AV9iCKjf1
-
-[credential]
-  helper = osxkeychain
-
 [color]
   ui = true
 
@@ -68,9 +64,11 @@
 	updateRefs = true
 
 [credential "https://github.com"]
+	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
 
 [credential "https://gist.github.com"]
+	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
 
 [github]
@@ -78,4 +76,3 @@
 
 [include]
   path = .gitconfig.local
-
