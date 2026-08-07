@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE hooks script TaskPaper vscode zsh"
+EXCLUDES="README.md LICENSE hooks script TaskPaper vscode zsh settings.base.json"
 SYMLINK_DIRS="tmuxinator"
