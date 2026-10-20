@@ -1,0 +1,11 @@
+{
+  "mcp": {},
+  "warming": true,
+  "permissions": [
+    {
+      "action": "external_directory",
+      "resource": "~/src/*",
+      "effect": "allow"
+    }
+  ]
+}

@@ -11,12 +11,33 @@ function cwo --description "Create a git worktree (via worktrunk) and open a wor
         return 1
     end
 
-    argparse pnpm bg -- $argv
+    argparse pnpm bg 'harness=' -- $argv
     or return 1
 
     if test (count $argv) -lt 1
-        echo "Usage: cwo [--pnpm] [--bg] <feature-name>"
+        echo "Usage: cwo [--pnpm] [--harness claude|opencode] [--bg] <feature-name>"
         return 1
+    end
+
+    # Resolve the agent command up front so a bad flag fails before we create
+    # a worktree.
+    set -l harness (set -q _flag_harness && echo $_flag_harness || echo opencode)
+    set -l agent_cmd
+    switch $harness
+        case opencode
+            if set -q _flag_bg
+                echo "--bg is only supported with --harness claude"
+                return 1
+            end
+            set agent_cmd opencode
+        case claude
+            set agent_cmd claude
+            if set -q _flag_bg
+                set agent_cmd "claude --bg"
+            end
+        case '*'
+            echo "Unknown harness: $harness (expected claude or opencode)"
+            return 1
     end
 
     set -l name $argv[1]
@@ -71,14 +92,5 @@ function cwo --description "Create a git worktree (via worktrunk) and open a wor
         set setup_cmd "$setup_cmd; and pnpm install"
     end
 
-    set -l claude_cmd claude
-    if set -q _flag_bg
-        set claude_cmd "claude --bg"
-    end
-
-    set -l nvim_id (kitty @ launch --type=tab --tab-title=$name --cwd=$dir fish -c 'nvim .; exec fish')
-    set -l claude_id (kitty @ launch --location=hsplit --match=id:$nvim_id --cwd=$dir fish -c "$claude_cmd; exec fish")
-    kitty @ launch --location=vsplit --cwd=$dir fish -c lazygit
-    kitty @ launch --location=hsplit --cwd=$dir fish -c "$setup_cmd; exec fish"
-    kitty @ focus-window --match=id:$claude_id
+    claude-workspace $dir $name $agent_cmd $setup_cmd
 end
