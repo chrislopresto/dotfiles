@@ -80,3 +80,6 @@
 
 [include]
   path = .gitconfig.local
+[hook "mise-trust"]
+	event = post-checkout
+	command = /Users/chrislopresto/.bootstrap/resources/git_config_hooks/mise-trust-worktree
